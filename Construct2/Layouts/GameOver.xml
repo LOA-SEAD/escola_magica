@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>GameOver</name>
+    <sid>2117714704899675</sid>
     <event-sheet>GameOver</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="layBG">
+        <layer name="layBG" sid="3631827844819131">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,12 +24,14 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances />
             <effects />
         </layer>
-        <layer name="layTexto">
+        <layer name="layTexto" sid="8533428224189816">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -39,10 +42,12 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="txtPontuacao">
+                <instance type="txtPontuacao" uid="336">
                     <properties>
                         <text>Você reprovou!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -80,9 +85,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btnEditarSom">
+                <instance type="btnEditarSom" uid="337">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -101,9 +107,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cursorSom">
+                <instance type="cursorSom" uid="338">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -125,7 +132,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="layFade">
+        <layer name="layFade" sid="277018884167085">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -136,10 +143,12 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="imgFade">
+                <instance type="imgFade" uid="339">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>

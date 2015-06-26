@@ -10,15 +10,130 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Introducao</layout>
-        <layout>Creditos</layout>
-        <event-sheet>Introducao</event-sheet>
-        <event-sheet active="1">Creditos</event-sheet>
+        <layout order="0">Vitoria</layout>
+        <event-sheet active="1" order="1">Vitoria</event-sheet>
     </open-tabs>
     <properties>
+        <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Cenario/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/P2/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/P3/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/Inicio/" />
+        <folder expanded="0" path="object-folder/Cenario/Solidos/" />
+        <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
+        <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
+        <folder expanded="0" path="object-folder/Cenario/Char/" />
+        <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
+        <folder expanded="0" path="object-folder/Cenario/Interativos/" />
+        <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
+        <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
+        <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />
+        <folder expanded="0" path="object-folder/Cenario/Particulas/" />
+        <folder expanded="0" path="object-folder/Textos/" />
+        <folder expanded="0" path="object-folder/Componentes/" />
+        <folder expanded="0" path="object-folder/HUD/" />
+        <folder expanded="0" path="object-folder/Animacoes/" />
+        <folder expanded="0" path="object-folder/Animacoes/onom/" />
+        <folder expanded="0" path="object-folder/Animacoes/onom/onomCocorico/" />
+        <folder expanded="0" path="object-folder/Animacoes/menino/" />
+        <folder expanded="0" path="object-folder/Animacoes/relogio/" />
+        <folder expanded="0" path="object-folder/Creditos/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Portas/" />
+        <folder expanded="1" path="layout-folder/Animacoes/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="event-folder/Classes/" />
+        <folder expanded="0" path="event-folder/Animacoes/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="0" path="music-folder/fundos/" />
+        <folder expanded="1" path="animation-folder/imgNuvem/" />
+        <folder expanded="1" path="animation-folder/imgPiramide/" />
+        <folder expanded="1" path="animation-folder/itCaixaMusica/" />
+        <folder expanded="1" path="animation-folder/imgInicioBG/" />
+        <folder expanded="1" path="animation-folder/JanelasDasPortas/" />
+        <folder expanded="1" path="animation-folder/TituloEscolaMagica/" />
+        <folder expanded="1" path="animation-folder/imgArvores/" />
+        <folder expanded="1" path="animation-folder/itPonte/" />
+        <folder expanded="1" path="animation-folder/itBarras/" />
+        <folder expanded="1" path="animation-folder/Plataforma/" />
+        <folder expanded="1" path="animation-folder/imgBalao/" />
+        <folder expanded="1" path="animation-folder/imgPlayer/" />
+        <folder expanded="1" path="animation-folder/Inimigo/" />
+        <folder expanded="1" path="animation-folder/itBala/" />
+        <folder expanded="1" path="animation-folder/PortaA/" />
+        <folder expanded="1" path="animation-folder/PortaB/" />
+        <folder expanded="1" path="animation-folder/PortaC/" />
+        <folder expanded="1" path="animation-folder/alavBarra/" />
+        <folder expanded="1" path="animation-folder/alavBase/" />
+        <folder expanded="1" path="animation-folder/imgCano/" />
+        <folder expanded="1" path="animation-folder/itEspinho/" />
+        <folder expanded="1" path="animation-folder/CP/" />
+        <folder expanded="1" path="animation-folder/Cama/" />
+        <folder expanded="1" path="animation-folder/itVentilador/" />
+        <folder expanded="1" path="animation-folder/AreiaMovetica/" />
+        <folder expanded="1" path="animation-folder/imgRaios/" />
+        <folder expanded="1" path="animation-folder/itPedra2/" />
+        <folder expanded="1" path="animation-folder/btnEditarSom/" />
+        <folder expanded="1" path="animation-folder/cursorSom/" />
+        <folder expanded="1" path="animation-folder/co/" />
+        <folder expanded="1" path="animation-folder/co2/" />
+        <folder expanded="1" path="animation-folder/ri/" />
+        <folder expanded="1" path="animation-folder/onomCó/" />
+        <folder expanded="1" path="animation-folder/onomBonk/" />
+        <folder expanded="1" path="animation-folder/onomGlup/" />
+        <folder expanded="1" path="animation-folder/onomZzz/" />
+        <folder expanded="1" path="animation-folder/onomTriiim/" />
+        <folder expanded="1" path="animation-folder/meninoCloseOlhosBase/" />
+        <folder expanded="1" path="animation-folder/meninoEstudando/" />
+        <folder expanded="1" path="animation-folder/meninoEstudandoLápis/" />
+        <folder expanded="1" path="animation-folder/meninoSonhoBase/" />
+        <folder expanded="1" path="animation-folder/meninoSonhoInterrogação/" />
+        <folder expanded="1" path="animation-folder/meninoSonhoOlhos/" />
+        <folder expanded="1" path="animation-folder/meninoSonhoPortas/" />
+        <folder expanded="1" path="animation-folder/meninoEstudandoPupila/" />
+        <folder expanded="1" path="animation-folder/closeOlhos/" />
+        <folder expanded="1" path="animation-folder/meninoCaric/" />
+        <folder expanded="1" path="animation-folder/pupila/" />
+        <folder expanded="1" path="animation-folder/meninoProvaClose/" />
+        <folder expanded="1" path="animation-folder/meninoGotas/" />
+        <folder expanded="1" path="animation-folder/meninoProvaPupila/" />
+        <folder expanded="1" path="animation-folder/meninoNotaFinal/" />
+        <folder expanded="1" path="animation-folder/meninoProva/" />
+        <folder expanded="1" path="animation-folder/ponteiroA/" />
+        <folder expanded="1" path="animation-folder/ponteiroB/" />
+        <folder expanded="1" path="animation-folder/provaRelogio/" />
+        <folder expanded="1" path="animation-folder/paredeRelogio/" />
+        <folder expanded="1" path="animation-folder/LogoEscolaMágica/" />
+        <folder expanded="1" path="animation-folder/ponteiro/" />
+        <folder expanded="1" path="animation-folder/relogioFala/" />
+        <folder expanded="1" path="animation-folder/fundoParaSeq123E/" />
+        <folder expanded="1" path="animation-folder/xicara/" />
+        <folder expanded="1" path="animation-folder/calendário/" />
+        <folder expanded="1" path="animation-folder/fundo_branco/" />
+        <folder expanded="1" path="animation-folder/meninoEscola/" />
+        <folder expanded="1" path="animation-folder/MeninoEscolaSaida/" />
+        <folder expanded="1" path="animation-folder/passagenDia/" />
+        <folder expanded="1" path="animation-folder/roupa/" />
+        <folder expanded="1" path="animation-folder/roupa2/" />
+        <folder expanded="1" path="animation-folder/parabens/" />
+        <folder expanded="1" path="animation-folder/sparkles/" />
+        <folder expanded="1" path="animation-folder/sparkles2/" />
+        <folder expanded="1" path="animation-folder/professorProva/" />
+        <folder expanded="1" path="animation-folder/galo/" />
+        <folder expanded="1" path="animation-folder/meninoAcordaObjetos/" />
+        <folder expanded="1" path="animation-folder/Logos/" />
+    </folders-expanded>
 </c2uistate>

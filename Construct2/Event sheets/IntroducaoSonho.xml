@@ -3,172 +3,187 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>IntroducaoSonho</name>
     <events>
-        <variable comment="Variavel de controle para transicao de animacoes" constant="0" name="AnimacaoAtual" static="0" type="number">0</variable>
-        <variable comment="Variavel de controle para transicao de animacoes" constant="0" name="ANIMACAOFINAL" static="0" type="number">8</variable>
-        <variable comment="0: a transição entre a AnimacaoAtual e a posterior é gradual." constant="0" name="CORTE_SECO" static="0" type="number">0</variable>
-        <event-block>
+        <variable comment="Variavel de controle para transicao de animacoes" constant="0" name="AnimacaoAtual" sid="3283579653980052" static="0" type="number">0</variable>
+        <variable comment="Variavel de controle para transicao de animacoes" constant="0" name="ANIMACAOFINAL" sid="4760204056053282" static="0" type="number">8</variable>
+        <variable comment="0: a transição entre a AnimacaoAtual e a posterior é gradual." constant="0" name="CORTE_SECO" sid="4249355802549033" static="0" type="number">0</variable>
+        <event-block sid="4657594880610626">
             <conditions>
-                <condition id="-2" name="On start of layout" type="System" />
+                <condition id="-2" name="On start of layout" sid="323551224755556" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" type="System">
+                <action id="-9" name="Set value" sid="1078053900765102" type="System">
                     <param id="0" name="Variable">AnimacaoAtual</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="-9" name="Set value" type="System">
+                <action id="-9" name="Set value" sid="6290834219204542" type="System">
                     <param id="0" name="Variable">ANIMACAOFINAL</param>
                     <param id="1" name="Value">8</param>
                 </action>
-                <action id="-18" name="Set layer opacity" type="System">
+                <action id="-18" name="Set layer opacity" sid="4427201899173138" type="System">
                     <param id="0" name="Layer">0</param>
                     <param id="1" name="Opacity">100</param>
                 </action>
-                <action id="-15" name="Set visible" type="onomBonk">
+                <action id="4" name="Preload" sid="2512776285452105" type="Audio">
+                    <param id="0" name="Audio file">IntroSonhoFX</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4878241557243717" type="onomBonk">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" type="onomZzz">
+                <action id="-15" name="Set visible" sid="5878818317953757" type="onomZzz">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" type="onomGlup">
+                <action id="-15" name="Set visible" sid="1440808091952792" type="onomGlup">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" type="meninoSonhoInterrogação">
+                <action id="-15" name="Set visible" sid="7093012443842043" type="meninoSonhoInterrogação">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="5885450526218625" type="Audio">
+                    <param id="0" name="Audio file">IntroSonhoFX</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">Volume</param>
+                    <param id="1" name="Tag (optional)">&quot;IntroFX&quot;</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="527020759297006" type="Audio">
+                    <param id="0" name="Audio file">Menu_das_portas</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;IntroBG&quot;</param>
                 </action>
             </actions>
             <sub-events>
-                <variable constant="0" name="i" static="0" type="number">1</variable>
-                <event-block>
+                <variable constant="0" name="i" sid="6161688871818163" static="0" type="number">1</variable>
+                <event-block sid="1352238677977506">
                     <conditions>
-                        <condition id="-10" name="For" type="System">
+                        <condition id="-10" name="For" sid="7289815975913668" type="System">
                             <param id="0" name="Name">&quot;&quot;</param>
                             <param id="1" name="Start index">1</param>
                             <param id="2" name="End index">ANIMACAOFINAL</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-18" name="Set layer opacity" type="System">
+                        <action id="-18" name="Set layer opacity" sid="7405315824904404" type="System">
                             <param id="0" name="Layer">i</param>
                             <param id="1" name="Opacity">0</param>
                         </action>
-                        <action id="-10" name="Add to" type="System">
+                        <action id="-10" name="Add to" sid="5764262298707498" type="System">
                             <param id="0" name="Variable">i</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="6438682863450179">
                     <conditions />
                     <actions>
-                        <action id="-16" name="Wait" type="System">
+                        <action id="-16" name="Wait" sid="7788647579474987" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
-                        <action id="-12" name="Set group active" type="System">
+                        <action id="-12" name="Set group active" sid="9916562210981548" type="System">
                             <param id="0" name="Group name">&quot;IS_SEQUENCIA_ANIMACOES&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="6448388695368134">
                     <conditions>
-                        <condition id="-13" name="Pick nth instance" type="System">
+                        <condition id="-13" name="Pick nth instance" sid="6080324499840606" type="System">
                             <param id="0" name="Object">meninoEstudando</param>
                             <param id="1" name="Instance">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" type="meninoEstudando">
+                        <action id="4" name="Set animation" sid="4638730114664487" type="meninoEstudando">
                             <param id="0" name="Animation">&quot;tomandoCafe&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="157047850682314">
                     <conditions>
-                        <condition id="-13" name="Pick nth instance" type="System">
+                        <condition id="-13" name="Pick nth instance" sid="2162635926107808" type="System">
                             <param id="0" name="Object">meninoEstudando</param>
                             <param id="1" name="Instance">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" type="meninoEstudando">
+                        <action id="4" name="Set animation" sid="9080996578800818" type="meninoEstudando">
                             <param id="0" name="Animation">&quot;dormindo&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block>
+                <event-block sid="3771798063547198">
                     <conditions>
-                        <condition id="-13" name="Pick nth instance" type="System">
+                        <condition id="-13" name="Pick nth instance" sid="9107758754324993" type="System">
                             <param id="0" name="Object">passagenDia</param>
                             <param id="1" name="Instance">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="2" name="Stop" type="passagenDia" />
-                        <action id="5" name="Set frame" type="passagenDia">
+                        <action id="2" name="Stop" sid="3590431482173914" type="passagenDia" />
+                        <action id="5" name="Set frame" sid="3782186905894674" type="passagenDia">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-group description="Gerador da sequencia de animações na introdução" inactive="1" title="IS_SEQUENCIA_ANIMACOES">
+        <event-group description="Gerador da sequencia de animações na introdução" inactive="1" sid="499728501446407" title="IS_SEQUENCIA_ANIMACOES">
             <sub-events>
-                <variable comment="Tempo de espera entre cada transição de layer (em segundos)" constant="0" name="TEMPO_ESPERA" static="0" type="number">3</variable>
-                <event-block>
+                <variable comment="Tempo de espera entre cada transição de layer (em segundos)" constant="0" name="TEMPO_ESPERA" sid="7811650224411036" static="0" type="number">3</variable>
+                <event-block sid="4546267589201665">
                     <conditions>
-                        <condition id="-14" name="Compare variable" type="System">
+                        <condition id="-14" name="Compare variable" sid="4110903196526475" type="System">
                             <param id="0" name="Variable">AnimacaoAtual</param>
                             <param id="1" name="Comparison">2</param>
                             <param id="2" name="Value">ANIMACAOFINAL</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Set group active" type="System">
+                        <action id="-12" name="Set group active" sid="9559695254370394" type="System">
                             <param id="0" name="Group name">&quot;IS_SEQUENCIA_ANIMACOES&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-18" name="Set layer opacity" type="System">
+                        <action id="-18" name="Set layer opacity" sid="177285196469624" type="System">
                             <param id="0" name="Layer">AnimacaoAtual -1</param>
                             <param id="1" name="Opacity">0</param>
                         </action>
-                        <action id="-18" name="Set layer opacity" type="System">
+                        <action id="-18" name="Set layer opacity" sid="3857743564405433" type="System">
                             <param id="0" name="Layer">AnimacaoAtual</param>
                             <param id="1" name="Opacity">100</param>
                         </action>
-                        <action id="-10" name="Add to" type="System">
+                        <action id="-10" name="Add to" sid="1890178370110845" type="System">
                             <param id="0" name="Variable">AnimacaoAtual</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Set value" type="System">
+                        <action id="-9" name="Set value" sid="3894577579811278" type="System">
                             <param id="0" name="Variable">CORTE_SECO</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-9" name="Set value" type="System">
+                        <action id="-9" name="Set value" sid="4010102077388013" type="System">
                             <param id="0" name="Variable">TEMPO_ESPERA</param>
                             <param id="1" name="Value">3</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block>
+                        <event-block sid="8233758392396494">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="9726006803647099" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" type="System">
+                                <action id="-9" name="Set value" sid="5918280998047889" type="System">
                                     <param id="0" name="Variable">TEMPO_ESPERA</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="5083575725683019">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="6442766209222294" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
@@ -176,114 +191,114 @@
                             </conditions>
                             <actions />
                         </event-block>
-                        <event-block>
+                        <event-block sid="3552262316177005">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="24212743330288" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" type="System">
+                                <action id="-9" name="Set value" sid="4579245126841434" type="System">
                                     <param id="0" name="Variable">CORTE_SECO</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="3072706451562909" type="System">
                                     <param id="0" name="Group name">&quot;IS_onomGlup&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="6164917065544601">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="2573583225420601" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">4</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" type="System">
+                                <action id="-9" name="Set value" sid="6189075740616531" type="System">
                                     <param id="0" name="Variable">CORTE_SECO</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="3" name="Start" type="closeOlhos">
+                                <action id="3" name="Start" sid="8158392648474036" type="closeOlhos">
                                     <param id="0" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3356993206681276">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="2879706319500604" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">5</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="2248773425290453" type="System">
                                     <param id="0" name="Group name">&quot;IS_onomBonk&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="3474890645310045">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="1665340958052041" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">6</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" type="System">
+                                <action id="-9" name="Set value" sid="66532802827242" type="System">
                                     <param id="0" name="Variable">TEMPO_ESPERA</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="7588983842040534">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="5982792186609741" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">7</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="2902831922877855" type="System">
                                     <param id="0" name="Group name">&quot;IS_interrogacao&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="6510567106370898" type="System">
                                     <param id="0" name="Group name">&quot;IS_olhosMexendo&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="1518017334132847">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="3510033429387299" type="System">
                                     <param id="0" name="Variable">AnimacaoAtual</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">8</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" type="System">
+                                <action id="-9" name="Set value" sid="7840199687869971" type="System">
                                     <param id="0" name="Variable">TEMPO_ESPERA</param>
                                     <param id="1" name="Value">4</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2129349915764982">
                             <conditions />
                             <actions>
-                                <action id="-16" name="Wait" type="System">
+                                <action id="-16" name="Wait" sid="1570254969523355" type="System">
                                     <param id="0" name="Seconds">TEMPO_ESPERA</param>
                                 </action>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="4394782913136898" type="System">
                                     <param id="0" name="Group name">&quot;IS_ALTERNAR_LAYERS&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
@@ -291,12 +306,12 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block>
+                <event-block sid="3960380574178919">
                     <conditions>
-                        <condition id="-22" name="Else" type="System" />
+                        <condition id="-22" name="Else" sid="797302452311345" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-12" name="Set group active" type="System">
+                        <action id="-12" name="Set group active" sid="3354133886691023" type="System">
                             <param id="0" name="Group name">&quot;IS_SEQUENCIA_ANIMACOES&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
@@ -304,61 +319,61 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Produz animação entre uma layer e outra." inactive="1" title="IS_ALTERNAR_LAYERS">
+        <event-group description="Produz animação entre uma layer e outra." inactive="1" sid="4461079916387936" title="IS_ALTERNAR_LAYERS">
             <sub-events>
                 <comment>Corte seco</comment>
-                <event-block>
+                <event-block sid="4110436138334674">
                     <conditions>
-                        <condition id="-4" name="Trigger once while true" type="System" />
-                        <condition id="-14" name="Compare variable" type="System">
+                        <condition id="-4" name="Trigger once while true" sid="9801050517362001" type="System" />
+                        <condition id="-14" name="Compare variable" sid="8631934746383434" type="System">
                             <param id="0" name="Variable">CORTE_SECO</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Set group active" type="System">
+                        <action id="-12" name="Set group active" sid="8496638451362429" type="System">
                             <param id="0" name="Group name">&quot;IS_ALTERNAR_LAYERS&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" type="System">
+                        <action id="-12" name="Set group active" sid="4007632942328661" type="System">
                             <param id="0" name="Group name">&quot;IS_SEQUENCIA_ANIMACOES&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
                 <comment>Transicao suave</comment>
-                <event-block>
+                <event-block sid="3355327880864937">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" type="System">
+                        <condition id="-6" name="Every X seconds" sid="3049778621510165" type="System">
                             <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-18" name="Set layer opacity" type="System">
+                        <action id="-18" name="Set layer opacity" sid="6607491713311884" type="System">
                             <param id="0" name="Layer">AnimacaoAtual -1</param>
                             <param id="1" name="Opacity">LayerOpacity(AnimacaoAtual -1) -10</param>
                         </action>
-                        <action id="-18" name="Set layer opacity" type="System">
+                        <action id="-18" name="Set layer opacity" sid="837787410485994" type="System">
                             <param id="0" name="Layer">AnimacaoAtual</param>
                             <param id="1" name="Opacity">LayerOpacity(AnimacaoAtual) +10</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block any="1">
+                        <event-block any="1" sid="2121864740211741">
                             <conditions>
-                                <condition id="-8" name="Compare two values" type="System">
+                                <condition id="-8" name="Compare two values" sid="5103732294212392" type="System">
                                     <param id="0" name="First value">LayerOpacity(AnimacaoAtual)</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Second value">100</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="9350667397388938" type="System">
                                     <param id="0" name="Group name">&quot;IS_ALTERNAR_LAYERS&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="3749834234746654" type="System">
                                     <param id="0" name="Group name">&quot;IS_SEQUENCIA_ANIMACOES&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
@@ -368,99 +383,99 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Animações que ocorrem simultaneamente às transições principais." title="IS_AnimacoesDisjustas">
+        <event-group description="Animações que ocorrem simultaneamente às transições principais." sid="7943736260721224" title="IS_AnimacoesDisjustas">
             <sub-events>
-                <event-group description="" inactive="1" title="IS_olhosMexendo">
+                <event-group description="" inactive="1" sid="2010962200173194" title="IS_olhosMexendo">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="4042934372416728">
                             <conditions />
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="8548311698674419" type="System">
                                     <param id="0" name="Group name">&quot;IS_olhosMexendo&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-16" name="Wait" type="System">
+                                <action id="-16" name="Wait" sid="2706873035483175" type="System">
                                     <param id="0" name="Seconds">0.8</param>
                                 </action>
-                                <action id="-1" name="Set X" type="meninoSonhoOlhos">
+                                <action id="-1" name="Set X" sid="4458853545360179" type="meninoSonhoOlhos">
                                     <param id="0" name="X">self.X -10</param>
                                 </action>
-                                <action id="-16" name="Wait" type="System">
+                                <action id="-16" name="Wait" sid="1497658369863498" type="System">
                                     <param id="0" name="Seconds">0.8</param>
                                 </action>
-                                <action id="-1" name="Set X" type="meninoSonhoOlhos">
+                                <action id="-1" name="Set X" sid="9061277513443081" type="meninoSonhoOlhos">
                                     <param id="0" name="X">self.X +20</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" inactive="1" title="IS_onomBonk">
+                <event-group description="" inactive="1" sid="346431952748602" title="IS_onomBonk">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="992868428084976">
                             <conditions />
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="4503922146143578" type="System">
                                     <param id="0" name="Group name">&quot;IS_onomBonk&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" type="onomBonk">
+                                <action id="-15" name="Set visible" sid="8189124185327187" type="onomBonk">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                                <action id="-16" name="Wait" type="System">
+                                <action id="-16" name="Wait" sid="8107458762038025" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action id="-15" name="Set visible" type="onomBonk">
+                                <action id="-15" name="Set visible" sid="4216688546101813" type="onomBonk">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="-16" name="Wait" type="System">
+                                <action id="-16" name="Wait" sid="6141981122256785" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-15" name="Set visible" type="onomZzz">
+                                <action id="-15" name="Set visible" sid="8295950485453351" type="onomZzz">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" inactive="1" title="IS_onomGlup">
+                <event-group description="" inactive="1" sid="4149270754774748" title="IS_onomGlup">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="2327212113933729">
                             <conditions />
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="1174839117684886" type="System">
                                     <param id="0" name="Group name">&quot;IS_onomGlup&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block sid="2079998939560139">
                             <conditions>
-                                <condition id="-11" name="For Each" type="System">
+                                <condition id="-11" name="For Each" sid="2155214226604715" type="System">
                                     <param id="0" name="Object">onomGlup</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-15" name="Set visible" type="onomGlup">
+                                <action id="-15" name="Set visible" sid="6074983344323213" type="onomGlup">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" inactive="1" title="IS_interrogacao">
+                <event-group description="" inactive="1" sid="2881751676792987" title="IS_interrogacao">
                     <sub-events>
-                        <event-block>
+                        <event-block sid="1114239905012853">
                             <conditions />
                             <actions>
-                                <action id="-12" name="Set group active" type="System">
+                                <action id="-12" name="Set group active" sid="5640772236670238" type="System">
                                     <param id="0" name="Group name">&quot;IS_interrogacao&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-16" name="Wait" type="System">
+                                <action id="-16" name="Wait" sid="2591210198887194" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action id="-15" name="Set visible" type="meninoSonhoInterrogação">
+                                <action id="-15" name="Set visible" sid="8389577346326413" type="meninoSonhoInterrogação">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
@@ -469,24 +484,71 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block any="1">
+        <event-block any="1" sid="102883158725705">
             <conditions>
-                <condition id="0" name="On key pressed" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="3406548390867138" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
-                <condition id="0" name="On key pressed" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="4484935234444352" type="Keyboard">
                     <param id="0" name="Key">13 (Return)</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Set value" type="System">
-                    <param id="0" name="Variable">LayoutAnterior</param>
-                    <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
-                </action>
-                <action id="-2" name="Go to layout" type="System">
-                    <param id="0" name="Layout">Inicio</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="6047610841482798">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="634016382003221" type="System">
+                            <param id="0" name="Variable">AnimacaoAtual</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">ANIMACAOFINAL</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="7081205073714389" type="Audio">
+                            <param id="0" name="Tag">&quot;IntroFX&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="1542299979003408" type="Audio">
+                            <param id="0" name="Tag">&quot;IntroBG&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5448729012478197" type="System">
+                            <param id="0" name="Variable">LayoutAnterior</param>
+                            <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4201733162794606" type="System">
+                            <param id="0" name="Layout">Inicio</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3670869740258236">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6900561215770555" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="7823650401026211" type="Audio">
+                            <param id="0" name="Tag">&quot;IntroFX&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="36390557251659" type="Audio">
+                            <param id="0" name="Tag">&quot;IntroBG&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="7884362538980874" type="Audio">
+                            <param id="0" name="Audio file">Start</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3705340022120282" type="System">
+                            <param id="0" name="Seconds">1.6</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4360167349376269" type="System">
+                            <param id="0" name="Variable">LayoutAnterior</param>
+                            <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="693024365318934" type="System">
+                            <param id="0" name="Layout">Inicio</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

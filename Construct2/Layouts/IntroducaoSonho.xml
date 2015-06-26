@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>IntroducaoSonho</name>
+    <sid>6276910059464172</sid>
     <event-sheet>IntroducaoSonho</event-sheet>
     <size>
         <width>800</width>
@@ -12,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="animacao1">
+        <layer name="animacao1" sid="200585743301236">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -23,12 +24,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundoParaSeq123E">
+                <instance type="fundoParaSeq123E" uid="340">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -47,9 +51,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoEstudando">
+                <instance type="meninoEstudando" uid="341">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -68,9 +73,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoEstudandoLápis">
+                <instance type="meninoEstudandoLápis" uid="342">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -104,9 +110,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="xicara">
+                <instance type="xicara" uid="343">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -125,9 +132,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoEstudandoPupila">
+                <instance type="meninoEstudandoPupila" uid="344">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -164,7 +172,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao2">
+        <layer name="animacao2" sid="4731714050219674">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -175,12 +183,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="calendário">
+                <instance type="calendário" uid="345">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -202,7 +213,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao3">
+        <layer name="animacao3" sid="1182446610737595">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -213,12 +224,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundoParaSeq123E">
+                <instance type="fundoParaSeq123E" uid="346">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -237,9 +251,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoEstudando">
+                <instance type="meninoEstudando" uid="347">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -258,9 +273,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="passagenDia">
+                <instance type="passagenDia" uid="348">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -279,9 +295,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="onomGlup">
+                <instance type="onomGlup" uid="349">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -300,9 +317,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="onomGlup">
+                <instance type="onomGlup" uid="350">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -324,7 +342,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao4">
+        <layer name="animacao4" sid="8429925514631162">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -335,12 +353,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="meninoCloseOlhosBase">
+                <instance type="meninoCloseOlhosBase" uid="351">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -359,9 +380,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="closeOlhos">
+                <instance type="closeOlhos" uid="352">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -383,7 +405,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao5">
+        <layer name="animacao5" sid="6538132705521321">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -394,12 +416,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundoParaSeq123E">
+                <instance type="fundoParaSeq123E" uid="353">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -418,9 +443,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoEstudando">
+                <instance type="meninoEstudando" uid="354">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -439,9 +465,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="passagenDia">
+                <instance type="passagenDia" uid="355">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -460,9 +487,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="onomBonk">
+                <instance type="onomBonk" uid="356">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -481,9 +509,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="onomZzz">
+                <instance type="onomZzz" uid="357">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -514,7 +543,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao6">
+        <layer name="animacao6" sid="8396031810945046">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -525,12 +554,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundo_branco">
+                <instance type="fundo_branco" uid="358">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -552,7 +584,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao7">
+        <layer name="animacao7" sid="2610479198185034">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -563,12 +595,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="meninoSonhoBase">
+                <instance type="meninoSonhoBase" uid="359">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -587,9 +622,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoSonhoOlhos">
+                <instance type="meninoSonhoOlhos" uid="360">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -608,9 +644,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoSonhoInterrogação">
+                <instance type="meninoSonhoInterrogação" uid="361">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -632,7 +669,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao8">
+        <layer name="animacao8" sid="600428528764288">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -643,12 +680,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="meninoSonhoPortas">
+                <instance type="meninoSonhoPortas" uid="362">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -670,7 +710,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="animacao9">
+        <layer name="animacao9" sid="7550175564193854">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -681,12 +721,15 @@
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
             <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="LogoEscolaMágica">
+                <instance type="LogoEscolaMágica" uid="363">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -705,7 +748,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txtCenario">
+                <instance type="txtCenario" uid="364">
                     <properties>
                         <text>&lt;&lt;Pressione Enter para iniciar o jogo&gt;&gt;</text>
                         <initial-visibility>Visible</initial-visibility>

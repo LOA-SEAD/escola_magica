@@ -12,15 +12,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
+    <show-grid>0</show-grid>
     <snap-width>32</snap-width>
     <snap-height>32</snap-height>
+    <show-collision-polys>0</show-collision-polys>
+    <translucent-inactive-layers>0</translucent-inactive-layers>
     <properties>
         <property expanded="1" name="Layout properties" />
         <property expanded="0" name="Layout Size" />
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="animacao1" />
+    <active-layer name="animacao9" />
     <layers>
         <layer locked="0" name="animacao1" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="animacao2" parallax-in-editor="0" visible="0" />

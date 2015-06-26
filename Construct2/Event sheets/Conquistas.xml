@@ -4,88 +4,88 @@
     <name>Conquistas</name>
     <events>
         <comment>As seguintes constantes sao preenchidas no inicio de cada uma das classes, por estas apresentarem caracteristicas distintas. Por exemplo: o numero minimo de inimigos mortos na classe A ee diferente do numero da classe B, assim como de C.</comment>
-        <variable constant="0" name="MAX_INI_MORT" static="0" type="number">0</variable>
-        <variable constant="0" name="MIN_INI_MORT" static="0" type="number">0</variable>
-        <variable constant="0" name="MIN_VELOC_FASE" static="0" type="number">0</variable>
-        <variable constant="0" name="MIN_VELOC_RESP" static="0" type="number">0</variable>
+        <variable constant="0" name="MAX_INI_MORT" sid="5712119472847928" static="0" type="number">0</variable>
+        <variable constant="0" name="MIN_INI_MORT" sid="3335279453699673" static="0" type="number">0</variable>
+        <variable constant="0" name="MIN_VELOC_FASE" sid="3490366526875999" static="0" type="number">0</variable>
+        <variable constant="0" name="MIN_VELOC_RESP" sid="8484736369695655" static="0" type="number">0</variable>
         <comment>As seguintes variaveis sao resetadas no inicio de cada classe e irao referenciar numeros presentes nestas mesmas. Por exemplo: numInimigosMortos guarda o numero de inimigos que sao mortos pelo jogador durante a classe A.</comment>
-        <variable constant="0" name="NumInimigosMortos" static="0" type="number">0</variable>
-        <variable constant="0" name="NumVezesDano" static="0" type="number">0</variable>
-        <variable constant="0" name="NumQuedas" static="0" type="number">0</variable>
-        <variable constant="0" name="NumRespErradas" static="0" type="number">0</variable>
-        <variable constant="0" name="NumReprov" static="0" type="number">0</variable>
-        <variable constant="0" name="ConquistaInicoFase" static="0" type="number">0</variable>
-        <variable constant="0" name="ConquistaInicioResp" static="0" type="number">0</variable>
-        <event-block>
+        <variable constant="0" name="NumInimigosMortos" sid="5070855583434068" static="0" type="number">0</variable>
+        <variable constant="0" name="NumVezesDano" sid="2202096418449746" static="0" type="number">0</variable>
+        <variable constant="0" name="NumQuedas" sid="6057613820353994" static="0" type="number">0</variable>
+        <variable constant="0" name="NumRespErradas" sid="3666923203894945" static="0" type="number">0</variable>
+        <variable constant="0" name="NumReprov" sid="3422039028268649" static="0" type="number">0</variable>
+        <variable constant="0" name="ConquistaInicoFase" sid="6414713883688636" static="0" type="number">0</variable>
+        <variable constant="0" name="ConquistaInicioResp" sid="8894723995958551" static="0" type="number">0</variable>
+        <event-block sid="4343149019294573">
             <conditions>
-                <condition id="-2" name="On start of layout" type="System" />
+                <condition id="-2" name="On start of layout" sid="6219194495305769" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" type="Audio">
+                <action id="6" name="Stop" sid="4873590199429348" type="Audio">
                     <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
             </actions>
             <sub-events>
-                <event-group collapsed="1" description='Verifica variaveis responsaveis pelo registro das acoes do jogador e, caso tenha atingido uma conquista, atribui o valor 1 aa posicao correspondente dessa mesma ao vetor &quot;Conquistas&quot;, registrando que ela ja foi atingida.' title="VerificarConquistas">
+                <event-group description='Verifica variaveis responsaveis pelo registro das acoes do jogador e, caso tenha atingido uma conquista, atribui o valor 1 aa posicao correspondente dessa mesma ao vetor &quot;Conquistas&quot;, registrando que ela ja foi atingida.' sid="2474853392045306" title="VerificarConquistas">
                     <sub-events>
                         <comment>Repetente</comment>
-                        <event-block>
+                        <event-block sid="3454149856025876">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="3058608049916826" type="System">
                                     <param id="0" name="Variable">NumReprov</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="2" name="Set at X" type="Conquistas">
+                                <action id="2" name="Set at X" sid="5828038716199424" type="Conquistas">
                                     <param id="0" name="X">6</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <comment>Quase la</comment>
-                        <event-block any="1">
+                        <event-block any="1" sid="7852138856500293">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="8205383918454033" type="System">
                                     <param id="0" name="Variable">CenariosConcluidos</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;011&quot;</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="3131659292997341" type="System">
                                     <param id="0" name="Variable">CenariosConcluidos</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;101&quot;</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="884859221103199" type="System">
                                     <param id="0" name="Variable">CenariosConcluidos</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;110&quot;</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="1111386338250181" type="System">
                                     <param id="0" name="Variable">CenariosConcluidos</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;111&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="2" name="Set at X" type="Conquistas">
+                                <action id="2" name="Set at X" sid="3084607979095736" type="Conquistas">
                                     <param id="0" name="X">9</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <comment>Doutor</comment>
-                        <event-block>
+                        <event-block sid="9016486074090121">
                             <conditions>
-                                <condition id="-14" name="Compare variable" type="System">
+                                <condition id="-14" name="Compare variable" sid="9697123281175947" type="System">
                                     <param id="0" name="Variable">CenariosConcluidos</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;111&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="2" name="Set at X" type="Conquistas">
+                                <action id="2" name="Set at X" sid="5147955331624456" type="Conquistas">
                                     <param id="0" name="X">10</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
@@ -93,51 +93,51 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description='Lista todas as conquistas para o jogador, construindo o icone &quot;check&quot; nas que ja foram alcancadas por esse.' title="PreencherConquistas">
+                <event-group description='Lista todas as conquistas para o jogador, construindo o icone &quot;check&quot; nas que ja foram alcancadas por esse.' sid="5310148383209038" title="PreencherConquistas">
                     <sub-events>
-                        <variable constant="0" name="LINE_HEIGHT" static="0" type="number">36</variable>
-                        <variable constant="0" name="INI_POS_Y" static="0" type="number">81</variable>
-                        <variable constant="0" name="INI_POS_X" static="0" type="number">250</variable>
-                        <variable constant="0" name="ConqIndex" static="0" type="number">0</variable>
-                        <event-block>
+                        <variable constant="0" name="LINE_HEIGHT" sid="3015489170006913" static="0" type="number">36</variable>
+                        <variable constant="0" name="INI_POS_Y" sid="6560231153611721" static="0" type="number">81</variable>
+                        <variable constant="0" name="INI_POS_X" sid="8940501059926431" static="0" type="number">250</variable>
+                        <variable constant="0" name="ConqIndex" sid="2717004975934929" static="0" type="number">0</variable>
+                        <event-block sid="3564258213618734">
                             <conditions>
-                                <condition id="-13" name="Pick nth instance" type="System">
+                                <condition id="-13" name="Pick nth instance" sid="9722751231327288" type="System">
                                     <param id="0" name="Object">txtCenario</param>
                                     <param id="1" name="Instance">2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="txtCenario">
+                                <action id="0" name="Set text" sid="9664140452316497" type="txtCenario">
                                     <param id="0" name="Text">&quot;Intocável.&#x0D;&#x0A;Pacifista.&#x0D;&#x0A;Destruidor de lares.&#x0D;&#x0A;Acrobata.&#x0D;&#x0A;Espertinho.&#x0D;&#x0A;Estudioso.&#x0D;&#x0A;Repetente.&#x0D;&#x0A;Veloz.&#x0D;&#x0A;Esforçado.&#x0D;&#x0A;Quase lá!&#x0D;&#x0A;Doutor.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
                         <comment>Valor ConqIndex pretence ao intervalo aberto [ 0, 11]</comment>
-                        <event-block>
+                        <event-block sid="5625062095986511">
                             <conditions>
-                                <condition id="-10" name="For" type="System">
+                                <condition id="-10" name="For" sid="7464240102652218" type="System">
                                     <param id="0" name="Name">&quot;ConqCompare&quot;</param>
                                     <param id="1" name="Start index">0</param>
                                     <param id="2" name="End index">10</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" type="System">
+                                <action id="-10" name="Add to" sid="4755611929819188" type="System">
                                     <param id="0" name="Variable">ConqIndex</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block>
+                                <event-block sid="8705069247300484">
                                     <conditions>
-                                        <condition id="0" name="Compare at X" type="Conquistas">
+                                        <condition id="0" name="Compare at X" sid="648108192546163" type="Conquistas">
                                             <param id="0" name="X">ConqIndex -1</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Create object" type="System">
+                                        <action id="-3" name="Create object" sid="1437301072285498" type="System">
                                             <param id="0" name="Object to create">imgGreenCheck</param>
                                             <param id="1" name="Layer">2</param>
                                             <param id="2" name="X">INI_POS_X</param>
@@ -147,15 +147,15 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block sid="8855627979301759">
                             <conditions>
-                                <condition id="-13" name="Pick nth instance" type="System">
+                                <condition id="-13" name="Pick nth instance" sid="8669758327403174" type="System">
                                     <param id="0" name="Object">txtCenario</param>
                                     <param id="1" name="Instance">1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" type="txtCenario">
+                                <action id="0" name="Set text" sid="3611924807605605" type="txtCenario">
                                     <param id="0" name="Text">&quot;Não seja ferido em nenhum momento.&#x0D;&#x0A;Elimine o mínimo possível de inimigos.&#x0D;&#x0A;Elimine o máximo possível de inimigos.&#x0D;&#x0A;Nunca caia ou seja esmagado.&#x0D;&#x0A;Responda rapidamente qualquer pergunta.&#x0D;&#x0A;Acerte de primeira todas as perguntas!&#x0D;&#x0A;Reprove em um dos anos!&#x0D;&#x0A;Vença um ano na velocidade da luz.&#x0D;&#x0A;Conquiste uma classe com a vida inferior a 20%.&#x0D;&#x0A;Complete dois dos três anos!&#x0D;&#x0A;Conquiste o jogo!&quot;</param>
                                 </action>
                             </actions>
@@ -164,16 +164,16 @@
                 </event-group>
             </sub-events>
         </event-block>
-        <event-block>
+        <event-block sid="8251626547898244">
             <conditions>
-                <condition id="1" name="On any key pressed" type="Keyboard" />
+                <condition id="1" name="On any key pressed" sid="7073558125573275" type="Keyboard" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" type="System">
+                <action id="-9" name="Set value" sid="7388303771071186" type="System">
                     <param id="0" name="Variable">LayoutAnterior</param>
                     <param id="1" name="Value">&quot;Conquistas&quot;</param>
                 </action>
-                <action id="-2" name="Go to layout" type="System">
+                <action id="-2" name="Go to layout" sid="323371765746531" type="System">
                     <param id="0" name="Layout">Inicio</param>
                 </action>
             </actions>
