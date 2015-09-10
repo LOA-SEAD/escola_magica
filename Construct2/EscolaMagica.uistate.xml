@@ -10,8 +10,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Vitoria</layout>
-        <event-sheet active="1" order="1">Vitoria</event-sheet>
+        <layout order="0">Inicio</layout>
+        <layout order="1">Porta3</layout>
+        <layout order="3">Porta1</layout>
+        <layout order="5">Porta2</layout>
+        <layout order="8">Pergunta</layout>
+        <layout order="11">Introducao</layout>
+        <event-sheet order="2">Porta3</event-sheet>
+        <event-sheet order="4">Porta1</event-sheet>
+        <event-sheet order="6">Porta2</event-sheet>
+        <event-sheet order="7">Inicio</event-sheet>
+        <event-sheet order="9">GameOver</event-sheet>
+        <event-sheet order="10">Vitoria</event-sheet>
+        <event-sheet order="12">Introducao</event-sheet>
+        <event-sheet active="1" order="13">Pergunta</event-sheet>
+        <event-sheet order="14">Creditos</event-sheet>
+        <event-sheet order="15">IntroducaoSonho</event-sheet>
+        <event-sheet order="16">Conquistas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -21,8 +36,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Cenario/" />
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Cenario/" />
         <folder expanded="0" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
@@ -34,7 +49,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
         <folder expanded="0" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
-        <folder expanded="0" path="object-folder/Cenario/Interativos/" />
+        <folder expanded="1" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />
@@ -51,12 +66,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
         <folder expanded="1" path="layout-folder/Animacoes/" />
-        <folder expanded="0" path="event-folder/" />
-        <folder expanded="0" path="event-folder/Classes/" />
-        <folder expanded="0" path="event-folder/Animacoes/" />
-        <folder expanded="0" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Classes/" />
+        <folder expanded="1" path="event-folder/Animacoes/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="0" path="music-folder/fundos/" />
         <folder expanded="1" path="animation-folder/imgNuvem/" />
@@ -135,5 +150,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/galo/" />
         <folder expanded="1" path="animation-folder/meninoAcordaObjetos/" />
         <folder expanded="1" path="animation-folder/Logos/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/BackgroundFix/" />
+        <folder expanded="1" path="animation-folder/Engine/" />
+        <folder expanded="1" path="animation-folder/Monitor/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Suporte/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/CanoFix/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/SaltoDeFé/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/SaltoDeFéSQN/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/NãoPule/" />
+        <folder expanded="1" path="animation-folder/MãoDeAreia/" />
+        <folder expanded="1" path="animation-folder/MãoTrigger/" />
+        <folder expanded="1" path="animation-folder/PortaCPin/" />
     </folders-expanded>
 </c2uistate>

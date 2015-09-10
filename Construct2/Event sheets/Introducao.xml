@@ -118,5 +118,25 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="8201277455859557">
+            <conditions>
+                <condition id="1" name="On any click" sid="3158619194287173" type="Mouse" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2588725571274144" type="System">
+                    <param id="0" name="Layout">IntroducaoSonho</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7082270773040591">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="456102477576798" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9321767210496896" type="System">
+                    <param id="0" name="Layout">IntroducaoSonho</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

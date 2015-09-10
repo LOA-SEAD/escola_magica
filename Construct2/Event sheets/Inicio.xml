@@ -3,6 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Inicio</name>
     <events>
+        <variable constant="0" name="EasterEgg" sid="8009486351615664" static="0" type="number">0</variable>
+        <variable constant="0" name="Porta3Clear" sid="2136560678193999" static="0" type="number">0</variable>
+        <variable constant="0" name="Porta2Clear" sid="2804559230775495" static="0" type="number">0</variable>
+        <variable constant="0" name="Porta1Clear" sid="8577475624881665" static="0" type="number">0</variable>
         <comment>SelecaoPorta ee exibido sempre apos a introducao ou a saida de uma das classes (a conclusao das mesmas). Neste layout o jogador seleciona qual ano ele deseja jogar, alem das salas de visualizacao de conquistas e creditos.</comment>
         <variable comment="Const. global respeitada pelos elementos do jogo." constant="0" name="VLR_MAX_VELOC" sid="5986807040696636" static="0" type="number">300</variable>
         <variable constant="0" name="VLR_MAX_ACELER" sid="254123058421735" static="0" type="number">1000</variable>
@@ -50,18 +54,7 @@
                     <param id="0" name="Animation">&quot;Standing&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="6" name="Stop" sid="3216733195578995" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-                <action id="6" name="Stop" sid="1243683784573171" type="Audio">
-                    <param id="0" name="Tag">&quot;FaseA&quot;</param>
-                </action>
-                <action id="6" name="Stop" sid="7938767061507864" type="Audio">
-                    <param id="0" name="Tag">&quot;FaseB&quot;</param>
-                </action>
-                <action id="6" name="Stop" sid="2728403624650317" type="Audio">
-                    <param id="0" name="Tag">&quot;FaseC&quot;</param>
-                </action>
+                <action id="33" name="Stop all" sid="6588599826906139" type="Audio" />
                 <action id="0" name="Play" sid="1711216274094569" type="Audio">
                     <param id="0" name="Audio file">Menu_das_portas</param>
                     <param id="2" name="Loop">1</param>
@@ -113,6 +106,9 @@
                 <action id="-12" name="Set group active" sid="9871794006888905" type="System">
                     <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
                     <param id="1" name="State">1</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="7323692095552375" type="PortaB">
+                    <param id="0" name="Setting">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -759,5 +755,79 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="5552196977663903" title="Liberar portas">
+            <sub-events>
+                <event-group description="" sid="2715691190538893" title="Liberar Porta2">
+                    <sub-events>
+                        <event-block sid="5990235136215976">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="985835648083657" type="System">
+                                    <param id="0" name="Variable">Porta1Clear</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="8542362068604961" type="PortaB">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6096756923275798">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2498311264473284" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="1608114006189384" type="PortaB">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="9077039769018335" type="PortaC">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="9914678706700432" title="Liberar Porta3">
+                    <sub-events>
+                        <event-block sid="5990235136215976">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="985835648083657" type="System">
+                                    <param id="0" name="Variable">Porta2Clear</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="2617608855029825" type="PortaC">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6096756923275798">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2498311264473284" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="6164258739305792" type="PortaC">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="2352170428467864">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7859156963917975" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="9853866243686993" type="Sprite6">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

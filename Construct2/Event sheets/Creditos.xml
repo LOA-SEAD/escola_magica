@@ -8,6 +8,7 @@
                 <condition id="-2" name="On start of layout" sid="6214025813211725" type="System" />
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="8088735845280139" type="Audio" />
                 <action id="-3" name="Set position" sid="5870587113205849" type="TextCreditos">
                     <param id="0" name="X">400</param>
                     <param id="1" name="Y">600</param>
@@ -19,9 +20,6 @@
                     <param id="0" name="Pin to">TextCreditos</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action id="6" name="Stop" sid="9968291270505561" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
                 <action id="0" name="Play" sid="6416603133230927" type="Audio">
                     <param id="0" name="Audio file">creditos</param>
                     <param id="2" name="Loop">1</param>
@@ -29,7 +27,7 @@
                     <param id="1" name="Tag (optional)">&quot;creditos&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="9667949596418767" type="TextCreditos">
-                    <param id="0" name="Text">&quot;&#x0D;&#x0A;&#x0D;&#x0A;COORDENAÇÃO&#x0D;&#x0A;Delano Medeiros Beder&#x0D;&#x0A;Joice Lee Otsuka&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ORIENTAÇÃO&#x0D;&#x0A;Delano Medeiros Beder&#x0D;&#x0A;Ivan Zanetti Rocca&#x0D;&#x0A;Joice Lee Otsuka&#x0D;&#x0A;Mauro Carlos Romanatto&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ROTEIRO&#x0D;&#x0A;Jheniffer Camila Pedro&#x0D;&#x0A;Marcos Vinícius Costa&#x0D;&#x0A;José Antonio Salvador&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;DESENVOLVIMENTO&#x0D;&#x0A;Fabricio Kazuaki Uehara&#x0D;&#x0A;Guilherme H. R. Perego&#x0D;&#x0A;Lucas Oliveira David&#x0D;&#x0A;Felipe Berlini&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ILUSTRAÇÃO&#x0D;&#x0A;Catarine Santana Ohnuma&#x0D;&#x0A;Jessica Sayuri Nishiguchi&#x0D;&#x0A;Jennifer Kaon Cheng Lu&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;TRILHA SONORA&#x0D;&#x0A;Daniel Lopes Santiago&quot;</param>
+                    <param id="0" name="Text">&quot;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ROTEIRO&#x0D;&#x0A;&#x0D;&#x0A;Jheniffer Camila Pedro&#x0D;&#x0A;Marcos Vinícius Costa&#x0D;&#x0A;José Antonio Salvador&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;DESENVOLVIMENTO&#x0D;&#x0A;&#x0D;&#x0A;Daniel Lopes Santiago&#x0D;&#x0A;Fabricio Kazuaki Uehara&#x0D;&#x0A;Guilherme H. R. Perego&#x0D;&#x0A;Lucas Oliveira David&#x0D;&#x0A;Felipe Berlini&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ILUSTRAÇÕES&#x0D;&#x0A;&#x0D;&#x0A;Daniel Lopes Santiago&#x0D;&#x0A;Catarine Santana Ohnuma&#x0D;&#x0A;Jessica Sayuri Nishiguchi&#x0D;&#x0A;Jennifer Kaon Cheng Lu&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;TRILHA SONORA&#x0D;&#x0A;&#x0D;&#x0A;Daniel Lopes Santiago&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;REVISÃO&#x0D;&#x0A;&#x0D;&#x0A;Marcos Tsuda&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;COORDENAÇÃO&#x0D;&#x0A;&#x0D;&#x0A;Delano Medeiros Beder&#x0D;&#x0A;Joice Lee Otsuka&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;SUPERVISÃO&#x0D;&#x0A;&#x0D;&#x0A;Ivan Zanetti Rocca&#x0D;&#x0A;Delano Medeiros Beder&#x0D;&#x0A;Joice Lee Otsuka&quot;</param>
                 </action>
                 <action id="-12" name="Set group active" sid="2978100618422334" type="System">
                     <param id="0" name="Group name">&quot;Movimento&quot;</param>
@@ -65,7 +63,7 @@
                     <conditions>
                         <condition id="-2" name="Compare Y" sid="9716986992697729" type="TextCreditos">
                             <param id="0" name="Comparison">5</param>
-                            <param id="1" name="Y co-ordinate">-900</param>
+                            <param id="1" name="Y co-ordinate">-1393</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -76,7 +74,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Set Y" sid="7964758277858311" type="TextCreditos">
-                                    <param id="0" name="Y">self.Y - 3</param>
+                                    <param id="0" name="Y">self.Y - 2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -90,9 +88,6 @@
                         <action id="-12" name="Set group active" sid="7242192218354515" type="System">
                             <param id="0" name="Group name">&quot;Movimento&quot;</param>
                             <param id="1" name="State">0</param>
-                        </action>
-                        <action disabled="1" id="-16" name="Wait" sid="4163412645484991" type="System">
-                            <param id="0" name="Seconds">2</param>
                         </action>
                         <action disabled="1" id="-12" name="Set group active" sid="1623203461924924" type="System">
                             <param id="0" name="Group name">&quot;Logos&quot;</param>

@@ -44,10 +44,10 @@
                     <param id="3" name="Volume">Volume</param>
                     <param id="1" name="Tag (optional)">&quot;IntroFX&quot;</param>
                 </action>
-                <action disabled="1" id="0" name="Play" sid="527020759297006" type="Audio">
-                    <param id="0" name="Audio file">Menu_das_portas</param>
+                <action id="0" name="Play" sid="527020759297006" type="Audio">
+                    <param id="0" name="Audio file">IntroEscolaMágica</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">-10</param>
+                    <param id="3" name="Volume">10</param>
                     <param id="1" name="Tag (optional)">&quot;IntroBG&quot;</param>
                 </action>
             </actions>

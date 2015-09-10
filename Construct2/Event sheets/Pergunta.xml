@@ -3,166 +3,175 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Pergunta</name>
     <events>
+        <variable constant="0" name="HelpOn" sid="9249117927984566" static="0" type="number">0</variable>
         <comment>&quot;Resp&quot; armazena um numero que faz referencia a qual alavanca o jogador pressionou. &quot;RespCorreta&quot; armazena uma referencia da alavanca correta. Se ambas sao iguais quando o jogador tenta sair pela porta, sua resposta obviamente esta correta. Caso contrario, o jogador toma um choque (descrito pelo grupo &quot;Choque&quot;), e deverá responder a pergunta novamente.&#x0D;&#x0A;On start of layout: o objeto ajax e verificado. Se este for nulo, o carregamento das perguntas no layout &quot;Introducao&quot; foi mal sucedido. Uma segunda requisicao e entao executada.</comment>
+        <variable constant="0" name="Pergunta" sid="7657345607694649" static="0" type="text"></variable>
         <variable constant="0" name="Resp" sid="9667931264537564" static="0" type="number">-1</variable>
         <variable constant="0" name="RespCorreta" sid="5447675615131101" static="0" type="number">-1</variable>
-        <event-block sid="152157541819758">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="5706053433638337" type="System" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="6406169261771769" type="PortaA">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="584622257281213" type="PortaB">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="5851763119130963" type="PortaC">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="2000862257770369" type="imgPlayer">
-                    <param id="0" name="Pin to">player</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="9121829700756287" type="imgRaios">
-                    <param id="0" name="Pin to">imgPlayer</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="9598537225728637" type="imgBalao">
-                    <param id="0" name="Pin to">imgPlayer</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="5116801840745328" type="txtFala">
-                    <param id="0" name="Pin to">imgBalao</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action id="4" name="Set animation" sid="5884891631587748" type="imgPlayer">
-                    <param id="0" name="Animation">&quot;Standing&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-5" name="Set width" sid="9455573667547835" type="BarraVida">
-                    <param id="0" name="Width">Capsula.Width * (vlrVida/100)</param>
-                </action>
-                <action id="6" name="Stop" sid="9757432905032761" type="Audio">
-                    <param id="0" name="Tag">&quot;FaseA&quot;</param>
-                </action>
-                <action id="6" name="Stop" sid="7368431646349312" type="Audio">
-                    <param id="0" name="Tag">&quot;FaseB&quot;</param>
-                </action>
-                <action id="6" name="Stop" sid="1937141448832244" type="Audio">
-                    <param id="0" name="Tag">&quot;FaseC&quot;</param>
-                </action>
-                <action id="4" name="Preload" sid="9677479159799335" type="Audio">
-                    <param id="0" name="Audio file">Acerto</param>
-                </action>
-                <action id="4" name="Preload" sid="6821624222736852" type="Audio">
-                    <param id="0" name="Audio file">Alavanca</param>
-                </action>
-                <action id="0" name="Play" sid="1428201906458581" type="Audio">
-                    <param id="0" name="Audio file">Pergunta</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">Volume</param>
-                    <param id="1" name="Tag (optional)">&quot;Pergunta&quot;</param>
-                </action>
-                <action id="2" name="Set muted" sid="8530818908521782" type="Audio">
-                    <param id="0" name="Tag">&quot;Barras&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action id="2" name="Set muted" sid="1049918423321355" type="Audio">
-                    <param id="0" name="Tag">&quot;Agua&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="2283323352328104" type="System">
-                    <param id="0" name="Variable">ConquistaInicioResp</param>
-                    <param id="1" name="Value">time</param>
-                </action>
-                <action id="-9" name="Set value" sid="8519852414855977" type="System">
-                    <param id="0" name="Variable">Resp</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-                <action id="-9" name="Set value" sid="6320746257360839" type="System">
-                    <param id="0" name="Variable">RespCorreta</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-                <action id="5" name="Set frame" sid="7904220537366845" type="btnEditarSom">
-                    <param id="0" name="Frame number">Volume = -20 ? 2 : 0</param>
-                </action>
-                <action id="-12" name="Set group active" sid="4788247294694829" type="System">
-                    <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
-                    <param id="1" name="State">1</param>
-                </action>
-            </actions>
+        <event-group description="" sid="7103146111134226" title="Start Layout">
             <sub-events>
-                <event-block sid="8024828818504334">
+                <event-block sid="152157541819758">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="4598863858322679" type="System">
-                            <param id="0" name="First value">AJAX.LastData</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;&quot;</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="5706053433638337" type="System" />
                     </conditions>
                     <actions>
-                        <action id="1" name="Request project file" sid="5092078996703473" type="AJAX">
-                            <param id="0" name="Tag">&quot;Perguntas&quot;</param>
-                            <param id="1" name="File">Perguntas.xml</param>
+                        <action id="-15" name="Set visible" sid="6406169261771769" type="PortaA">
+                            <param id="0" name="Visibility">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7523478323250769">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="6735476120846838" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Set group active" sid="7830796186704538" type="System">
-                            <param id="0" name="Group name">&quot;CarregaPergunta&quot;</param>
+                        <action id="-15" name="Set visible" sid="584622257281213" type="PortaB">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5851763119130963" type="PortaC">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="2000862257770369" type="imgPlayer">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="9121829700756287" type="imgRaios">
+                            <param id="0" name="Pin to">imgPlayer</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="9598537225728637" type="imgBalao">
+                            <param id="0" name="Pin to">imgPlayer</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="5116801840745328" type="txtFala">
+                            <param id="0" name="Pin to">imgBalao</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5884891631587748" type="imgPlayer">
+                            <param id="0" name="Animation">&quot;Standing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="9455573667547835" type="BarraVida">
+                            <param id="0" name="Width">Capsula.Width * (vlrVida/100)</param>
+                        </action>
+                        <action id="6" name="Stop" sid="9757432905032761" type="Audio">
+                            <param id="0" name="Tag">&quot;FaseA&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="7368431646349312" type="Audio">
+                            <param id="0" name="Tag">&quot;FaseB&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="1937141448832244" type="Audio">
+                            <param id="0" name="Tag">&quot;FaseC&quot;</param>
+                        </action>
+                        <action id="4" name="Preload" sid="9677479159799335" type="Audio">
+                            <param id="0" name="Audio file">Acerto</param>
+                        </action>
+                        <action id="4" name="Preload" sid="6821624222736852" type="Audio">
+                            <param id="0" name="Audio file">Alavanca</param>
+                        </action>
+                        <action id="0" name="Play" sid="1428201906458581" type="Audio">
+                            <param id="0" name="Audio file">Desafios</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">Volume</param>
+                            <param id="1" name="Tag (optional)">&quot;Pergunta&quot;</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="8530818908521782" type="Audio">
+                            <param id="0" name="Tag">&quot;Barras&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="1049918423321355" type="Audio">
+                            <param id="0" name="Tag">&quot;Agua&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2283323352328104" type="System">
+                            <param id="0" name="Variable">ConquistaInicioResp</param>
+                            <param id="1" name="Value">time</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8519852414855977" type="System">
+                            <param id="0" name="Variable">Resp</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6320746257360839" type="System">
+                            <param id="0" name="Variable">RespCorreta</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7904220537366845" type="btnEditarSom">
+                            <param id="0" name="Frame number">Volume = -20 ? 2 : 0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="4788247294694829" type="System">
+                            <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9749425927738996">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="4693916047788923" type="System">
-                            <param id="0" name="Variable">AnoAtual</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="3322711959614257" type="PortaA">
-                            <param id="0" name="Visibility">1</param>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="3179053405022629" type="PortaB">
+                            <param id="0" name="Setting">1</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="2501893168524932">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="6477797197977685" type="System">
-                            <param id="0" name="Variable">AnoAtual</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="9756291357093979" type="PortaB">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1677215691119424">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2037588515274042" type="System">
-                            <param id="0" name="Variable">AnoAtual</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="3387457659281362" type="PortaC">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
+                    <sub-events>
+                        <event-block sid="8024828818504334">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="4598863858322679" type="System">
+                                    <param id="0" name="First value">AJAX.LastData</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Request project file" sid="5092078996703473" type="AJAX">
+                                    <param id="0" name="Tag">&quot;Perguntas&quot;</param>
+                                    <param id="1" name="File">Perguntas.xml</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7523478323250769">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6735476120846838" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="7830796186704538" type="System">
+                                    <param id="0" name="Group name">&quot;CarregaPergunta&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9749425927738996">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4693916047788923" type="System">
+                                    <param id="0" name="Variable">AnoAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3322711959614257" type="PortaA">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2501893168524932">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6477797197977685" type="System">
+                                    <param id="0" name="Variable">AnoAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9756291357093979" type="PortaB">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1677215691119424">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2037588515274042" type="System">
+                                    <param id="0" name="Variable">AnoAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3387457659281362" type="PortaC">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
         <event-group description="" sid="5775981100384622" title="RegrasGerais">
             <sub-events>
                 <event-group description="" sid="2178698034752266" title="ControleTeclas">
@@ -419,86 +428,6 @@
                         </event-group>
                     </sub-events>
                 </event-group>
-                <event-group description="" inactive="1" sid="4782293249889303" title="Fala">
-                    <sub-events>
-                        <event-block sid="4921641311588378">
-                            <conditions />
-                            <actions>
-                                <action id="-12" name="Set group active" sid="559406880323792" type="System">
-                                    <param id="0" name="Group name">&quot;Fala&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="4132690400246698" type="imgBalao">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="3924358804470244" type="imgBalao">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="457289248842495" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="1088473948692812" type="imgBalao">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="9928754836932767" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="7601756633056002" type="imgBalao">
-                                    <param id="0" name="Frame number">3</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="2409278138277647" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="353021147943925" type="imgBalao">
-                                    <param id="0" name="Frame number">4</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="7200089063986062" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="4746215529484061" type="txtFala">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="1659852687014099" type="System">
-                                    <param id="0" name="Seconds">2.0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="8539088116506358" type="txtFala">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="3441661192658635" type="imgBalao">
-                                    <param id="0" name="Animation">&quot;Aparecer&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="5868750290041287" type="imgBalao">
-                                    <param id="0" name="Frame number">3</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="4956735626783093" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="9235990505760993" type="imgBalao">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="5874483058159068" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="1902900982645528" type="imgBalao">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="1633258658191951" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="3260927263565785" type="imgBalao">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="7321943149566291" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="6896433510126171" type="imgBalao">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
             </sub-events>
         </event-group>
         <event-group description="" sid="8759871659699389" title="Interacao">
@@ -571,35 +500,13 @@
                                         </action>
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="5167950262696314">
+                                        <event-block sid="8074006636747717">
                                             <conditions>
                                                 <condition id="-14" name="Compare variable" sid="7680531975933655" type="System">
                                                     <param id="0" name="Variable">Resp</param>
-                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">RespCorreta</param>
                                                 </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Add to" sid="3177568496760587" type="System">
-                                                    <param id="0" name="Variable">NumRespErradas</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="0" name="Set text" sid="4127212282019195" type="txtFala">
-                                                    <param id="0" name="Text">&quot;AIII!!! Parece que alguma coisa não está certa!&quot;</param>
-                                                </action>
-                                                <action id="-12" name="Set group active" sid="5046184180571921" type="System">
-                                                    <param id="0" name="Group name">&quot;Fala&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-12" name="Set group active" sid="3043444281651663" type="System">
-                                                    <param id="0" name="Group name">&quot;Choque&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="8074006636747717">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="921280058430352" type="System" />
                                             </conditions>
                                             <actions>
                                                 <action id="0" name="Play" sid="1769304841177188" type="Audio">
@@ -614,6 +521,13 @@
                                                 <action id="-10" name="Add to" sid="1683302807120664" type="System">
                                                     <param id="0" name="Variable">PergAtual</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="4535131634003792" type="System">
+                                                    <param id="0" name="Variable">Pergunta</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
+                                                </action>
+                                                <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
+                                                    <param id="0" name="Value">&quot;send(&quot; &amp; Pergunta &amp; &quot;)&quot;</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -689,6 +603,70 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
+                                        <event-block sid="5167950262696314">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="921280058430352" type="System" />
+                                                <condition disabled="1" id="-14" name="Compare variable" sid="6911190681902456" type="System">
+                                                    <param id="0" name="Variable">HelpOn</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="1177849256999538" type="System">
+                                                    <param id="0" name="Variable">HelpOn</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="3177568496760587" type="System">
+                                                    <param id="0" name="Variable">NumRespErradas</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="5939990263331082" type="System">
+                                                    <param id="0" name="Variable">Pergunta</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
+                                                </action>
+                                                <action id="0" name="Execute" sid="2866700705005697" type="CallJS">
+                                                    <param id="0" name="Value">&quot;send(&quot; &amp; Pergunta &amp; &quot;)&quot;</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="3043444281651663" type="System">
+                                                    <param id="0" name="Group name">&quot;Choque&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action disabled="1" id="0" name="Set text" sid="4127212282019195" type="txtFala">
+                                                    <param id="0" name="Text">&quot;Hmm... Não é essa a resposta.&quot;</param>
+                                                </action>
+                                                <action disabled="1" id="-15" name="Set visible" sid="1724373827416541" type="txtFala">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                                <action disabled="1" id="-15" name="Set visible" sid="712382880647509" type="imgBalao">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action disabled="1" id="4" name="Set animation" sid="452133928890276" type="imgBalao">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action disabled="1" id="-16" name="Wait" sid="4750108804787977" type="System">
+                                                    <param id="0" name="Seconds">0.3</param>
+                                                </action>
+                                                <action disabled="1" id="-15" name="Set visible" sid="82656323319062" type="txtFala">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action disabled="1" id="-16" name="Wait" sid="562483260172854" type="System">
+                                                    <param id="0" name="Seconds">5</param>
+                                                </action>
+                                                <action disabled="1" id="-15" name="Set visible" sid="9914236131777993" type="txtFala">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                                <action disabled="1" id="4" name="Set animation" sid="6492149791021188" type="imgBalao">
+                                                    <param id="0" name="Animation">&quot;Close&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action disabled="1" id="-9" name="Set value" sid="6016521169757969" type="System">
+                                                    <param id="0" name="Variable">HelpOn</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                     </sub-events>
                                 </event-block>
                             </sub-events>
@@ -747,8 +725,8 @@
                             </conditions>
                             <actions>
                                 <action behavior="Flash" id="0" name="Flash" sid="8719859999641796" type="imgPlayer">
-                                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="0" name="&apos;On&apos; time">0.07</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.03</param>
                                     <param id="2" name="Duration">2.0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="4169678823951398" type="System">
@@ -779,14 +757,14 @@
                                 </action>
                                 <action id="-11" name="Subtract from" sid="4065954820202058" type="System">
                                     <param id="0" name="Variable">vlrVida</param>
-                                    <param id="1" name="Value">10</param>
+                                    <param id="1" name="Value">(vlrVida/3) + 10</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="9070578597582217" type="System">
                                     <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="6511589028057144" type="System">
-                                    <param id="0" name="Seconds">1.0</param>
+                                    <param id="0" name="Seconds">0.3</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="5882359947124594" type="imgRaios">
                                     <param id="0" name="Visibility">0</param>
@@ -885,9 +863,17 @@
                                         <action id="0" name="Set text" sid="3005165809557421" type="txtPergunta">
                                             <param id="0" name="Text">XML.StringValue(&quot;@titulo&quot;)</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="8757549881452613" type="System">
+                                            <param id="0" name="Variable">Pergunta</param>
+                                            <param id="1" name="Value">&quot;&apos;&quot; &amp; XML.StringValue(&quot;@titulo&quot;) &amp; &quot;&apos;,&quot;</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="4958175886242566" type="System">
                                             <param id="0" name="Variable">RespCorreta</param>
                                             <param id="1" name="Value">int(XML.StringValue(&quot;@respCorreta&quot;))</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="3727609858483325" type="System">
+                                            <param id="0" name="Variable">Pergunta</param>
+                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; XML.StringValue(&quot;@respCorreta&quot;) &amp; &quot;&apos;&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="3488004036136543" type="System">
                                             <param id="0" name="Variable">encontrouPergunta</param>
@@ -908,6 +894,10 @@
                                             <actions>
                                                 <action id="0" name="Set text" sid="5140590252013463" type="txtCenario">
                                                     <param id="0" name="Text">XML.StringValue(&quot;node()&quot;)</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="6363771757854336" type="System">
+                                                    <param id="0" name="Variable">Pergunta</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; XML.StringValue(&quot;node()&quot;) &amp; &quot;&apos;&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1079,5 +1069,17 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="6718644061072744">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8931389555762609" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6071659622560259" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

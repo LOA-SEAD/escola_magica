@@ -381,86 +381,6 @@
         </event-block>
         <event-group description="" sid="1028172993761318" title="RegrasGerais">
             <sub-events>
-                <event-group description="" inactive="1" sid="4586382005305241" title="Fala">
-                    <sub-events>
-                        <event-block sid="335645580887279">
-                            <conditions />
-                            <actions>
-                                <action id="-12" name="Set group active" sid="4130097189771544" type="System">
-                                    <param id="0" name="Group name">&quot;Fala&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="5513986525555488" type="imgBalao">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="5888218336978706" type="imgBalao">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="3647974202930129" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="3647877838030821" type="imgBalao">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="370796637609824" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="8658220575205613" type="imgBalao">
-                                    <param id="0" name="Frame number">3</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="3326679873942662" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="2404095516697208" type="imgBalao">
-                                    <param id="0" name="Frame number">4</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="2285607751585976" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="9206292462629525" type="txtFala">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="9349245011605095" type="System">
-                                    <param id="0" name="Seconds">2.0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="2386386164205366" type="txtFala">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="7524747954357348" type="imgBalao">
-                                    <param id="0" name="Animation">&quot;Aparecer&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="8347127586257738" type="imgBalao">
-                                    <param id="0" name="Frame number">3</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="6392969962138723" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="45833725512762" type="imgBalao">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="8458093554014069" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="393874722976141" type="imgBalao">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="3897208632796662" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="7229288335557924" type="imgBalao">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="4239266113854185" type="System">
-                                    <param id="0" name="Seconds">0.025</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="1501880489967414" type="imgBalao">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
                 <event-group description="" sid="463249802941619" title="ControleTeclas">
                     <sub-events>
                         <event-block sid="578587582104011">
@@ -547,16 +467,6 @@
                                 <action id="4" name="Set animation" sid="4687413826849023" type="imgPlayer">
                                     <param id="0" name="Animation">&quot;Leaping&quot;</param>
                                     <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="5250318828920655">
-                            <conditions>
-                                <condition behavior="Platform" id="0" name="Is moving" sid="8734108118393746" type="player" />
-                            </conditions>
-                            <actions>
-                                <action id="-8" name="Scroll to object" sid="8061233584075327" type="System">
-                                    <param id="0" name="Object">player</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -647,6 +557,14 @@
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="8757075422823015" type="System">
+                                            <param id="0" name="Variable">PosX</param>
+                                            <param id="1" name="Value">player.X</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="4392148629158805" type="System">
+                                            <param id="0" name="Variable">PosY</param>
+                                            <param id="1" name="Value">player.Y</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-group description="" inactive="1" sid="7942375812805092" title="CA_AlteraAlavanca">
@@ -675,14 +593,6 @@
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="226010568491412" type="alavBarra">
                                                     <param id="0" name="Angle">315</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="8757075422823015" type="System">
-                                                    <param id="0" name="Variable">PosX</param>
-                                                    <param id="1" name="Value">player.X</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="4392148629158805" type="System">
-                                                    <param id="0" name="Variable">PosY</param>
-                                                    <param id="1" name="Value">player.Y</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="7900093948535531" type="System">
                                                     <param id="0" name="Layout">Pergunta</param>
@@ -920,9 +830,7 @@
                                 </event-block>
                                 <event-block sid="4549170487757962">
                                     <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="3191707672583651" type="System">
-                                            <param id="0" name="Interval (seconds)">0.1</param>
-                                        </condition>
+                                        <condition id="-1" name="Every tick" sid="3191707672583651" type="System" />
                                         <condition id="-13" name="Pick nth instance" sid="5775349652438756" type="System">
                                             <param id="0" name="Object">itPonte</param>
                                             <param id="1" name="Instance">1</param>
@@ -930,7 +838,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-8" name="Set angle" sid="732028280137887" type="itPonte">
-                                            <param id="0" name="Angle">itPonte.Angle -10</param>
+                                            <param id="0" name="Angle">itPonte.Angle -1.5</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -987,9 +895,7 @@
                                 </event-block>
                                 <event-block sid="8365723629188028">
                                     <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="136991671616814" type="System">
-                                            <param id="0" name="Interval (seconds)">0.1</param>
-                                        </condition>
+                                        <condition id="-1" name="Every tick" sid="136991671616814" type="System" />
                                         <condition id="-13" name="Pick nth instance" sid="403332991337303" type="System">
                                             <param id="0" name="Object">itPonte</param>
                                             <param id="1" name="Instance">0</param>
@@ -997,7 +903,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-8" name="Set angle" sid="3208493738806694" type="itPonte">
-                                            <param id="0" name="Angle">itPonte.Angle -10</param>
+                                            <param id="0" name="Angle">itPonte.Angle -1.5</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -1055,6 +961,10 @@
                                         <action id="-9" name="Set value" sid="796744692412638" type="System">
                                             <param id="0" name="Variable">CenariosConcluidos</param>
                                             <param id="1" name="Value">1&amp;right(CenariosConcluidos, 2)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="6244768826078263" type="System">
+                                            <param id="0" name="Variable">Porta1Clear</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -1663,7 +1573,11 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="6247252461849232" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-8" name="Scroll to object" sid="9307252571222618" type="System">
+                    <param id="0" name="Object">player</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block any="1" sid="2411659116091408">
                     <conditions>
@@ -1688,6 +1602,38 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="4677722022984175">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9919900697957623" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3895591202333319" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2388397423301967">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="1418149967668583" type="Inimigo" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="5904184189632504" type="Inimigo">
+                    <param id="0" name="Object">KillMonster</param>
+                    <param id="1" name="Layer">6</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3578229576417376">
+            <conditions>
+                <condition id="0" inverted="1" name="Is spraying" sid="2738739402468216" type="KillMonster" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6036444069055011" type="KillMonster" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

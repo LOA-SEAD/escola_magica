@@ -21,8 +21,12 @@
                 <condition id="-2" name="On start of layout" sid="6219194495305769" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="4873590199429348" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
+                <action id="33" name="Stop all" sid="440482741661346" type="Audio" />
+                <action id="0" name="Play" sid="8551666269884352" type="Audio">
+                    <param id="0" name="Audio file">Desafios</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
             <sub-events>
