@@ -1231,7 +1231,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Fumaça" uid="482">
+                <instance type="Fumaca" uid="482">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>20</spray-cone>
@@ -1270,7 +1270,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Fumaça" uid="481">
+                <instance type="Fumaca" uid="481">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>20</spray-cone>
@@ -1309,7 +1309,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Fumaça" uid="480">
+                <instance type="Fumaca" uid="480">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>20</spray-cone>
@@ -1348,7 +1348,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Fumaça" uid="479">
+                <instance type="Fumaca" uid="479">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>20</spray-cone>
@@ -1387,7 +1387,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Fumaça" uid="478">
+                <instance type="Fumaca" uid="478">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>20</spray-cone>

@@ -1460,7 +1460,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="NãoPule" uid="179">
+                <instance type="NaoPule" uid="179">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1769,7 +1769,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MãoTrigger" uid="184">
+                <instance type="MaoTrigger" uid="184">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2309,7 +2309,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SaltoDeFéSQN" uid="175">
+                <instance type="SaltoDeFeSQN" uid="175">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3090,7 +3090,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MãoDeAreia" uid="182">
+                <instance type="MaoDeAreia" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

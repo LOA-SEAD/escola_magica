@@ -180,7 +180,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="onomCó" uid="371">
+                <instance type="onomCo" uid="371">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

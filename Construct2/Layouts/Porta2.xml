@@ -1098,7 +1098,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SaltoDeFé" uid="169">
+                <instance type="SaltoDeFe" uid="169">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1914,7 +1914,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SaltoDeFé" uid="168">
+                <instance type="SaltoDeFe" uid="168">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

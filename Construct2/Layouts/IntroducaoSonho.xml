@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoEstudandoLápis" uid="342">
+                <instance type="meninoEstudandoLapis" uid="342">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -188,7 +188,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="calendário" uid="345">
+                <instance type="calendario" uid="345">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -644,7 +644,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="meninoSonhoInterrogação" uid="361">
+                <instance type="meninoSonhoInterrogacao" uid="361">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -726,7 +726,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="LogoEscolaMágica" uid="363">
+                <instance type="LogoEscolaMagica" uid="363">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

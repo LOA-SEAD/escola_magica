@@ -25,7 +25,7 @@
                     <param id="0" name="Audio file">FinalFX</param>
                 </action>
                 <action id="4" name="Preload" sid="5318925596504309" type="Audio">
-                    <param id="0" name="Audio file">Escola Mágica Final</param>
+                    <param id="0" name="Audio file">EscolaMagicaFinal</param>
                 </action>
                 <action id="-15" name="Set visible" sid="5449683070603083" type="galo">
                     <param id="0" name="Visibility">0</param>
@@ -39,7 +39,7 @@
                 <action id="-15" name="Set visible" sid="683130341679608" type="onomGlup">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="9526757690337575" type="meninoSonhoInterrogação">
+                <action id="-15" name="Set visible" sid="9526757690337575" type="meninoSonhoInterrogacao">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-15" name="Set visible" sid="3095437953438241" type="onomTriiim">
@@ -103,7 +103,7 @@
                             <param id="1" name="Tag (optional)">&quot;FinalFX&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="6718706709223922" type="Audio">
-                            <param id="0" name="Audio file">Escola Mágica Final</param>
+                            <param id="0" name="Audio file">EscolaMagicaFinal</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -577,7 +577,7 @@
                                 <action id="-16" name="Wait" sid="8857841598084765" type="System">
                                     <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="6593626332355314" type="onomCó">
+                                <action id="-15" name="Set visible" sid="6593626332355314" type="onomCo">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>

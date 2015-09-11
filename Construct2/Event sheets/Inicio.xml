@@ -56,7 +56,7 @@
                 </action>
                 <action id="33" name="Stop all" sid="6588599826906139" type="Audio" />
                 <action id="0" name="Play" sid="1711216274094569" type="Audio">
-                    <param id="0" name="Audio file">Menu_das_portas</param>
+                    <param id="0" name="Audio file">MenuDasPortas</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">Volume</param>
                     <param id="1" name="Tag (optional)">&quot;Selecao&quot;</param>

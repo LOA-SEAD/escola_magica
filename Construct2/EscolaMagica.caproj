@@ -1611,7 +1611,7 @@
                             </animation>
                         </animation-folder>
                     </object-type>
-                    <object-type name="onomCó" sid="5570199032494012">
+                    <object-type name="onomCo" sid="5570199032494012">
                         <plugin id="Sprite" />
                         <animation-folder>
                             <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4479413505733611" speed="5">
@@ -1770,7 +1770,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="meninoEstudandoLápis" sid="225936495062955">
+                <object-type name="meninoEstudandoLapis" sid="225936495062955">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Sine" sid="435553927964946">
@@ -1802,7 +1802,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="meninoSonhoInterrogação" sid="6063250891229591">
+                <object-type name="meninoSonhoInterrogacao" sid="6063250891229591">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9817622618201633" speed="5">
@@ -2038,7 +2038,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="LogoEscolaMágica" sid="399560133886992">
+                <object-type name="LogoEscolaMagica" sid="399560133886992">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139480402230906" speed="5">
@@ -2110,7 +2110,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="calendário" sid="9526699444424477">
+            <object-type name="calendario" sid="9526699444424477">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8694062612421015" speed="5">
@@ -2416,7 +2416,7 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
-        <object-type name="Fumaça" sid="6226075801281265">
+        <object-type name="Fumaca" sid="6226075801281265">
             <plugin id="Particles" />
             <texture />
         </object-type>
@@ -2458,7 +2458,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SaltoDeFé" sid="3912036040050939">
+        <object-type name="SaltoDeFe" sid="3912036040050939">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6093350816958448" speed="5">
@@ -2478,7 +2478,7 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
-        <object-type name="SaltoDeFéSQN" sid="2046561108818032">
+        <object-type name="SaltoDeFeSQN" sid="2046561108818032">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1530474082145221" speed="5">
@@ -2513,7 +2513,7 @@
         <object-type name="SliderBar" sid="6063340759246219">
             <plugin id="sliderbar" />
         </object-type>
-        <object-type name="NãoPule" sid="1305528718213469">
+        <object-type name="NaoPule" sid="1305528718213469">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7379158004435226" speed="5">
@@ -2524,7 +2524,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="MãoDeAreia" sid="6286863956769592">
+        <object-type name="MaoDeAreia" sid="6286863956769592">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3027780458085786" speed="5">
@@ -2548,7 +2548,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="MãoTrigger" sid="3483859076072731">
+        <object-type name="MaoTrigger" sid="3483859076072731">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7521323207853016" speed="5">
@@ -2706,19 +2706,19 @@
             <file name="FaseB.ogg" />
             <file name="FaseC.m4a" />
             <file name="FaseC.ogg" />
-            <file name="IntroEscolaMágica.m4a" />
-            <file name="IntroEscolaMágica.ogg" />
+            <file name="IntroEscolaMagica.m4a" />
+            <file name="IntroEscolaMagica.ogg" />
         </music-folder>
         <file name="Fim.ogg" />
         <file name="Fim.m4a" />
         <file name="Pergunta.m4a" />
         <file name="Pergunta.ogg" />
-        <file name="Menu_das_portas.m4a" />
-        <file name="Menu_das_portas.ogg" />
+        <file name="MenuDasPortas.m4a" />
+        <file name="MenuDasPortas.ogg" />
         <file name="creditos.m4a" />
         <file name="creditos.ogg" />
-        <file name="Escola Mágica Final.m4a" />
-        <file name="Escola Mágica Final.ogg" />
+        <file name="EscolaMagicaFinal.m4a" />
+        <file name="EscolaMagicaFinal.ogg" />
         <file name="Desafios.m4a" />
         <file name="Desafios.ogg" />
     </music-folder>

@@ -296,13 +296,13 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="11" name="Set collisions enabled" sid="9727505600323219" type="MãoDeAreia">
+                                <action id="11" name="Set collisions enabled" sid="9727505600323219" type="MaoDeAreia">
                                     <param id="0" name="Collisions">0</param>
                                 </action>
-                                <action id="11" name="Set collisions enabled" sid="8991958535102586" type="MãoTrigger">
+                                <action id="11" name="Set collisions enabled" sid="8991958535102586" type="MaoTrigger">
                                     <param id="0" name="Collisions">0</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="3575902237302251" type="NãoPule">
+                                <action id="4" name="Set animation" sid="3575902237302251" type="NaoPule">
                                     <param id="0" name="Animation">&quot;Pule&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -1228,7 +1228,7 @@
                                             <param id="0" name="Object">AreiaMovetica</param>
                                         </condition>
                                         <condition id="1" name="Is overlapping another object" sid="9977844648754323" type="imgPlayer">
-                                            <param id="0" name="Object">MãoDeAreia</param>
+                                            <param id="0" name="Object">MaoDeAreia</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -2039,15 +2039,15 @@
         <event-block sid="3818421517061011">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="4850683636934803" type="imgPlayer">
-                    <param id="0" name="Object">MãoTrigger</param>
+                    <param id="0" name="Object">MaoTrigger</param>
                 </condition>
-                <condition id="-2" name="Compare Y" sid="8580254668017589" type="MãoDeAreia">
+                <condition id="-2" name="Compare Y" sid="8580254668017589" type="MaoDeAreia">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Y co-ordinate">520</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Set Y" sid="1272052248728218" type="MãoDeAreia">
+                <action id="-2" name="Set Y" sid="1272052248728218" type="MaoDeAreia">
                     <param id="0" name="Y">Self.Y - 20</param>
                 </action>
             </actions>
@@ -2055,20 +2055,20 @@
         <event-block sid="1843902353676124">
             <conditions>
                 <condition id="-22" name="Else" sid="2329139054152487" type="System" />
-                <condition id="-2" name="Compare Y" sid="3063624637143636" type="MãoDeAreia">
+                <condition id="-2" name="Compare Y" sid="3063624637143636" type="MaoDeAreia">
                     <param id="0" name="Comparison">2</param>
                     <param id="1" name="Y co-ordinate">700</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Set Y" sid="4374345914088117" type="MãoDeAreia">
+                <action id="-2" name="Set Y" sid="4374345914088117" type="MaoDeAreia">
                     <param id="0" name="Y">Self.Y + 3</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="206027882381427">
             <conditions>
-                <condition id="-9" name="Is visible" sid="861118633599002" type="MãoDeAreia" />
+                <condition id="-9" name="Is visible" sid="861118633599002" type="MaoDeAreia" />
             </conditions>
             <actions />
             <sub-events>
@@ -2118,7 +2118,7 @@
             </conditions>
             <actions>
                 <action behavior="Pin" id="0" name="Pin to object" sid="3883789606735854" type="Areias">
-                    <param id="0" name="Pin to">MãoDeAreia</param>
+                    <param id="0" name="Pin to">MaoDeAreia</param>
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
