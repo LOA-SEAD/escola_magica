@@ -7,6 +7,7 @@
         <comment>&quot;Resp&quot; armazena um numero que faz referencia a qual alavanca o jogador pressionou. &quot;RespCorreta&quot; armazena uma referencia da alavanca correta. Se ambas sao iguais quando o jogador tenta sair pela porta, sua resposta obviamente esta correta. Caso contrario, o jogador toma um choque (descrito pelo grupo &quot;Choque&quot;), e deverá responder a pergunta novamente.&#x0D;&#x0A;On start of layout: o objeto ajax e verificado. Se este for nulo, o carregamento das perguntas no layout &quot;Introducao&quot; foi mal sucedido. Uma segunda requisicao e entao executada.</comment>
         <variable constant="0" name="Pergunta" sid="7657345607694649" static="0" type="text"></variable>
         <variable constant="0" name="Resp" sid="9667931264537564" static="0" type="number">-1</variable>
+        <variable constant="0" name="SendJS" sid="3321349714617433" static="0" type="text"></variable>
         <variable constant="0" name="RespCorreta" sid="5447675615131101" static="0" type="number">-1</variable>
         <event-group description="" sid="7103146111134226" title="Start Layout">
             <sub-events>
@@ -523,11 +524,11 @@
                                                     <param id="1" name="Value">1</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="4535131634003792" type="System">
-                                                    <param id="0" name="Variable">Pergunta</param>
+                                                    <param id="0" name="Variable">SendJS</param>
                                                     <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
-                                                    <param id="0" name="Value">&quot;send(&quot; &amp; Pergunta &amp; &quot;)&quot;</param>
+                                                    <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -622,11 +623,11 @@
                                                     <param id="1" name="Value">1</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="5939990263331082" type="System">
-                                                    <param id="0" name="Variable">Pergunta</param>
+                                                    <param id="0" name="Variable">SendJS</param>
                                                     <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="2866700705005697" type="CallJS">
-                                                    <param id="0" name="Value">&quot;send(&quot; &amp; Pergunta &amp; &quot;)&quot;</param>
+                                                    <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
                                                 </action>
                                                 <action id="-12" name="Set group active" sid="3043444281651663" type="System">
                                                     <param id="0" name="Group name">&quot;Choque&quot;</param>
