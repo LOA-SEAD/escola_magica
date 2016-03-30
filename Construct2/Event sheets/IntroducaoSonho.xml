@@ -492,6 +492,9 @@
                 <condition id="0" name="On key pressed" sid="4484935234444352" type="Keyboard">
                     <param id="0" name="Key">13 (Return)</param>
                 </condition>
+                <condition id="0" name="On key pressed" sid="4174395221224141" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
@@ -549,6 +552,67 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="578407483925501">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6894403808139171" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">itIntro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="9241289937907566" type="Audio">
+                    <param id="0" name="Tag">&quot;IntroFX&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="3269597948339779" type="Audio">
+                    <param id="0" name="Tag">&quot;IntroBG&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5678882187137316" type="System">
+                    <param id="0" name="Variable">LayoutAnterior</param>
+                    <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="7282014666491478" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9314505183090769">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="42144611635179" type="System">
+                    <param id="0" name="Variable">AnimacaoAtual</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ANIMACAOFINAL</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="7467292590201634" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="571921286115199" type="itIntro" />
+            </actions>
+        </event-block>
+        <event-block sid="6468111266611754">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5503417348395905" type="Mouse">
+                    <param id="0" name="Object">itIntro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="3768968774047371" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247721790710503">
+            <conditions>
+                <condition id="-22" name="Else" sid="808697020212754" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="736526960206653" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -2961,7 +2961,7 @@
                 </instance>
                 <instance type="Text2" uid="60">
                     <properties>
-                        <text>&gt;&gt;use as setas direita e esquerda para andar</text>
+                        <text>&gt;&gt;use as setas direita e esquerda para andar             &gt;&gt;use Esc para pausar jogo</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Verdana,-16,400,0</font>
                         <color>255,255,255</color>
@@ -3175,7 +3175,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>790</x>
-                        <y>30</y>
+                        <y>17</y>
                         <z>0</z>
                         <width>87</width>
                         <height>20</height>
@@ -3197,7 +3197,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>788</x>
-                        <y>38</y>
+                        <y>25</y>
                         <z>0</z>
                         <width>7</width>
                         <height>15</height>

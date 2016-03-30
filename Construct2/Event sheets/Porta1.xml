@@ -1603,18 +1603,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="4677722022984175">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="9919900697957623" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="3895591202333319" type="System">
-                    <param id="0" name="Layout">Inicio</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="2388397423301967">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="1418149967668583" type="Inimigo" />
@@ -1635,5 +1623,114 @@
                 <action id="-9" name="Destroy" sid="6036444069055011" type="KillMonster" />
             </actions>
         </event-block>
+        <event-group description="" sid="9639904519568549" title="Pause">
+            <sub-events>
+                <event-block sid="4677722022984175">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9919900697957623" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8764557524232928">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2954964382006967" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="5205238254887733" type="imgPlayer" />
+                                <action id="2" name="Stop" sid="8325824230256894" type="Monitor" />
+                                <action behavior="Sine" id="0" name="Set active" sid="9713422142483866" type="itBarras">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="9160004701460578" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="6485876101862006" type="itBala">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="4480387004893727" type="Inimigo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="4177724011179551" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="1768169569919" type="Inimigo" />
+                                <action id="2" name="Stop" sid="6907539348092644" type="itBala" />
+                                <action id="-16" name="Wait" sid="5350487560269484" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1895531899378355" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2514202807907053">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5203595730922394" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="8427177743147599" type="Monitor">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="1541602515711581" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="9283294758409059" type="itBala">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="5978722890634736" type="Inimigo">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="2691966395545415" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="5717987624382805" type="Inimigo">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="5836607921020539" type="itBala">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7623870425909599" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5587345331490058" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4011556959837176">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5993447068109465" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

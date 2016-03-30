@@ -10,24 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Inicio</layout>
-        <layout order="2">Porta3</layout>
-        <layout order="4">Porta1</layout>
-        <layout order="6">Porta2</layout>
-        <layout order="9">Pergunta</layout>
-        <layout order="12">Introducao</layout>
-        <layout order="18">IntroducaoSonho</layout>
-        <event-sheet order="3">Porta3</event-sheet>
-        <event-sheet order="5">Porta1</event-sheet>
-        <event-sheet order="7">Porta2</event-sheet>
-        <event-sheet order="8">Inicio</event-sheet>
-        <event-sheet order="10">GameOver</event-sheet>
-        <event-sheet order="11">Vitoria</event-sheet>
-        <event-sheet order="13">Introducao</event-sheet>
-        <event-sheet active="1" order="14">Pergunta</event-sheet>
-        <event-sheet order="15">Creditos</event-sheet>
-        <event-sheet order="16">IntroducaoSonho</event-sheet>
-        <event-sheet order="17">Conquistas</event-sheet>
+        <layout active="1" order="0">Porta1</layout>
+        <event-sheet order="1">Porta1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,9 +21,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Cenario/" />
-        <folder expanded="1" path="object-folder/Cenario/BG/" />
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Cenario/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P2/" />
@@ -48,7 +32,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Cenario/Solidos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
-        <folder expanded="0" path="object-folder/Cenario/Char/" />
+        <folder expanded="1" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
         <folder expanded="1" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
@@ -59,12 +43,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Componentes/" />
         <folder expanded="0" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Animacoes/" />
-        <folder expanded="1" path="object-folder/Animacoes/onom/" />
-        <folder expanded="1" path="object-folder/Animacoes/onom/onomCocorico/" />
-        <folder expanded="1" path="object-folder/Animacoes/menino/" />
-        <folder expanded="1" path="object-folder/Animacoes/relogio/" />
+        <folder expanded="0" path="object-folder/Animacoes/onom/" />
+        <folder expanded="0" path="object-folder/Animacoes/onom/onomCocorico/" />
+        <folder expanded="0" path="object-folder/Animacoes/menino/" />
+        <folder expanded="0" path="object-folder/Animacoes/relogio/" />
         <folder expanded="0" path="object-folder/Creditos/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="object-folder/Pause/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
         <folder expanded="1" path="layout-folder/Animacoes/" />
         <folder expanded="1" path="event-folder/" />
@@ -104,6 +89,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/itPedra2/" />
         <folder expanded="1" path="animation-folder/btnEditarSom/" />
         <folder expanded="1" path="animation-folder/cursorSom/" />
+        <folder expanded="1" path="animation-folder/itIntro/" />
         <folder expanded="1" path="animation-folder/co/" />
         <folder expanded="1" path="animation-folder/co2/" />
         <folder expanded="1" path="animation-folder/ri/" />

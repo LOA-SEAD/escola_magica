@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Inicio</name>
     <events>
+        <variable constant="0" name="pausado" sid="7867959592615192" static="0" type="number">0</variable>
         <variable constant="0" name="EasterEgg" sid="8009486351615664" static="0" type="number">0</variable>
         <variable constant="0" name="Porta3Clear" sid="2136560678193999" static="0" type="number">0</variable>
         <variable constant="0" name="Porta2Clear" sid="2804559230775495" static="0" type="number">0</variable>
