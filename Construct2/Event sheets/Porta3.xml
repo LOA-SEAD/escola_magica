@@ -16,6 +16,10 @@
                     <param id="0" name="Variable">AnoAtual</param>
                     <param id="1" name="Value">3</param>
                 </action>
+                <action id="-9" name="Set value" sid="6284207197629086" type="System">
+                    <param id="0" name="Variable">pausado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-5" name="Set width" sid="1252367637309558" type="BarraVida">
                     <param id="0" name="Width">Capsula.Width * (vlrVida/100)</param>
                 </action>
@@ -38,6 +42,21 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="6000549498630727" type="txtFala">
                     <param id="0" name="Pin to">imgBalao</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5156077943156635" type="btnContinuar">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1276100455588605" type="btnSair">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="7736698724551163" type="Pause">
+                    <param id="0" name="X">400</param>
+                    <param id="1" name="Y">900</param>
+                </action>
+                <action id="6" name="Set speed" sid="5962623969452292" type="AreiaMovetica">
+                    <param id="0" name="Speed">4</param>
                 </action>
                 <action id="6" name="Stop" sid="3220195181165965" type="Audio">
                     <param id="0" name="Tag">&quot;Pergunta&quot;</param>
@@ -2024,105 +2043,97 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="3519116734341458">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="2786131168939087" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="8715575057225912" type="System">
-                    <param id="0" name="Layout">Inicio</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3818421517061011">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="4850683636934803" type="imgPlayer">
-                    <param id="0" name="Object">MaoTrigger</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="8580254668017589" type="MaoDeAreia">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">520</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Set Y" sid="1272052248728218" type="MaoDeAreia">
-                    <param id="0" name="Y">Self.Y - 20</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1843902353676124">
-            <conditions>
-                <condition id="-22" name="Else" sid="2329139054152487" type="System" />
-                <condition id="-2" name="Compare Y" sid="3063624637143636" type="MaoDeAreia">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">700</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Set Y" sid="4374345914088117" type="MaoDeAreia">
-                    <param id="0" name="Y">Self.Y + 3</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="206027882381427">
-            <conditions>
-                <condition id="-9" name="Is visible" sid="861118633599002" type="MaoDeAreia" />
-            </conditions>
-            <actions />
+        <event-group description="" sid="6171468316812672" title="ControleMao">
             <sub-events>
-                <event-block sid="4253772068636181">
+                <event-block sid="3818421517061011">
                     <conditions>
-                        <condition id="-11" name="For Each" sid="7975506408518474" type="System">
-                            <param id="0" name="Object">Areias</param>
+                        <condition id="1" name="Is overlapping another object" sid="4850683636934803" type="imgPlayer">
+                            <param id="0" name="Object">MaoTrigger</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="8580254668017589" type="MaoDeAreia">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">520</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set spraying" sid="4178323572189822" type="Areias">
-                            <param id="0" name="State">1</param>
+                        <action id="-2" name="Set Y" sid="1272052248728218" type="MaoDeAreia">
+                            <param id="0" name="Y">Self.Y - 20</param>
                         </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="3491332513776031">
-            <conditions>
-                <condition id="-22" name="Else" sid="2444667656426935" type="System" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="221885342624038">
+                <event-block sid="1843902353676124">
                     <conditions>
-                        <condition id="-11" name="For Each" sid="7432216421524538" type="System">
-                            <param id="0" name="Object">Areias</param>
+                        <condition id="-22" name="Else" sid="2329139054152487" type="System" />
+                        <condition id="-2" name="Compare Y" sid="3063624637143636" type="MaoDeAreia">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">700</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set spraying" sid="2675339098089573" type="Areias">
-                            <param id="0" name="State">0</param>
+                        <action id="-2" name="Set Y" sid="4374345914088117" type="MaoDeAreia">
+                            <param id="0" name="Y">Self.Y + 3</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="5600994282208305">
+                <event-block sid="206027882381427">
                     <conditions>
-                        <condition id="-22" name="Else" sid="2360078842204282" type="System" />
+                        <condition id="-9" name="Is visible" sid="861118633599002" type="MaoDeAreia" />
                     </conditions>
                     <actions />
+                    <sub-events>
+                        <event-block sid="4253772068636181">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7975506408518474" type="System">
+                                    <param id="0" name="Object">Areias</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set spraying" sid="4178323572189822" type="Areias">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3491332513776031">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2444667656426935" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="221885342624038">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7432216421524538" type="System">
+                                    <param id="0" name="Object">Areias</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set spraying" sid="2675339098089573" type="Areias">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5600994282208305">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2360078842204282" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8787626615215018">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="2517760735371317" type="Areias" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="3883789606735854" type="Areias">
+                            <param id="0" name="Pin to">MaoDeAreia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="8787626615215018">
-            <conditions>
-                <condition id="-18" name="On created" sid="2517760735371317" type="Areias" />
-            </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="3883789606735854" type="Areias">
-                    <param id="0" name="Pin to">MaoDeAreia</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
         <event-block sid="8872171002813427">
             <conditions>
                 <condition id="0" name="Is spraying" sid="3552829565331269" type="AreiaPorta" />
@@ -2208,5 +2219,244 @@
                 <action id="-9" name="Destroy" sid="9158696986245981" type="KillMonster" />
             </actions>
         </event-block>
+        <event-group description="" sid="6192092806024395" title="Pause3">
+            <sub-events>
+                <event-block sid="4677722022984175">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9919900697957623" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8764557524232928">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2954964382006967" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="5205238254887733" type="imgPlayer" />
+                                <action id="2" name="Stop" sid="8325824230256894" type="Monitor" />
+                                <action id="2" name="Stop" sid="6135150080810201" type="itCaixaMusica" />
+                                <action id="2" name="Stop" sid="5276631492026212" type="AreiaMovetica" />
+                                <action behavior="Sine" id="0" name="Set active" sid="9713422142483866" type="itBarras">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="2667577385049447" type="System">
+                                    <param id="0" name="Group name">&quot;ControleMao&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="0" name="Set spraying" sid="1112208194732684" type="Areias">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="9160004701460578" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="6485876101862006" type="itBala">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="4480387004893727" type="Inimigo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="4177724011179551" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="1768169569919" type="Inimigo" />
+                                <action id="2" name="Stop" sid="6907539348092644" type="itBala" />
+                                <action id="-2" name="Set Y" sid="8432172744044183" type="Pause">
+                                    <param id="0" name="Y">300</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5350487560269484" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1895531899378355" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2514202807907053">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5203595730922394" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="3789186778512904" type="imgPlayer">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="8427177743147599" type="Monitor">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="7571108024583952" type="itCaixaMusica">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="187490287811298" type="AreiaMovetica">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="7143919103170106" type="System">
+                                    <param id="0" name="Group name">&quot;ControleMao&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set spraying" sid="7020822140369974" type="Areias">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="1541602515711581" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="9283294758409059" type="itBala">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="5978722890634736" type="Inimigo">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="2691966395545415" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="5717987624382805" type="Inimigo">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="5836607921020539" type="itBala">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="7040081383905007" type="Pause">
+                                    <param id="0" name="Y">900</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7623870425909599" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5587345331490058" type="System">
+                                    <param id="0" name="Variable">pausado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2997889628044342">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="21058059759278" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnContinuar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="8434627368933655" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="5989121739477325" type="imgPlayer">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="8618549204497369" type="Monitor">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="2213267447356349" type="itCaixaMusica">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="1282783168002928" type="AreiaMovetica">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="1342305691078986" type="itBarras">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="7675482987164324" type="System">
+                            <param id="0" name="Group name">&quot;ControleMao&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set spraying" sid="8055914698533426" type="Areias">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9842313099369818" type="System">
+                            <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="8410291756076473" type="itBala">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="9968511236088963" type="Inimigo">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3069775957441581" type="System">
+                            <param id="0" name="Group name">&quot;Balas&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="7639795857846625" type="Inimigo">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="593804933258206" type="itBala">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="5066060983301952" type="Pause">
+                            <param id="0" name="Y">900</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7986527529952751" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7653478269472922" type="System">
+                            <param id="0" name="Variable">pausado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="549760132423265">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="3796904347239169" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnSair</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="8528616595195116" type="System">
+                            <param id="0" name="Layout">Inicio</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="2660004660275946">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="8441289153373396" type="Mouse">
+                            <param id="0" name="Object">btnContinuar</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="4863856554768553" type="Mouse">
+                            <param id="0" name="Object">btnSair</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="4334798200106093" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9275969028420301">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1581824781923888" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="6192663106451446" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

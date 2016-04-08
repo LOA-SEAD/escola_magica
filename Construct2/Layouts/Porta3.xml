@@ -1867,8 +1867,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>522</x>
-                        <y>340</y>
+                        <x>111</x>
+                        <y>440</y>
                         <z>0</z>
                         <width>31</width>
                         <height>121</height>
@@ -3123,7 +3123,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1246.915771484</x>
-                        <y>599.524780273</y>
+                        <y>579.524780273</y>
                         <z>0</z>
                         <width>218</width>
                         <height>60</height>
@@ -3438,8 +3438,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>7783.36328125</x>
-                        <y>596.16973877</y>
+                        <x>7783.362792969</x>
+                        <y>578</y>
                         <z>0</z>
                         <width>251</width>
                         <height>44</height>
@@ -3552,6 +3552,78 @@
                         <depth>0</depth>
                         <hotspotX>0.571428597</hotspotX>
                         <hotspotY>0.600000024</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pause" uid="319">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400</x>
+                        <y>900</y>
+                        <z>0</z>
+                        <width>600</width>
+                        <height>400</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btnContinuar" uid="413">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400</x>
+                        <y>850</y>
+                        <z>0</z>
+                        <width>240</width>
+                        <height>31</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.516129017</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="btnSair" uid="325">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400</x>
+                        <y>950</y>
+                        <z>0</z>
+                        <width>103</width>
+                        <height>31</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504854381</hotspotX>
+                        <hotspotY>0.516129017</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

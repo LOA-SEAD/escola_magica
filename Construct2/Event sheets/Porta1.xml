@@ -35,6 +35,18 @@
                     <param id="0" name="Pin to">player</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3967276325034202" type="btnContinuar">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4109245183126283" type="btnSair">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="5072174524636328" type="Pause">
+                    <param id="0" name="X">400</param>
+                    <param id="1" name="Y">900</param>
+                </action>
                 <action id="6" name="Stop" sid="7333289944771288" type="Audio">
                     <param id="0" name="Tag">&quot;Pergunta&quot;</param>
                 </action>
@@ -1647,6 +1659,9 @@
                                 </action>
                                 <action id="2" name="Stop" sid="5205238254887733" type="imgPlayer" />
                                 <action id="2" name="Stop" sid="8325824230256894" type="Monitor" />
+                                <action id="4" name="Set speed" sid="9793677418984298" type="particAgua">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
                                 <action behavior="Sine" id="0" name="Set active" sid="9713422142483866" type="itBarras">
                                     <param id="0" name="State">0</param>
                                 </action>
@@ -1666,6 +1681,9 @@
                                 </action>
                                 <action id="2" name="Stop" sid="1768169569919" type="Inimigo" />
                                 <action id="2" name="Stop" sid="6907539348092644" type="itBala" />
+                                <action id="-2" name="Set Y" sid="8843195170536634" type="Pause">
+                                    <param id="0" name="Y">300</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="5350487560269484" type="System">
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
@@ -1687,8 +1705,14 @@
                                 <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
                                     <param id="0" name="State">1</param>
                                 </action>
+                                <action id="3" name="Start" sid="5553715342408123" type="imgPlayer">
+                                    <param id="0" name="From">0</param>
+                                </action>
                                 <action id="3" name="Start" sid="8427177743147599" type="Monitor">
                                     <param id="0" name="From">0</param>
+                                </action>
+                                <action id="4" name="Set speed" sid="741011278819792" type="particAgua">
+                                    <param id="0" name="Speed">200</param>
                                 </action>
                                 <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
                                     <param id="0" name="State">1</param>
@@ -1713,6 +1737,9 @@
                                 <action id="3" name="Start" sid="5836607921020539" type="itBala">
                                     <param id="0" name="From">0</param>
                                 </action>
+                                <action id="-2" name="Set Y" sid="6749964949230261" type="Pause">
+                                    <param id="0" name="Y">900</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="7623870425909599" type="System">
                                     <param id="0" name="Seconds">0.01</param>
                                 </action>
@@ -1724,11 +1751,100 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="4011556959837176">
+                <event-block sid="5175371022691706">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="5993447068109465" type="System" />
+                        <condition id="6" name="On object clicked" sid="7679009545292211" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnContinuar</param>
+                        </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="698634517338744" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="8856633396715411" type="imgPlayer">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="2566995398557139" type="Monitor">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="4" name="Set speed" sid="7367038283370661" type="particAgua">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="1166711076003986" type="itBarras">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="217044097750129" type="System">
+                            <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="50563361241668" type="itBala">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="9090469384076846" type="Inimigo">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9728324138409943" type="System">
+                            <param id="0" name="Group name">&quot;Balas&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="3879207122067463" type="Inimigo">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="5539818472665359" type="itBala">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="1502180377049174" type="Pause">
+                            <param id="0" name="Y">900</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6711344954798788" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8658113062518671" type="System">
+                            <param id="0" name="Variable">pausado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2776851738300811">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="2369588735002487" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnSair</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6188807745821578" type="System">
+                            <param id="0" name="Layout">Inicio</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="3732124613383076">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="4954060000409056" type="Mouse">
+                            <param id="0" name="Object">btnContinuar</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="8569594709865572" type="Mouse">
+                            <param id="0" name="Object">btnSair</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="8546984833497051" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2104957611377207">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3512328386758048" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="6086658133630272" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
