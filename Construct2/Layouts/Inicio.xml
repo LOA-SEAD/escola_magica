@@ -163,6 +163,33 @@
                         <data>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                     </tilemap-data>
                 </instance>
+                <instance type="txtMenu2" uid="415">
+                    <properties>
+                        <text></text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-15,700,0</font>
+                        <color>60,60,60</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400</x>
+                        <y>520</y>
+                        <z>0</z>
+                        <width>721</width>
+                        <height>144</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="itInterrup" uid="411">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -199,72 +226,6 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="JanelasDasPortas" uid="415">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>228</x>
-                        <y>152</y>
-                        <z>0</z>
-                        <width>161</width>
-                        <height>105</height>
-                        <depth>0</depth>
-                        <hotspotX>0.503105581</hotspotX>
-                        <hotspotY>0.504761934</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="JanelasDasPortas" uid="416">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>1</initial-frame>
-                        <collisions>Disabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>410</x>
-                        <y>150</y>
-                        <z>0</z>
-                        <width>161</width>
-                        <height>105</height>
-                        <depth>0</depth>
-                        <hotspotX>0.503105581</hotspotX>
-                        <hotspotY>0.504761934</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="JanelasDasPortas" uid="417">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>2</initial-frame>
-                        <collisions>Disabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>587</x>
-                        <y>151</y>
-                        <z>0</z>
-                        <width>161</width>
-                        <height>105</height>
-                        <depth>0</depth>
-                        <hotspotX>0.503105581</hotspotX>
-                        <hotspotY>0.504761934</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

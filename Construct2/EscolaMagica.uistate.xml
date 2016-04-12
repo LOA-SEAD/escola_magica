@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <event-sheet active="1" order="0">Porta2</event-sheet>
-        <event-sheet order="1">Porta1</event-sheet>
+        <layout order="0">Inicio</layout>
+        <layout active="1" order="2">Conquistas</layout>
+        <event-sheet order="1">Inicio</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,13 +24,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Cenario/" />
-        <folder expanded="0" path="object-folder/Cenario/BG/" />
+        <folder expanded="1" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P2/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P3/" />
-        <folder expanded="0" path="object-folder/Cenario/BG/Inicio/" />
-        <folder expanded="1" path="object-folder/Cenario/Solidos/" />
+        <folder expanded="1" path="object-folder/Cenario/BG/Inicio/" />
+        <folder expanded="0" path="object-folder/Cenario/Solidos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
         <folder expanded="0" path="object-folder/Cenario/Char/" />
@@ -64,7 +65,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/imgPiramide/" />
         <folder expanded="1" path="animation-folder/itCaixaMusica/" />
         <folder expanded="1" path="animation-folder/imgInicioBG/" />
-        <folder expanded="1" path="animation-folder/JanelasDasPortas/" />
         <folder expanded="1" path="animation-folder/TituloEscolaMagica/" />
         <folder expanded="1" path="animation-folder/imgArvores/" />
         <folder expanded="1" path="animation-folder/itPonte/" />
@@ -140,6 +140,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Pause/" />
         <folder expanded="1" path="animation-folder/btnSair/" />
         <folder expanded="1" path="animation-folder/btnContinuar/" />
+        <folder expanded="1" path="animation-folder/btnReiniciar/" />
+        <folder expanded="1" path="animation-folder/btnFechar/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/BackgroundFix/" />
         <folder expanded="1" path="animation-folder/Engine/" />

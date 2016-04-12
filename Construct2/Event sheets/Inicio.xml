@@ -30,6 +30,9 @@
                 <condition id="-2" name="On start of layout" sid="7389519769199064" type="System" />
             </conditions>
             <actions>
+                <action id="0" name="Set text" sid="3886291381498481" type="txtMenu2">
+                    <param id="0" name="Text">&quot;Direcionais - segure para fazer o personagem andar. Tecle para cima para pular.&#x0D;&#x0A;Shift - segure enquanto anda para fazer o personagem correr.&#x0D;&#x0A;Ctrl - aperte para produzir uma ação qualquer no jogo (entrar na porta, responder uma pergunta, ...)&#x0D;&#x0A;Esc - aperte a qualquer momento do jogo para pausar e ter novas opções.&quot;</param>
+                </action>
                 <action behavior="Platform" id="1" name="Set max speed" sid="489559898116043" type="player">
                     <param id="0" name="Max Speed">VLR_MAX_VELOC</param>
                 </action>

@@ -41,17 +41,25 @@
                     <param id="0" name="Pin to">player</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="2071176973789953" type="btnContinuar">
-                    <param id="0" name="Pin to">Pause</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="7710694230130272" type="btnSair">
-                    <param id="0" name="Pin to">Pause</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
                 <action id="-3" name="Set position" sid="4866609244417183" type="Pause">
                     <param id="0" name="X">400</param>
                     <param id="1" name="Y">900</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4117421463786953" type="btnContinuar">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5625101223628914" type="btnReiniciar">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5940545913351824" type="btnSair">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6279035140524566" type="btnFechar">
+                    <param id="0" name="Pin to">Pause</param>
+                    <param id="1" name="Mode">0</param>
                 </action>
                 <action id="6" name="Stop" sid="9150014949645651" type="Audio">
                     <param id="0" name="Tag">&quot;Pergunta&quot;</param>
@@ -2091,12 +2099,17 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="77328081693632">
+                <event-block any="1" sid="77328081693632">
                     <conditions>
                         <condition id="6" name="On object clicked" sid="3981320313572308" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">btnContinuar</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="4237189113195858" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnFechar</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2152,6 +2165,54 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="1430725404084281">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="1074632622731851" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnReiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7516654734159606" type="System">
+                            <param id="0" name="Variable">PosX</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8755448917969917" type="System">
+                            <param id="0" name="Variable">PosY</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7586011996704402" type="System">
+                            <param id="0" name="Variable">PergAtual</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7998607218836856" type="System">
+                            <param id="0" name="Variable">vlrVida</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7339132995321708" type="System">
+                            <param id="0" name="Variable">NumQuedas</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6716831154710015" type="System">
+                            <param id="0" name="Variable">NumRespErradas</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7418225169515635" type="System">
+                            <param id="0" name="Variable">NumVezesDano</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2009303008300334" type="System">
+                            <param id="0" name="Variable">NumInimigosMortos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9219595235045145" type="System">
+                            <param id="0" name="Variable">NumQuedas</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="9717391352319371" type="System" />
+                    </actions>
+                </event-block>
                 <event-block sid="2743912537400785">
                     <conditions>
                         <condition id="6" name="On object clicked" sid="161579297199929" type="Mouse">
@@ -2166,17 +2227,23 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="4858821008856348">
+                <event-block any="1" sid="293127929591734">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" sid="7224546971857442" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="5569550581221109" type="Mouse">
                             <param id="0" name="Object">btnContinuar</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" sid="4150343950666475" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="944850630672769" type="Mouse">
+                            <param id="0" name="Object">btnReiniciar</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="3479033574934134" type="Mouse">
                             <param id="0" name="Object">btnSair</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="6973278292490637" type="Mouse">
+                            <param id="0" name="Object">btnFechar</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set cursor style" sid="8314130218365751" type="Mouse">
+                        <action id="0" name="Set cursor style" sid="9075434777598551" type="Mouse">
                             <param id="0" name="Cursor style">1</param>
                         </action>
                     </actions>
