@@ -99,13 +99,13 @@
                         <action id="0" name="Play" sid="8608481059684857" type="Audio">
                             <param id="0" name="Audio file">FinalFX</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">Volume</param>
+                            <param id="3" name="Volume">Volume-15</param>
                             <param id="1" name="Tag (optional)">&quot;FinalFX&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="6718706709223922" type="Audio">
                             <param id="0" name="Audio file">EscolaMagicaFinal</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>

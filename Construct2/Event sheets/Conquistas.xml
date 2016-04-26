@@ -25,7 +25,7 @@
                 <action id="0" name="Play" sid="8551666269884352" type="Audio">
                     <param id="0" name="Audio file">Desafios</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-15</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -168,9 +168,49 @@
                 </event-group>
             </sub-events>
         </event-block>
+        <event-block sid="2321700257482058">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8842000061321847" type="Mouse">
+                    <param id="0" name="Object">galo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="9690528662918836" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="6907127426393091" type="galo">
+                    <param id="0" name="X">784</param>
+                    <param id="1" name="Y">571</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6531038131131296" type="galo">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3890492766861036">
+            <conditions>
+                <condition id="-22" name="Else" sid="9247535318923031" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="1968993313744549" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="7729104174358749" type="galo">
+                    <param id="0" name="X">792</param>
+                    <param id="1" name="Y">574</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6854218860452721" type="galo">
+                    <param id="0" name="Angle">21</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="8251626547898244">
             <conditions>
-                <condition id="1" name="On any key pressed" sid="7073558125573275" type="Keyboard" />
+                <condition id="6" name="On object clicked" sid="7073558125573275" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">galo</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="7388303771071186" type="System">

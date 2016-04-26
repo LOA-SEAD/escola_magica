@@ -10,9 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Inicio</layout>
-        <layout active="1" order="2">Conquistas</layout>
-        <event-sheet order="1">Inicio</event-sheet>
+        <layout order="0">Porta1</layout>
+        <layout order="1">Porta2</layout>
+        <layout order="2">Porta3</layout>
+        <event-sheet active="1" order="3">Porta1</event-sheet>
+        <event-sheet order="4">Porta2</event-sheet>
+        <event-sheet order="5">Porta3</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -43,7 +46,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="0" path="object-folder/Componentes/" />
         <folder expanded="0" path="object-folder/HUD/" />
-        <folder expanded="0" path="object-folder/Animacoes/" />
+        <folder expanded="1" path="object-folder/Animacoes/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/onomCocorico/" />
         <folder expanded="0" path="object-folder/Animacoes/menino/" />
@@ -58,7 +61,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="event-folder/Animacoes/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="music-folder/fundos/" />
         <folder expanded="1" path="animation-folder/imgNuvem/" />

@@ -75,7 +75,7 @@
                 <action id="0" name="Play" sid="3358661326702067" type="Audio">
                     <param id="0" name="Audio file">FaseC</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">Volume</param>
+                    <param id="3" name="Volume">Volume-15</param>
                     <param id="1" name="Tag (optional)">&quot;FaseC&quot;</param>
                 </action>
                 <action id="4" name="Preload" sid="2149236706775467" type="Audio">
@@ -307,7 +307,7 @@
                                         <action id="0" name="Play" sid="4639620488174726" type="Audio">
                                             <param id="0" name="Audio file">CaixaMusica</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
+                                            <param id="3" name="Volume">-15</param>
                                             <param id="1" name="Tag (optional)">&quot;Caixa&quot;</param>
                                         </action>
                                     </actions>
@@ -347,7 +347,7 @@
                                 <action id="0" name="Play" sid="1383342384169712" type="Audio">
                                     <param id="0" name="Audio file">Areia</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-15</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="1379670916062816" type="System">
@@ -513,7 +513,7 @@
                                 <action id="0" name="Play" sid="5665450895300911" type="Audio">
                                     <param id="0" name="Audio file">perPulo</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">Volume</param>
+                                    <param id="3" name="Volume">Volume-15</param>
                                     <param id="1" name="Tag (optional)">&quot;perPulo&quot;</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="1465099385448385" type="imgPlayer">
@@ -760,7 +760,7 @@
                                         <action id="0" name="Play" sid="5825422294370921" type="Audio">
                                             <param id="0" name="Audio file">Alavanca</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
+                                            <param id="3" name="Volume">-15</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="1233202952197867" type="System">
@@ -853,7 +853,7 @@
                                                         <action id="0" name="Play" sid="9720777541234859" type="Audio">
                                                             <param id="0" name="Audio file">Balas</param>
                                                             <param id="2" name="Loop">0</param>
-                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="3" name="Volume">-15</param>
                                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                         </action>
                                                     </actions>
@@ -940,7 +940,7 @@
                                                 <action id="0" name="Play" sid="2398337994722408" type="Audio">
                                                     <param id="0" name="Audio file">Coruja</param>
                                                     <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">20</param>
+                                                    <param id="3" name="Volume">10</param>
                                                     <param id="1" name="Tag (optional)">&quot;Coruja&quot;</param>
                                                 </action>
                                                 <action id="5" name="Set frame" sid="4811699095292819" type="CP">
@@ -1009,7 +1009,7 @@
                                                 <action id="0" name="Play" sid="3065013737733628" type="Audio">
                                                     <param id="0" name="Audio file">Pedra</param>
                                                     <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="3" name="Volume">-15</param>
                                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                                 <action behavior="Pin" id="0" name="Pin to object" sid="6825349159306769" type="itPedra2">
@@ -1116,7 +1116,7 @@
                                                         <action id="0" name="Play" sid="3191759846853081" type="Audio">
                                                             <param id="0" name="Audio file">ponte</param>
                                                             <param id="2" name="Loop">0</param>
-                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="3" name="Volume">-15</param>
                                                             <param id="1" name="Tag (optional)">&quot;Ponte&quot;</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="4224328003626774" type="System">
@@ -1183,7 +1183,7 @@
                                                         <action id="0" name="Play" sid="7884912650737984" type="Audio">
                                                             <param id="0" name="Audio file">ponte</param>
                                                             <param id="2" name="Loop">0</param>
-                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="3" name="Volume">-15</param>
                                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="9213206974081088" type="System">
@@ -1279,7 +1279,7 @@
                                                 <action id="0" name="Play" sid="9360205008386985" type="Audio">
                                                     <param id="0" name="Audio file">Areia</param>
                                                     <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="3" name="Volume">-15</param>
                                                     <param id="1" name="Tag (optional)">&quot;Areia&quot;</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="1388803474077726" type="System">
@@ -1680,7 +1680,7 @@
                                                 <action id="0" name="Play" sid="226293356051586" type="Audio">
                                                     <param id="0" name="Audio file">camaElast</param>
                                                     <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">Volume</param>
+                                                    <param id="3" name="Volume">Volume-15</param>
                                                     <param id="1" name="Tag (optional)">&quot;camaElast&quot;</param>
                                                 </action>
                                             </actions>
@@ -1916,19 +1916,19 @@
                                 </action>
                                 <action id="3" name="Set volume" sid="7312449306514135" type="Audio">
                                     <param id="0" name="Tag">&quot;FaseA&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                                 <action id="3" name="Set volume" sid="764592515410038" type="Audio">
                                     <param id="0" name="Tag">&quot;Selecao&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                                 <action id="3" name="Set volume" sid="1096079146056881" type="Audio">
                                     <param id="0" name="Tag">&quot;Pergunta&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                                 <action id="3" name="Set volume" sid="8794320886569131" type="Audio">
                                     <param id="0" name="Tag">&quot;Fim&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1978,19 +1978,19 @@
                         </action>
                         <action id="3" name="Set volume" sid="8862427851164786" type="Audio">
                             <param id="0" name="Tag">&quot;FaseC&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                         <action id="3" name="Set volume" sid="6989186022433302" type="Audio">
                             <param id="0" name="Tag">&quot;Selecao&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                         <action id="3" name="Set volume" sid="968161213100364" type="Audio">
                             <param id="0" name="Tag">&quot;Pergunta&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                         <action id="3" name="Set volume" sid="636189047663325" type="Audio">
                             <param id="0" name="Tag">&quot;Fim&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                     </actions>
                     <sub-events>

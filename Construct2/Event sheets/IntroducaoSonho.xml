@@ -41,7 +41,7 @@
                 <action id="0" name="Play" sid="5885450526218625" type="Audio">
                     <param id="0" name="Audio file">IntroSonhoFX</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">Volume</param>
+                    <param id="3" name="Volume">Volume-15</param>
                     <param id="1" name="Tag (optional)">&quot;IntroFX&quot;</param>
                 </action>
                 <action id="0" name="Play" sid="527020759297006" type="Audio">
@@ -536,7 +536,7 @@
                         <action id="0" name="Play" sid="7884362538980874" type="Audio">
                             <param id="0" name="Audio file">Start</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="3705340022120282" type="System">

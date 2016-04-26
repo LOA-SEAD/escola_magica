@@ -66,7 +66,7 @@
                         <action id="0" name="Play" sid="1428201906458581" type="Audio">
                             <param id="0" name="Audio file">Desafios</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">Volume</param>
+                            <param id="3" name="Volume">Volume-15</param>
                             <param id="1" name="Tag (optional)">&quot;Pergunta&quot;</param>
                         </action>
                         <action id="2" name="Set muted" sid="8530818908521782" type="Audio">
@@ -249,7 +249,7 @@
                                 <action id="0" name="Play" sid="4686321799187511" type="Audio">
                                     <param id="0" name="Audio file">perPulo</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">Volume</param>
+                                    <param id="3" name="Volume">Volume-15</param>
                                     <param id="1" name="Tag (optional)">&quot;perPulo&quot;</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="8986145168982716" type="imgPlayer">
@@ -358,7 +358,7 @@
                                         <action id="0" name="Play" sid="1950477472244243" type="Audio">
                                             <param id="0" name="Audio file">Alavanca</param>
                                             <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
+                                            <param id="3" name="Volume">-15</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="-8" name="Set angle" sid="2180974716396194" type="alavBarra">
@@ -513,7 +513,7 @@
                                                 <action id="0" name="Play" sid="1769304841177188" type="Audio">
                                                     <param id="0" name="Audio file">Acerto</param>
                                                     <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="3" name="Volume">-15</param>
                                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                                 <action id="6" name="Stop" sid="8868967417071078" type="Audio">
@@ -737,7 +737,7 @@
                                 <action id="0" name="Play" sid="6604364606563807" type="Audio">
                                     <param id="0" name="Audio file">Morrer</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-15</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
@@ -941,19 +941,19 @@
                                 </action>
                                 <action id="3" name="Set volume" sid="5871933734938039" type="Audio">
                                     <param id="0" name="Tag">&quot;FaseA&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                                 <action id="3" name="Set volume" sid="6239387947156508" type="Audio">
                                     <param id="0" name="Tag">&quot;Selecao&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                                 <action id="3" name="Set volume" sid="8902116163882341" type="Audio">
                                     <param id="0" name="Tag">&quot;Pergunta&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                                 <action id="3" name="Set volume" sid="6422231753474608" type="Audio">
                                     <param id="0" name="Tag">&quot;Fim&quot;</param>
-                                    <param id="1" name="dB">Volume</param>
+                                    <param id="1" name="dB">Volume-15</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1003,19 +1003,19 @@
                         </action>
                         <action id="3" name="Set volume" sid="2990394210787066" type="Audio">
                             <param id="0" name="Tag">&quot;FaseA&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                         <action id="3" name="Set volume" sid="7053115397885572" type="Audio">
                             <param id="0" name="Tag">&quot;Selecao&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                         <action id="3" name="Set volume" sid="7074956050685981" type="Audio">
                             <param id="0" name="Tag">&quot;Pergunta&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                         <action id="3" name="Set volume" sid="5589365964640068" type="Audio">
                             <param id="0" name="Tag">&quot;Fim&quot;</param>
-                            <param id="1" name="dB">Volume</param>
+                            <param id="1" name="dB">Volume-15</param>
                         </action>
                     </actions>
                 </event-block>

@@ -23,7 +23,7 @@
                 <action id="0" name="Play" sid="6416603133230927" type="Audio">
                     <param id="0" name="Audio file">creditos</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-15</param>
                     <param id="1" name="Tag (optional)">&quot;creditos&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="9667949596418767" type="TextCreditos">
