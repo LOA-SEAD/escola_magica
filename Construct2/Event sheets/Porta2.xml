@@ -91,6 +91,9 @@
                 <action id="4" name="Preload" sid="5466413356183293" type="Audio">
                     <param id="0" name="Audio file">AguaFadeOut</param>
                 </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="9480284974976423" type="cano">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action id="5" name="Set frame" sid="371188595346992" type="btnEditarSom">
                     <param id="0" name="Frame number">Volume = -20 ? 2 : 0</param>
                 </action>
@@ -250,7 +253,7 @@
                                 <action id="0" name="Play" sid="4742053807908691" type="Audio">
                                     <param id="0" name="Audio file">AguaFadeOut</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-15</param>
                                     <param id="1" name="Tag (optional)">&quot;AguaOut&quot;</param>
                                 </action>
                             </actions>
@@ -670,15 +673,15 @@
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="-12" name="Set group active" sid="5658492729422197" type="System">
-                                                            <param id="0" name="Group name">&quot;FlutuarPlat1&quot;</param>
-                                                            <param id="1" name="State">0</param>
-                                                        </action>
                                                         <action id="-2" name="Set Y" sid="618177966453362" type="imgPlatMov">
                                                             <param id="0" name="Y">576</param>
                                                         </action>
                                                         <action id="-2" name="Set Y" sid="285314576567535" type="imgPlatMovBase">
                                                             <param id="0" name="Y">571</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="5658492729422197" type="System">
+                                                            <param id="0" name="Group name">&quot;FlutuarPlat1&quot;</param>
+                                                            <param id="1" name="State">0</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -722,15 +725,15 @@
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="-12" name="Set group active" sid="8923553894265641" type="System">
-                                                            <param id="0" name="Group name">&quot;FlutuarPlat1&quot;</param>
-                                                            <param id="1" name="State">0</param>
-                                                        </action>
                                                         <action id="-2" name="Set Y" sid="1712772484628579" type="imgPlatMov">
                                                             <param id="0" name="Y">576</param>
                                                         </action>
                                                         <action id="-2" name="Set Y" sid="3108424792908525" type="imgPlatMovBase">
                                                             <param id="0" name="Y">571</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="8923553894265641" type="System">
+                                                            <param id="0" name="Group name">&quot;FlutuarPlat2&quot;</param>
+                                                            <param id="1" name="State">0</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -1138,11 +1141,87 @@
                                         <condition id="-4" name="Trigger once while true" sid="9219012751889912" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set spraying" sid="9948172135923367" type="particAgua">
-                                            <param id="0" name="State">0</param>
+                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="3035409631572509" type="player">
+                                            <param id="0" name="Input">1</param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="9990738673499868" type="cano" />
+                                        <action id="-12" name="Set group active" sid="8505175547780587" type="System">
+                                            <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="3231496791656268">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="4393943093892451" type="System">
+                                            <param id="0" name="Interval (seconds)">0.05</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="2080832136874035">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="2325549842312087" type="System">
+                                                    <param id="0" name="Object">particAgua</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="13" name="Set acceleration" sid="6840985013025232" type="particAgua">
+                                                    <param id="0" name="Acceleration">particAgua.ParticleAcceleration -20</param>
+                                                </action>
+                                                <action id="1" name="Set rate" sid="484830478973465" type="particAgua">
+                                                    <param id="0" name="Rate">ParticAgua.Rate -20</param>
+                                                </action>
+                                                <action id="-16" name="Set opacity" sid="1504209578426114" type="particAgua">
+                                                    <param id="0" name="Opacity">ParticAgua.Opacity -2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="455202877835774">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="3831511664551953" type="System">
+                                            <param id="0" name="First value">particAgua.Rate</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="1261166019001505" type="System">
+                                            <param id="0" name="Variable">PergAtual</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="7771927667830416">
+                                            <conditions>
+                                                <condition id="-19" name="Pick all" sid="8008001109778126" type="System">
+                                                    <param id="0" name="Object">particAgua</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="4249746716297834" type="particAgua" />
+                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="2847273997293676" type="player">
+                                                    <param id="0" name="Input">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="7721631414101999" type="cano">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="4146460918183608" type="System">
+                                                    <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="3789373218446915" type="System">
+                                                    <param id="0" name="Group name">&quot;MovimentaNoCano&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="3350730286444901" type="System">
+                                                    <param id="0" name="Group name">&quot;PararAgua&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-group description="" disabled="1" sid="9936933674823689" title="Deactivated">
                                     <sub-events>
@@ -1286,7 +1365,7 @@
                                                 <action id="0" name="Play" sid="2745508977355891" type="Audio">
                                                     <param id="0" name="Audio file">Tornado</param>
                                                     <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="3" name="Volume">-15</param>
                                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                             </actions>
@@ -1589,7 +1668,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">&quot;IniDest&quot;</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">0</param>
+                                                    <param id="4" name="Volume">-15</param>
                                                     <param id="2" name="Tag (optional)">&quot;IniDest&quot;</param>
                                                 </action>
                                                 <action behavior="Platform" id="9" name="Set vector Y" sid="7811747490099795" type="player">
@@ -1992,6 +2071,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="10" name="Set master volume" sid="6410865327609393" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume - 10</param>
+                                </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
                                     <param id="0" name="State">0</param>
                                 </action>
@@ -2045,6 +2127,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="10" name="Set master volume" sid="9740732452966112" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                                </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
                                     <param id="0" name="State">1</param>
                                 </action>

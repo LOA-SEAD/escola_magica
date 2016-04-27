@@ -805,91 +805,103 @@
                         </event-group>
                         <event-group description="" inactive="1" sid="1168831378966331" title="DescerPonte1">
                             <sub-events>
-                                <event-block sid="8541507132678542">
+                                <event-block sid="334146060809809">
                                     <conditions>
-                                        <condition id="-4" name="Trigger once while true" sid="1404900883998258" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="7593940826762393" type="System">
+                                            <param id="0" name="Variable">pausado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
                                     </conditions>
-                                    <actions>
-                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="7511786630515434" type="player">
-                                            <param id="0" name="Input">1</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="3528658837283597" type="System">
-                                            <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="6338713987422497" type="Audio">
-                                            <param id="0" name="Audio file">ponte</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">Volume-15</param>
-                                            <param id="1" name="Tag (optional)">&quot;ponte&quot;</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
-                                        <event-block sid="5771808538229412">
+                                        <event-block sid="8541507132678542">
                                             <conditions>
-                                                <condition id="-14" name="Compare variable" sid="7058134548208691" type="System">
-                                                    <param id="0" name="Variable">PergAtual</param>
-                                                    <param id="1" name="Comparison">4</param>
-                                                    <param id="2" name="Value">1</param>
-                                                </condition>
-                                                <condition id="-13" name="Pick nth instance" sid="1743786141567126" type="System">
+                                                <condition id="-4" name="Trigger once while true" sid="1404900883998258" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="7511786630515434" type="player">
+                                                    <param id="0" name="Input">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="3528658837283597" type="System">
+                                                    <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="6338713987422497" type="Audio">
+                                                    <param id="0" name="Audio file">ponte</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">Volume-15</param>
+                                                    <param id="1" name="Tag (optional)">&quot;ponte&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="5771808538229412">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="7058134548208691" type="System">
+                                                            <param id="0" name="Variable">PergAtual</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                        <condition id="-13" name="Pick nth instance" sid="1743786141567126" type="System">
+                                                            <param id="0" name="Object">itPonte</param>
+                                                            <param id="1" name="Instance">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="3661914329781441" type="System">
+                                                            <param id="0" name="Group name">&quot;DescerPonte1&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="2916025427369273" type="itPonte">
+                                                            <param id="0" name="Angle">233</param>
+                                                        </action>
+                                                        <action id="6" name="Stop" sid="4994564960503141" type="Audio">
+                                                            <param id="0" name="Tag">&quot;ponte&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="4549170487757962">
+                                            <conditions>
+                                                <condition id="-1" name="Every tick" sid="3191707672583651" type="System" />
+                                                <condition id="-13" name="Pick nth instance" sid="5775349652438756" type="System">
                                                     <param id="0" name="Object">itPonte</param>
                                                     <param id="1" name="Instance">1</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-12" name="Set group active" sid="3661914329781441" type="System">
-                                                    <param id="0" name="Group name">&quot;DescerPonte1&quot;</param>
-                                                    <param id="1" name="State">0</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="2916025427369273" type="itPonte">
-                                                    <param id="0" name="Angle">233</param>
-                                                </action>
-                                                <action id="6" name="Stop" sid="4994564960503141" type="Audio">
-                                                    <param id="0" name="Tag">&quot;ponte&quot;</param>
+                                                <action id="-8" name="Set angle" sid="732028280137887" type="itPonte">
+                                                    <param id="0" name="Angle">itPonte.Angle -1.5</param>
                                                 </action>
                                             </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="4549170487757962">
-                                    <conditions>
-                                        <condition id="-1" name="Every tick" sid="3191707672583651" type="System" />
-                                        <condition id="-13" name="Pick nth instance" sid="5775349652438756" type="System">
-                                            <param id="0" name="Object">itPonte</param>
-                                            <param id="1" name="Instance">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-8" name="Set angle" sid="732028280137887" type="itPonte">
-                                            <param id="0" name="Angle">itPonte.Angle -1.5</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="3313321083646327">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="551507751445894" type="System">
-                                                    <param id="0" name="First value">itPonte.Angle</param>
-                                                    <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Second value">233</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="5133906436488597" type="System">
-                                                    <param id="0" name="Group name">&quot;DescerPonte1&quot;</param>
-                                                    <param id="1" name="State">0</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="6679774618511816" type="itPonte">
-                                                    <param id="0" name="Angle">233</param>
-                                                </action>
-                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="1099330974557699" type="player">
-                                                    <param id="0" name="Input">0</param>
-                                                </action>
-                                                <action id="-12" name="Set group active" sid="7716845664998051" type="System">
-                                                    <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="3313321083646327">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="551507751445894" type="System">
+                                                            <param id="0" name="First value">itPonte.Angle</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Second value">233</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="5133906436488597" type="System">
+                                                            <param id="0" name="Group name">&quot;DescerPonte1&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="6679774618511816" type="itPonte">
+                                                            <param id="0" name="Angle">233</param>
+                                                        </action>
+                                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="1099330974557699" type="player">
+                                                            <param id="0" name="Input">0</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="6721672250332886" type="System">
+                                                            <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -897,67 +909,79 @@
                         </event-group>
                         <event-group description="" inactive="1" sid="8123842204923364" title="DescerPonte2">
                             <sub-events>
-                                <event-block sid="273290711924392">
+                                <event-block sid="2465699543246331">
                                     <conditions>
-                                        <condition id="-4" name="Trigger once while true" sid="3767326846726273" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="7999730997931373" type="player">
-                                            <param id="0" name="Input">1</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="8977344024086471" type="System">
-                                            <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="9433596464736987" type="Audio">
-                                            <param id="0" name="Audio file">ponte</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">Volume-15</param>
-                                            <param id="1" name="Tag (optional)">&quot;ponte&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="8365723629188028">
-                                    <conditions>
-                                        <condition id="-1" name="Every tick" sid="136991671616814" type="System" />
-                                        <condition id="-13" name="Pick nth instance" sid="403332991337303" type="System">
-                                            <param id="0" name="Object">itPonte</param>
-                                            <param id="1" name="Instance">0</param>
+                                        <condition id="-14" name="Compare variable" sid="6703742472781721" type="System">
+                                            <param id="0" name="Variable">pausado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-8" name="Set angle" sid="3208493738806694" type="itPonte">
-                                            <param id="0" name="Angle">itPonte.Angle -1.5</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
-                                        <event-block sid="7177005983730771">
+                                        <event-block sid="273290711924392">
                                             <conditions>
-                                                <condition id="-8" name="Compare two values" sid="1544240090728644" type="System">
-                                                    <param id="0" name="First value">itPonte.Angle</param>
-                                                    <param id="1" name="Comparison">2</param>
-                                                    <param id="2" name="Second value">270</param>
+                                                <condition id="-4" name="Trigger once while true" sid="3767326846726273" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="7999730997931373" type="player">
+                                                    <param id="0" name="Input">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="8977344024086471" type="System">
+                                                    <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="9433596464736987" type="Audio">
+                                                    <param id="0" name="Audio file">ponte</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">Volume-15</param>
+                                                    <param id="1" name="Tag (optional)">&quot;ponte&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="8365723629188028">
+                                            <conditions>
+                                                <condition id="-1" name="Every tick" sid="136991671616814" type="System" />
+                                                <condition id="-13" name="Pick nth instance" sid="403332991337303" type="System">
+                                                    <param id="0" name="Object">itPonte</param>
+                                                    <param id="1" name="Instance">0</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-8" name="Set angle" sid="3939809214865704" type="itPonte">
-                                                    <param id="0" name="Angle">270</param>
-                                                </action>
-                                                <action behavior="Platform" id="0" name="Set ignoring input" sid="6793255506640826" type="player">
-                                                    <param id="0" name="Input">0</param>
-                                                </action>
-                                                <action id="-12" name="Set group active" sid="2731879923501073" type="System">
-                                                    <param id="0" name="Group name">&quot;DescerPonte2&quot;</param>
-                                                    <param id="1" name="State">0</param>
-                                                </action>
-                                                <action id="-12" name="Set group active" sid="5159180590639155" type="System">
-                                                    <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="6" name="Stop" sid="1330828791501226" type="Audio">
-                                                    <param id="0" name="Tag">&quot;ponte&quot;</param>
+                                                <action id="-8" name="Set angle" sid="3208493738806694" type="itPonte">
+                                                    <param id="0" name="Angle">itPonte.Angle -1.5</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="7177005983730771">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="1544240090728644" type="System">
+                                                            <param id="0" name="First value">itPonte.Angle</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">270</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-8" name="Set angle" sid="3939809214865704" type="itPonte">
+                                                            <param id="0" name="Angle">270</param>
+                                                        </action>
+                                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="6793255506640826" type="player">
+                                                            <param id="0" name="Input">0</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="2731879923501073" type="System">
+                                                            <param id="0" name="Group name">&quot;DescerPonte2&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="5159180590639155" type="System">
+                                                            <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="6" name="Stop" sid="1330828791501226" type="Audio">
+                                                            <param id="0" name="Tag">&quot;ponte&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -1666,10 +1690,19 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="10" name="Set master volume" sid="5429658719155899" type="Audio">
-                                    <param id="0" name="dB">-10</param>
+                                <action id="10" name="Set master volume" sid="8518715042459491" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume - 10</param>
+                                </action>
+                                <action id="6" name="Stop" sid="6649367592844473" type="Audio">
+                                    <param id="0" name="Tag">&quot;ponte&quot;</param>
                                 </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="3783556583641243" type="imgPlatMov">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="3886087290129016" type="imgPlatMovBase">
                                     <param id="0" name="State">0</param>
                                 </action>
                                 <action id="2" name="Stop" sid="5205238254887733" type="imgPlayer" />
@@ -1717,10 +1750,16 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="10" name="Set master volume" sid="5210986921491888" type="Audio">
-                                    <param id="0" name="dB">0</param>
+                                <action id="10" name="Set master volume" sid="7299082749151137" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume + 10</param>
                                 </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="2965522150911052" type="imgPlatMov">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="7319477436306631" type="imgPlatMovBase">
                                     <param id="0" name="State">1</param>
                                 </action>
                                 <action id="3" name="Start" sid="5553715342408123" type="imgPlayer">

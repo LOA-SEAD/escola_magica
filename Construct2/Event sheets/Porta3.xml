@@ -888,7 +888,7 @@
                                             <param id="0" name="Folder">0</param>
                                             <param id="1" name="Audio file name">&quot;Morrer&quot;</param>
                                             <param id="3" name="Loop">0</param>
-                                            <param id="4" name="Volume">0</param>
+                                            <param id="4" name="Volume">-15</param>
                                             <param id="2" name="Tag (optional)">&quot;Morrer&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="6710337963200186" type="System">
@@ -1484,7 +1484,7 @@
                                             <param id="0" name="Folder">0</param>
                                             <param id="1" name="Audio file name">&quot;Morrer&quot;</param>
                                             <param id="3" name="Loop">0</param>
-                                            <param id="4" name="Volume">0</param>
+                                            <param id="4" name="Volume">-15</param>
                                             <param id="2" name="Tag (optional)">&quot;Morrer&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="4821964168155219" type="System">
@@ -1541,7 +1541,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">&quot;IniDest&quot;</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">0</param>
+                                                    <param id="4" name="Volume">-15</param>
                                                     <param id="2" name="Tag (optional)">&quot;IniDest&quot;</param>
                                                 </action>
                                                 <action behavior="Platform" id="9" name="Set vector Y" sid="650068275797155" type="player">
@@ -1613,7 +1613,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">&quot;Morrer&quot;</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">0</param>
+                                                    <param id="4" name="Volume">-15</param>
                                                     <param id="2" name="Tag (optional)">&quot;Morrer&quot;</param>
                                                 </action>
                                             </actions>
@@ -2246,6 +2246,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="10" name="Set master volume" sid="9726953574582497" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume - 10</param>
+                                </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
                                     <param id="0" name="State">0</param>
                                 </action>
@@ -2300,6 +2303,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="10" name="Set master volume" sid="6188324222626835" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume +10</param>
+                                </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
                                     <param id="0" name="State">1</param>
                                 </action>

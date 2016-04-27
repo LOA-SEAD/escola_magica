@@ -10,12 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Porta1</layout>
-        <layout order="1">Porta2</layout>
-        <layout order="2">Porta3</layout>
-        <event-sheet active="1" order="3">Porta1</event-sheet>
-        <event-sheet order="4">Porta2</event-sheet>
-        <event-sheet order="5">Porta3</event-sheet>
+        <event-sheet active="1" order="0">Porta3</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,32 +22,32 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Cenario/" />
-        <folder expanded="1" path="object-folder/Cenario/BG/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P2/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P3/" />
-        <folder expanded="1" path="object-folder/Cenario/BG/Inicio/" />
-        <folder expanded="0" path="object-folder/Cenario/Solidos/" />
-        <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/Inicio/" />
+        <folder expanded="1" path="object-folder/Cenario/Solidos/" />
+        <folder expanded="1" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
-        <folder expanded="0" path="object-folder/Cenario/Char/" />
+        <folder expanded="1" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
-        <folder expanded="0" path="object-folder/Cenario/Interativos/" />
+        <folder expanded="1" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />
-        <folder expanded="0" path="object-folder/Cenario/Particulas/" />
+        <folder expanded="1" path="object-folder/Cenario/Particulas/" />
         <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="0" path="object-folder/Componentes/" />
         <folder expanded="0" path="object-folder/HUD/" />
-        <folder expanded="1" path="object-folder/Animacoes/" />
+        <folder expanded="0" path="object-folder/Animacoes/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/onomCocorico/" />
         <folder expanded="0" path="object-folder/Animacoes/menino/" />
         <folder expanded="0" path="object-folder/Animacoes/relogio/" />
         <folder expanded="0" path="object-folder/Creditos/" />
-        <folder expanded="1" path="object-folder/Pause/" />
+        <folder expanded="0" path="object-folder/Pause/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
         <folder expanded="1" path="layout-folder/Animacoes/" />
