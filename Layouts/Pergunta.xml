@@ -873,7 +873,7 @@
         <instance type="XML" uid="456" />
         <instance type="CallJS" uid="136">
             <properties>
-                <scriptfile>myScripts.js</scriptfile>
+                <scriptfile>stats.js</scriptfile>
             </properties>
         </instance>
     </nonworld-instances>

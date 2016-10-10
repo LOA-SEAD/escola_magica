@@ -6,9 +6,15 @@
         <variable constant="0" name="HelpOn" sid="9249117927984566" static="0" type="number">0</variable>
         <comment>&quot;Resp&quot; armazena um numero que faz referencia a qual alavanca o jogador pressionou. &quot;RespCorreta&quot; armazena uma referencia da alavanca correta. Se ambas sao iguais quando o jogador tenta sair pela porta, sua resposta obviamente esta correta. Caso contrario, o jogador toma um choque (descrito pelo grupo &quot;Choque&quot;), e deverá responder a pergunta novamente.&#x0D;&#x0A;On start of layout: o objeto ajax e verificado. Se este for nulo, o carregamento das perguntas no layout &quot;Introducao&quot; foi mal sucedido. Uma segunda requisicao e entao executada.</comment>
         <variable constant="0" name="Pergunta" sid="7657345607694649" static="0" type="text"></variable>
+        <comment>Serve para armazenar o texto da resposta correta do .xml</comment>
+        <variable constant="0" name="RespostaCerta" sid="712853149161020" static="0" type="text"></variable>
+        <comment>Serve para armazenar o texto de todas as alternativas</comment>
+        <variable constant="0" name="AlternativasVariavel" sid="798303832783153" static="0" type="text"></variable>
         <variable constant="0" name="Resp" sid="9667931264537564" static="0" type="number">-1</variable>
         <variable constant="0" name="SendJS" sid="3321349714617433" static="0" type="text"></variable>
         <variable constant="0" name="RespCorreta" sid="5447675615131101" static="0" type="number">-1</variable>
+        <comment>Serve para armazenar o texto da resposta escolhida pelo jogador</comment>
+        <variable constant="0" name="RespostaEscolhida" sid="911034782147211" static="0" type="text"></variable>
         <event-group description="" sid="7103146111134226" title="Start Layout">
             <sub-events>
                 <event-block sid="152157541819758">
@@ -435,6 +441,7 @@
             <sub-events>
                 <event-group description="" sid="5686711284582808" title="Alavanca">
                     <sub-events>
+                        <variable constant="0" name="encontrouPergunta" sid="348220257586985" static="0" type="number">0</variable>
                         <event-block sid="7801088572549657">
                             <conditions>
                                 <condition id="3" name="On key released" sid="1328025449493639" type="Keyboard">
@@ -465,6 +472,67 @@
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="371290653000965">
+                                    <conditions>
+                                        <condition id="0" name="For each node" sid="616829619741599" type="XML">
+                                            <param id="0" name="XPath">&quot;/Perguntas/Classe&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="126328714374169" type="System">
+                                            <param id="0" name="First value">int(XML.StringValue(&quot;@ClaAno&quot;))</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">AnoAtual</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="544480493932198">
+                                            <conditions>
+                                                <condition id="0" name="For each node" sid="278426882534296" type="XML">
+                                                    <param id="0" name="XPath">&quot;Pergunta&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="878972108790374" type="System">
+                                                    <param id="0" name="First value">Perguntas.At(PergAtual)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">int(XML.StringValue(&quot;@PergNum&quot;))</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="784188068744487">
+                                                    <conditions>
+                                                        <condition id="0" name="For each node" sid="647089665236212" type="XML">
+                                                            <param id="0" name="XPath">&quot;Resp&quot;</param>
+                                                        </condition>
+                                                        <condition id="-13" name="Pick nth instance" sid="463352196575741" type="System">
+                                                            <param id="0" name="Object">txtCenario</param>
+                                                            <param id="1" name="Instance">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="915992940187693">
+                                                            <conditions>
+                                                                <condition id="-8" name="Compare two values" sid="413464887377087" type="System">
+                                                                    <param id="0" name="First value">Resp</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Second value">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="734817517920354" type="System">
+                                                                    <param id="0" name="Variable">RespostaEscolhida</param>
+                                                                    <param id="1" name="Value">&quot;&quot; &amp; XML.StringValue(&quot;node()&quot;)</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -523,12 +591,16 @@
                                                     <param id="0" name="Variable">PergAtual</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
-                                                <action id="-9" name="Set value" sid="4535131634003792" type="System">
+                                                <action disabled="1" id="-9" name="Set value" sid="4535131634003792" type="System">
                                                     <param id="0" name="Variable">SendJS</param>
                                                     <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="357542854578710" type="System">
+                                                    <param id="0" name="Variable">SendJS</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;1&apos;&quot;</param>
+                                                </action>
                                                 <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
-                                                    <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                    <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -622,11 +694,18 @@
                                                     <param id="0" name="Variable">NumRespErradas</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
-                                                <action id="-9" name="Set value" sid="5939990263331082" type="System">
+                                                <action id="-9" name="Set value" sid="891064738097468" type="System">
+                                                    <param id="0" name="Variable">SendJS</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;0&apos;&quot;</param>
+                                                </action>
+                                                <action id="0" name="Execute" sid="485455397764160" type="CallJS">
+                                                    <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                </action>
+                                                <action disabled="1" id="-9" name="Set value" sid="5939990263331082" type="System">
                                                     <param id="0" name="Variable">SendJS</param>
                                                     <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
                                                 </action>
-                                                <action id="0" name="Execute" sid="2866700705005697" type="CallJS">
+                                                <action disabled="1" id="0" name="Execute" sid="2866700705005697" type="CallJS">
                                                     <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
                                                 </action>
                                                 <action id="-12" name="Set group active" sid="3043444281651663" type="System">
@@ -864,15 +943,20 @@
                                         <action id="0" name="Set text" sid="3005165809557421" type="txtPergunta">
                                             <param id="0" name="Text">XML.StringValue(&quot;@titulo&quot;)</param>
                                         </action>
+                                        <action disabled="1" id="0" name="Clear" sid="925414407221057" type="Alternativas" />
+                                        <action id="-9" name="Set value" sid="968516012484026" type="System">
+                                            <param id="0" name="Variable">AlternativasVariavel</param>
+                                            <param id="1" name="Value">&quot;&apos;&quot;</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="8757549881452613" type="System">
                                             <param id="0" name="Variable">Pergunta</param>
-                                            <param id="1" name="Value">&quot;&apos;&quot; &amp; XML.StringValue(&quot;@titulo&quot;) &amp; &quot;&apos;,&quot;</param>
+                                            <param id="1" name="Value">&quot;&apos;&quot; &amp; XML.StringValue(&quot;@titulo&quot;) &amp; &quot;&apos;&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="4958175886242566" type="System">
                                             <param id="0" name="Variable">RespCorreta</param>
                                             <param id="1" name="Value">int(XML.StringValue(&quot;@respCorreta&quot;))</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="3727609858483325" type="System">
+                                        <action disabled="1" id="-9" name="Set value" sid="3727609858483325" type="System">
                                             <param id="0" name="Variable">Pergunta</param>
                                             <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; XML.StringValue(&quot;@respCorreta&quot;) &amp; &quot;&apos;&quot;</param>
                                         </action>
@@ -896,13 +980,62 @@
                                                 <action id="0" name="Set text" sid="5140590252013463" type="txtCenario">
                                                     <param id="0" name="Text">XML.StringValue(&quot;node()&quot;)</param>
                                                 </action>
-                                                <action id="-9" name="Set value" sid="6363771757854336" type="System">
-                                                    <param id="0" name="Variable">Pergunta</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; XML.StringValue(&quot;node()&quot;) &amp; &quot;&apos;&quot;</param>
+                                                <action disabled="1" id="2" name="Set at X" sid="6363771757854336" type="Alternativas">
+                                                    <param id="0" name="X">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                    <param id="1" name="Value">&quot;&apos;&quot; &amp; XML.StringValue(&quot;node()&quot;) &amp; &quot;&apos;,&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="988826198293673" type="System">
+                                                    <param id="0" name="Variable">AlternativasVariavel</param>
+                                                    <param id="1" name="Value">AlternativasVariavel &amp; XML.StringValue(&quot;node()&quot;)</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="220851615998545">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="416177173005567" type="System">
+                                                            <param id="0" name="First value">RespCorreta</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="878360839729951" type="System">
+                                                            <param id="0" name="Variable">RespostaCerta</param>
+                                                            <param id="1" name="Value">&quot;&quot; &amp; XML.StringValue(&quot;node()&quot;)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="302269631924800">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="444364434771838" type="System">
+                                                            <param id="0" name="First value">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                            <param id="1" name="Comparison">1</param>
+                                                            <param id="2" name="Second value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="848576981046723" type="System">
+                                                            <param id="0" name="Variable">AlternativasVariavel</param>
+                                                            <param id="1" name="Value">AlternativasVariavel &amp; &quot;,&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block sid="779894041174670">
+                                    <conditions />
+                                    <actions>
+                                        <action disabled="1" id="-9" name="Set value" sid="257949420958499" type="System">
+                                            <param id="0" name="Variable">Pergunta</param>
+                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; RespostaCerta &amp; &quot;&apos;,&apos;&quot; &amp; AnoAtual &amp; &quot;&apos;,&quot; &amp; Alternativas.At(0) &amp; Alternativas.At(1) &amp; Alternativas.At(2) &amp; Alternativas.At(3)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="113269157585338" type="System">
+                                            <param id="0" name="Variable">Pergunta</param>
+                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; RespostaCerta &amp; &quot;&apos;,&apos;&quot; &amp; AnoAtual &amp; &quot;&apos;,&quot; &amp; AlternativasVariavel &amp; &quot;&apos;,&quot;</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
