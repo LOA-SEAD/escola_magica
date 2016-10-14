@@ -1,4 +1,4 @@
-function sendData(pergunta,correta,fase,respostas,escolhida,acertou){
+function sendData(correta,pergunta,fase,respostas,escolhida,acertou){
 	var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
@@ -8,10 +8,10 @@ function sendData(pergunta,correta,fase,respostas,escolhida,acertou){
 	}
 	$.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
-        info.answer = pergunta;
         info.question = correta;
+        info.answer = pergunta;
         info.levelId = fase;
-        info.alternatives = respostas;
+        info.choices = respostas;
         info.choice = escolhida;
         //info.size = size;
         info.win = acertou;
