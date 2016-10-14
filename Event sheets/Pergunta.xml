@@ -597,7 +597,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="357542854578710" type="System">
                                                     <param id="0" name="Variable">SendJS</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;1&apos;&quot;</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;true&apos;&quot;</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
                                                     <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
@@ -696,7 +696,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="891064738097468" type="System">
                                                     <param id="0" name="Variable">SendJS</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;0&apos;&quot;</param>
+                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;&quot;</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="485455397764160" type="CallJS">
                                                     <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
