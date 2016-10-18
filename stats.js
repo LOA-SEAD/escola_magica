@@ -1,4 +1,4 @@
-function sendData(correta,pergunta,fase,respostas,escolhida,acertou){
+function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,tamanho){
 	var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
@@ -10,11 +10,11 @@ function sendData(correta,pergunta,fase,respostas,escolhida,acertou){
         info.exportedResourceId = json.exportedResourceId;
         info.question = correta;
         info.answer = pergunta;
-        info.levelId = fase;
+        info.levelId = nroPergunta;
         info.choices = respostas;
         info.choice = escolhida;
-        //info.size = size;
         info.win = acertou;
+        info.gameSize = tamanho;
         info.gameType = 'multipleChoice';
         $.ajax({
             type: "POST",
@@ -26,8 +26,9 @@ function sendData(correta,pergunta,fase,respostas,escolhida,acertou){
 });
 /*	console.log(pergunta);
 	console.log(correta);
-	console.log(fase);
+	console.log(nroPergunta);
 	console.log(respostas);
 	console.log(escolhida);
-	console.log(acertou);*/
+    console.log(acertou);
+    console.log(tamanho);*/
 }
