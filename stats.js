@@ -14,7 +14,7 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
         info.choices = respostas;
         info.choice = escolhida;
         info.win = acertou;
-        info.gameSize = tamanho;
+        info.size = tamanho;
         info.gameType = 'multipleChoice';
         $.ajax({
             type: "POST",
