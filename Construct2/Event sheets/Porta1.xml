@@ -101,6 +101,10 @@
                     <param id="0" name="Group name">&quot;controleTeclas&quot;</param>
                     <param id="1" name="State">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="514586047033507" type="System">
+                    <param id="0" name="Variable">SetorFase</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
             <sub-events>
                 <event-group description="Preenche corretamente as constantes necessarios referentes as conquistas do jogador." sid="4573874394720409" title="PreecheConquistas">
@@ -403,6 +407,67 @@
                 </event-group>
             </sub-events>
         </event-block>
+        <event-group description="" sid="159487942307212" title="ControleSetor1">
+            <sub-events>
+                <event-block sid="149549143692980">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="780021823739236" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Antes do primeiro checkpoint</comment>
+                        <event-block sid="383932423843115">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="607349562393303" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">3000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="477997799833919" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Entre os dois checkpoints</comment>
+                        <event-block sid="146772765097695">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="105881623332993" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">3000</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="880363229779283" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">5920</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="688843202930232" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Depois do segundo checkpoint</comment>
+                        <event-block sid="226050205264738">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="127767420871044" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">5920</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="352503013744146" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="1028172993761318" title="RegrasGerais">
             <sub-events>
                 <event-group description="" sid="463249802941619" title="ControleTeclas">

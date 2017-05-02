@@ -387,6 +387,67 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="969777711873705" title="ControleSetor2">
+            <sub-events>
+                <event-block sid="566233745641297">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="445113207242466" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Antes do primeiro checkpoint</comment>
+                        <event-block sid="823878925816919">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="868004142547528" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">2700</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="235694019032877" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Entre o checkpoint e a alavanca após o cano</comment>
+                        <event-block sid="297843804209349">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="492322769717347" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">2700</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="281132792781272" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">5500</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="138519496865962" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Depois da alavanca após o cano</comment>
+                        <event-block sid="413617908391132">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="646855202852644" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">5500</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="186771298690216" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="6372830733891167" title="RegrasGerais">
             <sub-events>
                 <event-group description="" sid="61492277981464" title="ControleTeclas">

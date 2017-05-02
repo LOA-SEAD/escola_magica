@@ -431,6 +431,67 @@
                 </event-group>
             </sub-events>
         </event-block>
+        <event-group description="" sid="513733104791388" title="ControleSetor3">
+            <sub-events>
+                <event-block sid="248484468694056">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="517680295161505" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Antes do salto da fé</comment>
+                        <event-block sid="231221007152384">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="504374028953498" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">3000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="396304013890001" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Entre o salto da fé e o checkpoint</comment>
+                        <event-block sid="567217860444957">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="854139857081680" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">3000</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="433335336196975" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">6000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="597510588981934" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Depois do checkpoint</comment>
+                        <event-block sid="453688250899028">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="829040380238828" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">6000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="132637537461063" type="System">
+                                    <param id="0" name="Variable">SetorFase</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="1804234864470099" title="RegrasGerais">
             <sub-events>
                 <event-group description="" sid="6648595578056518" title="ControleTeclas">

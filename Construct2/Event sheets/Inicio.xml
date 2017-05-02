@@ -20,11 +20,16 @@
         <variable constant="0" name="PosX" sid="7694594465221527" static="0" type="number">0</variable>
         <variable constant="0" name="PosY" sid="7841155348155351" static="0" type="number">0</variable>
         <variable constant="0" name="vlrVida" sid="2625677333623131" static="0" type="number">100</variable>
+        <comment>Indica qual fase o jogador sofreu o dano</comment>
         <variable constant="0" name="AnoAtual" sid="5231847482768696" static="0" type="number">0</variable>
         <variable constant="0" name="PergAtual" sid="5275246923354774" static="0" type="number">0</variable>
         <variable constant="0" name="CenariosConcluidos" sid="5079089539088103" static="0" type="text">000</variable>
         <variable comment="0: volume original; 20: dobro; -20: mudo" constant="0" name="Volume" sid="270361745745631" static="0" type="number">0</variable>
         <variable constant="0" name="LayoutAnterior" sid="5981670567343912" static="0" type="text"></variable>
+        <comment>Indica qual monstro causou o dano. Legenda:&#x0D;&#x0A;1 - Monstros&#x0D;&#x0A;2 - Projétil atirado pelo monstro&#x0D;&#x0A;3 - Espinhos (apenas fase 1)&#x0D;&#x0A;4 - Areia movediça / Mão de areia (apenas fase 3)</comment>
+        <variable constant="0" name="TipoDano" sid="464459884317956" static="0" type="number">0</variable>
+        <comment>Indica qual setor da fase o jogador sofreu o dano</comment>
+        <variable constant="0" name="SetorFase" sid="278584753170574" static="0" type="number">0</variable>
         <event-block sid="1738026046230992">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="7389519769199064" type="System" />
