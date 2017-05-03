@@ -23,8 +23,8 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
             success: function(data) {
             }
         })
-});
-/*	console.log(pergunta);
+	});
+	/*console.log(pergunta);
 	console.log(correta);
 	console.log(nroPergunta);
 	console.log(respostas);

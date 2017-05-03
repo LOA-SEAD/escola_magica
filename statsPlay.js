@@ -1,4 +1,4 @@
-function sendGameData(monstro,fase,setor){
+function sendPlayData(monstro,fase,setor){
 	/*var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
