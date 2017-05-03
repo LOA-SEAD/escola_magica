@@ -30,6 +30,7 @@
         <variable constant="0" name="TipoDano" sid="464459884317956" static="0" type="number">0</variable>
         <comment>Indica qual setor da fase o jogador sofreu o dano</comment>
         <variable constant="0" name="SetorFase" sid="278584753170574" static="0" type="number">0</variable>
+        <variable constant="0" name="sendPlayJS" sid="210655776253107" static="0" type="text"></variable>
         <event-block sid="1738026046230992">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="7389519769199064" type="System" />

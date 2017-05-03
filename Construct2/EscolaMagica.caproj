@@ -2687,6 +2687,9 @@
         <object-type global="1" name="Alternativas" sid="954445798597759">
             <plugin id="Arr" />
         </object-type>
+        <object-type global="1" name="PlayJS" sid="116442241954680">
+            <plugin id="cjs" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
