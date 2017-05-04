@@ -2801,6 +2801,10 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file-folder name="JS">
+            <file name="stats.js" />
+            <file name="statsPlay.js" />
+        </file-folder>
         <file name="Perguntas.xml" />
     </files-folder>
 </c2project>

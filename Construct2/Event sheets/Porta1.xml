@@ -773,6 +773,10 @@
                                         <action behavior="Platform" id="11" name="Set enabled" sid="3190756080998625" type="player">
                                             <param id="0" name="State">1</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="937866801284354" type="System">
+                                            <param id="0" name="Variable">TipoDano</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="6404697466592241" type="System">
                                             <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -1246,6 +1250,10 @@
                                             <param id="0" name="Variable">vlrVida</param>
                                             <param id="1" name="Value">vlrVida - VLR_DANO_BALA</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="626306033242303" type="System">
+                                            <param id="0" name="Variable">TipoDano</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="2586767583921654" type="System">
                                             <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -1361,6 +1369,10 @@
                                         <action id="-9" name="Set value" sid="4351417490518054" type="System">
                                             <param id="0" name="Variable">vlrVida</param>
                                             <param id="1" name="Value">vlrVida - VLR_DANO_ESPINHOS</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="133039970230629" type="System">
+                                            <param id="0" name="Variable">TipoDano</param>
+                                            <param id="1" name="Value">4</param>
                                         </action>
                                         <action id="-12" name="Set group active" sid="9434124712261827" type="System">
                                             <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>
@@ -1508,6 +1520,10 @@
                                         <action id="-9" name="Set value" sid="8792774605751024" type="System">
                                             <param id="0" name="Variable">vlrVida</param>
                                             <param id="1" name="Value">vlrVida -VLR_DANO_ESPINHOS</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="785741838038833" type="System">
+                                            <param id="0" name="Variable">TipoDano</param>
+                                            <param id="1" name="Value">3</param>
                                         </action>
                                         <action id="-12" name="Set group active" sid="8123100147670051" type="System">
                                             <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>

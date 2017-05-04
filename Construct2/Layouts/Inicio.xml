@@ -2287,7 +2287,7 @@
         </instance>
         <instance type="PlayJS" uid="534">
             <properties>
-                <scriptfile>statsPlay.js</scriptfile>
+                <scriptfile>statsplay.js</scriptfile>
             </properties>
         </instance>
     </nonworld-instances>

@@ -957,6 +957,10 @@
                                         <action behavior="Platform" id="11" name="Set enabled" sid="3168139297119447" type="player">
                                             <param id="0" name="State">1</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="853509062968092" type="System">
+                                            <param id="0" name="Variable">TipoDano</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="6115583826284074" type="System">
                                             <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -1461,6 +1465,13 @@
                                         <action id="-5" name="Set width" sid="5563289887533083" type="BarraVida">
                                             <param id="0" name="Width">Capsula.Width * (vlrVida/100)</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="130100147146894" type="System">
+                                            <param id="0" name="Variable">sendPlayJS</param>
+                                            <param id="1" name="Value">TipoDano &amp; &quot;,&quot; &amp; AnoAtual &amp; &quot;,&quot; &amp; SetorFase</param>
+                                        </action>
+                                        <action id="0" name="Execute" sid="807785891520624" type="PlayJS">
+                                            <param id="0" name="Value">&quot;sendPlayData(&quot; &amp; sendPlayJS &amp; &quot;)&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="1969697642323397">
@@ -1680,6 +1691,10 @@
                                             <param id="0" name="Variable">vlrVida</param>
                                             <param id="1" name="Value">vlrVida - VLR_DANO_BALA</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="571628462299443" type="System">
+                                            <param id="0" name="Variable">TipoDano</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="2522275171493859" type="System">
                                             <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -1791,6 +1806,10 @@
                                                 <action id="-9" name="Set value" sid="3271872396855684" type="System">
                                                     <param id="0" name="Variable">vlrVida</param>
                                                     <param id="1" name="Value">vlrVida - VLR_DANO_MONSTROS</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="621180602977116" type="System">
+                                                    <param id="0" name="Variable">TipoDano</param>
+                                                    <param id="1" name="Value">1</param>
                                                 </action>
                                                 <action id="-12" name="Set group active" sid="5957988899642804" type="System">
                                                     <param id="0" name="Group name">&quot;VerificaGameOver&quot;</param>

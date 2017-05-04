@@ -11,17 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Creditos</layout>
-        <layout order="2">Porta1</layout>
-        <layout order="4">Porta2</layout>
-        <layout order="6">Porta3</layout>
-        <layout order="8">Inicio</layout>
-        <layout order="10">Pergunta</layout>
+        <layout order="2">Inicio</layout>
+        <layout order="5">Porta3</layout>
         <event-sheet order="1">Creditos</event-sheet>
-        <event-sheet active="1" order="3">Porta1</event-sheet>
-        <event-sheet order="5">Porta2</event-sheet>
+        <event-sheet order="3">Inicio</event-sheet>
+        <event-sheet order="4">Porta2</event-sheet>
+        <event-sheet active="1" order="6">Porta1</event-sheet>
         <event-sheet order="7">Porta3</event-sheet>
-        <event-sheet order="9">Inicio</event-sheet>
-        <event-sheet order="11">Pergunta</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -65,10 +61,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Classes/" />
         <folder expanded="1" path="event-folder/Animacoes/" />
-        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/JS/" />
         <folder expanded="0" path="music-folder/fundos/" />
         <folder expanded="1" path="animation-folder/imgNuvem/" />
         <folder expanded="1" path="animation-folder/imgPiramide/" />
