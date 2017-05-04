@@ -1,5 +1,5 @@
 function sendPlayData(monstro,fase,setor){
-	/*var info = {};
+	var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
         path = "/exported-resource/saveStats" //VAI MUDAR
@@ -19,8 +19,8 @@ function sendPlayData(monstro,fase,setor){
             success: function(data) {
             }
         })
-    });*/
-	console.log(monstro);
+    });
+	/*console.log(monstro);
 	console.log(fase);
-	console.log(setor);
+	console.log(setor);*/
 }
