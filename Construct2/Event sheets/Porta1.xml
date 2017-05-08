@@ -843,7 +843,7 @@
                                             <param id="0" name="Variable">sendPlayJS</param>
                                             <param id="1" name="Value">TipoDano &amp; &quot;,&quot; &amp; AnoAtual &amp; &quot;,&quot; &amp; SetorFase</param>
                                         </action>
-                                        <action id="0" name="Execute" sid="607481654887403" type="PlayJS">
+                                        <action id="0" name="Execute" sid="607481654887403" type="CallJS">
                                             <param id="0" name="Value">&quot;sendPlayData(&quot; &amp; sendPlayJS &amp; &quot;)&quot;</param>
                                         </action>
                                     </actions>
