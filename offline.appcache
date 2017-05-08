@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1493910826
+#1494257921
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -210,7 +210,6 @@ icon-128.png
 icon-256.png
 loading-logo.png
 stats.js
-statsplay.js
 perguntas.xml
 penumbra.png
 NETWORK:
