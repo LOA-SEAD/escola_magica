@@ -522,7 +522,7 @@
                                                             <actions>
                                                                 <action id="-9" name="Set value" sid="734817517920354" type="System">
                                                                     <param id="0" name="Variable">RespostaEscolhida</param>
-                                                                    <param id="1" name="Value">&quot;&quot; &amp; XML.StringValue(&quot;node()&quot;)</param>
+                                                                    <param id="1" name="Value">&quot;&quot; &amp; replace(XML.StringValue(&quot;node()&quot;), &quot;&apos;&quot;, &quot;\&apos;&quot;)</param>
                                                                 </action>
                                                             </actions>
                                                         </event-block>
@@ -950,7 +950,7 @@
                                         </action>
                                         <action id="-9" name="Set value" sid="8757549881452613" type="System">
                                             <param id="0" name="Variable">Pergunta</param>
-                                            <param id="1" name="Value">&quot;&apos;&quot; &amp; XML.StringValue(&quot;@titulo&quot;) &amp; &quot;&apos;&quot;</param>
+                                            <param id="1" name="Value">&quot;&apos;&quot; &amp; replace(XML.StringValue(&quot;@titulo&quot;), &quot;&apos;&quot;, &quot;\&apos;&quot;) &amp; &quot;&apos;&quot;</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="4958175886242566" type="System">
                                             <param id="0" name="Variable">RespCorreta</param>
@@ -986,7 +986,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="988826198293673" type="System">
                                                     <param id="0" name="Variable">AlternativasVariavel</param>
-                                                    <param id="1" name="Value">AlternativasVariavel &amp; XML.StringValue(&quot;node()&quot;)</param>
+                                                    <param id="1" name="Value">AlternativasVariavel &amp; replace(XML.StringValue(&quot;node()&quot;), &quot;&apos;&quot;, &quot;\&apos;&quot;)</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -1001,7 +1001,7 @@
                                                     <actions>
                                                         <action id="-9" name="Set value" sid="878360839729951" type="System">
                                                             <param id="0" name="Variable">RespostaCerta</param>
-                                                            <param id="1" name="Value">&quot;&quot; &amp; XML.StringValue(&quot;node()&quot;)</param>
+                                                            <param id="1" name="Value">&quot;&quot; &amp; replace(XML.StringValue(&quot;node()&quot;), &quot;&apos;&quot;, &quot;\&apos;&quot;)</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
