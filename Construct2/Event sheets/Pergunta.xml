@@ -1033,7 +1033,7 @@
                                         </action>
                                         <action id="-9" name="Set value" sid="113269157585338" type="System">
                                             <param id="0" name="Variable">Pergunta</param>
-                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; RespostaCerta &amp; &quot;&apos;,&apos;&quot; &amp; PergAtual &amp; &quot;&apos;,&quot; &amp; AlternativasVariavel &amp; &quot;&apos;,&quot;</param>
+                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; RespostaCerta &amp; &quot;&apos;,&apos;&quot; &amp; Perguntas.At(PergAtual) + (5 * (AnoAtual - 1)) &amp; &quot;&apos;,&quot; &amp; AlternativasVariavel &amp; &quot;&apos;,&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
