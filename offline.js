@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1495204443,
+	"version": 1496754738,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -63,9 +63,6 @@
 		"images/itventilador-sheet2.png",
 		"images/areiamovetica-sheet0.png",
 		"images/areiamovetica-sheet1.png",
-		"images/imgraios-sheet0.png",
-		"images/imgraios-sheet1.png",
-		"images/imgraios-sheet2.png",
 		"images/itpedra2-sheet0.png",
 		"images/particgrav.png",
 		"images/particagua.png",
