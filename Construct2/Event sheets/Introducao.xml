@@ -28,6 +28,7 @@
                 <action id="-16" name="Set opacity" sid="5443038834118415" type="Logos">
                     <param id="0" name="Opacity">0</param>
                 </action>
+                <action id="0" name="Clear" sid="648405098334266" type="Pontuacao" />
             </actions>
         </event-block>
         <event-block sid="494701241156839">

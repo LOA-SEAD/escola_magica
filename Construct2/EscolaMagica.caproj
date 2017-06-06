@@ -2672,6 +2672,9 @@
         <object-type global="1" name="Alternativas" sid="954445798597759">
             <plugin id="Arr" />
         </object-type>
+        <object-type global="1" name="Pontuacao" sid="430250450220324">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

@@ -1387,7 +1387,7 @@
                         </event-group>
                         <event-group description="" sid="6379572587996184" title="ColisaoPorta">
                             <sub-events>
-                                <comment>Conclui terceiro ano, seta variavel CenariosCencluidos com 1 na terceira posição.</comment>
+                                <comment>Conclui terceiro ano, seta variavel CenariosCencluidos com 1 na terceira posição e armazena a vida que o jogador terminou na fase para fins de ranking</comment>
                                 <event-block sid="9037406869294781">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="9265707767176688" type="PortaC">
@@ -1522,6 +1522,21 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-group>
+                                        <event-block sid="835735874948148">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="273030499377712" type="System">
+                                                    <param id="0" name="Variable">vlrVida</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">Pontuacao.At(2)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="2" name="Set at X" sid="653071094712639" type="Pontuacao">
+                                                    <param id="0" name="X">2</param>
+                                                    <param id="1" name="Value">vlrVida</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                         <event-block sid="8890998850916585">
                                             <conditions />
                                             <actions>

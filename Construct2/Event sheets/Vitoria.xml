@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Vitoria</name>
     <events>
+        <comment>Inicia a animação e envia a pontuação total do jogador para o REMAR</comment>
         <event-block sid="1979121213293125">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4186129095117303" type="System" />
@@ -55,6 +56,9 @@
                 <action id="-3" name="Set position" sid="9183718856071369" type="meninoProvaPupila">
                     <param id="0" name="X">414</param>
                     <param id="1" name="Y">305</param>
+                </action>
+                <action id="0" name="Execute" sid="108376284846277" type="CallJS">
+                    <param id="0" name="Value">&quot;sendRankingData(&quot; &amp; Pontuacao.At(0) + Pontuacao.At(1) + Pontuacao.At(2) &amp; &quot;)&quot;</param>
                 </action>
             </actions>
             <sub-events>
