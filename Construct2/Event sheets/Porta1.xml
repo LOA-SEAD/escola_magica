@@ -1090,6 +1090,10 @@
                                             <param id="0" name="Variable">Porta1Clear</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="787916766492591" type="System">
+                                            <param id="0" name="Variable">tempoFinal</param>
+                                            <param id="1" name="Value">time</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
                                         <event-group description='Verifica variaveis responsaveis pelo registro das acoes do jogador e, caso tenha atingido uma conquista, atribui o valor 1 aa posicao correspondente dessa mesma ao vetor &quot;Conquistas&quot;, registrando que ela ja foi atingida.' sid="319805167552879" title="VerificarConquistas">
@@ -1229,6 +1233,13 @@
                                                 <action id="-9" name="Set value" sid="5166095553894452" type="System">
                                                     <param id="0" name="Variable">LayoutAnterior</param>
                                                     <param id="1" name="Value">&quot;Porta&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="540649488404684" type="System">
+                                                    <param id="0" name="Variable">sendTimeJS</param>
+                                                    <param id="1" name="Value">tempoFinal - tempoInicial</param>
+                                                </action>
+                                                <action id="0" name="Execute" sid="288290773258507" type="CallJS">
+                                                    <param id="0" name="Value">&quot;sendTimeData(&quot; &amp; sendTimeJS &amp; &quot;)&quot;</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="1288812834193346" type="System">
                                                     <param id="0" name="Layout">Inicio</param>

@@ -1760,11 +1760,11 @@
                         <x>6061</x>
                         <y>244</y>
                         <z>0</z>
-                        <width>123</width>
+                        <width>150</width>
                         <height>200</height>
                         <depth>0</depth>
-                        <hotspotX>0.617886186</hotspotX>
-                        <hotspotY>0.495000005</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

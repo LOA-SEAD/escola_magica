@@ -4,10 +4,10 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>5628.79</position-x>
+        <position-x>2977.82</position-x>
         <position-y>300</position-y>
-        <position-z>100</position-z>
-        <lookat-x>5628.79</lookat-x>
+        <position-z>90.9091</position-z>
+        <lookat-x>2977.82</lookat-x>
         <lookat-y>300</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
@@ -23,16 +23,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="layHUD" />
+    <active-layer name="layObjetos2" />
     <layers>
-        <layer locked="0" name="layBG1" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="layBG1" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layEstrelas" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layBG2" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layBG3" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layObjetos2" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layPlataformas" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layObjetos" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="laySombraFrente" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="laySombraFrente" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="layHUD" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
