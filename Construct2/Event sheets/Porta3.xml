@@ -1552,7 +1552,7 @@
                                                     <param id="0" name="Variable">sendTimeJS</param>
                                                     <param id="1" name="Value">tempoFinal - tempoInicial</param>
                                                 </action>
-                                                <action id="0" name="Execute" sid="446110747731736" type="CallJS">
+                                                <action disabled="1" id="0" name="Execute" sid="446110747731736" type="CallJS">
                                                     <param id="0" name="Value">&quot;sendTimeData(&quot; &amp; sendTimeJS &amp; &quot;)&quot;</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="503383949572217" type="System">
