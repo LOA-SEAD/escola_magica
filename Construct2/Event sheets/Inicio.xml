@@ -123,8 +123,95 @@
                 <action behavior="Physics" id="21" name="Set immovable" sid="7323692095552375" type="PortaB">
                     <param id="0" name="Setting">1</param>
                 </action>
+                <action id="-12" name="Set group active" sid="427564613731707" type="System">
+                    <param id="0" name="Group name">&quot;Mobile&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
             </actions>
             <sub-events>
+                <comment>Verifica se estamos em um dispositivo mobile para tornar os botões visíveis e disponíveis para clique</comment>
+                <event-block sid="533690896596780">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="859105523450125" type="System" />
+                        <condition id="-9" inverted="1" name="Is visible" sid="337481640616147" type="BtnSetaEsq" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="172209913545596" type="BtnCtrl">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="488251503241011" type="BtnEsc">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="354685214293120" type="BtnSetaBaixo">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="262788470315621" type="BtnSetaCima">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="847701711553822" type="BtnSetaDir">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="152176540236213" type="BtnSetaEsq">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="116362601059918" type="BtnShift">
+                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="253871958835912" type="BtnSetaEsq">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="386840376840210" type="BtnSetaEsq">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="577439324090332" type="BtnSetaDir">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="870626558753977" type="BtnSetaDir">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="695455030421196" type="BtnSetaCima">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="702916675292693" type="BtnSetaCima">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="553707580054513" type="BtnSetaBaixo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action disabled="1" id="11" name="Set collisions enabled" sid="355486182562079" type="BtnSetaBaixo">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="267654808894991" type="BtnCtrl">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="671050036089866" type="BtnCtrl">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="852590970770614" type="BtnShift">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="292329037256537" type="BtnShift">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="263301606271900" type="BtnEsc">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action disabled="1" id="11" name="Set collisions enabled" sid="223143441257332" type="BtnEsc">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="258945890157603" type="System">
+                            <param id="0" name="Group name">&quot;Mobile&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>Jogador completou o jogo</comment>
                 <event-block sid="8846049922666475">
                     <conditions>
@@ -236,6 +323,241 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-group description="Responsavel por ativar os botões na versao mobile" sid="294419604362365" title="Mobile">
+                    <sub-events>
+                        <event-block sid="555414996830484">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="258239423950613" type="Touch">
+                                    <param id="0" name="Object">BtnSetaEsq</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="504138910970234" type="BtnSetaEsq">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="310167239565754" type="player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="729123467049719" type="imgPlayer">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="564449133292959">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="941830511523227" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="537746589578035">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="316276272068312" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="187499373636025" type="BtnSetaEsq">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="408238027218897">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="901473835747749" type="Touch">
+                                    <param id="0" name="Object">BtnSetaDir</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="996300920664741" type="BtnSetaDir">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="832464755593943" type="player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="715629218908394" type="imgPlayer">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="825490804139643">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="180643677617483" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="437778942504293">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="215303878334184" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="841608707472842" type="BtnSetaDir">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="904541029697255">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="974278876941141" type="Touch">
+                                    <param id="0" name="Object">BtnSetaCima</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="905340084148967" type="BtnSetaCima">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="670362993715685" type="player">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="958526259295894">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="951606899779660" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="230186045239831">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="442150582574775" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="614614177571992" type="BtnSetaCima">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="786114903979817">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="963305440405551" type="Touch">
+                                    <param id="0" name="Object">BtnSetaBaixo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="971482065732823" type="BtnSetaBaixo">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="746110728148056">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="581911278362541" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="130181471458873">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="460176338388794" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="880952336888896" type="BtnSetaBaixo">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="909745876143287">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="772257303851435" type="Touch">
+                                    <param id="0" name="Object">BtnCtrl</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="987474140369490" type="BtnCtrl">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="885258228302297">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="932994302645542" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="785541487457622">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="951545380290564" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="700904887305243" type="BtnCtrl">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="723848451099744">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="754761604379252" type="Touch">
+                                    <param id="0" name="Object">BtnEsc</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="338859333539947" type="BtnEsc">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="723056464739959">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="194142756146231" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="228757268576370">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="529488197489094" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="354725204945381" type="BtnEsc">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="563356747200334">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="889731633723303" type="Touch">
+                                    <param id="0" name="Object">BtnShift</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="758708515999290" type="BtnShift">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="479474759885357" type="player">
+                                    <param id="0" name="Max Speed">2*VLR_MAX_VELOC</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="641132047601946">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="829516938008827" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="988674853713732">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="214158432598377" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="794928438933563" type="BtnShift">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action behavior="Platform" id="1" name="Set max speed" sid="464257535371525" type="player">
+                                            <param id="0" name="Max Speed">VLR_MAX_VELOC</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-block>
         <event-group description="" sid="8455751455595235" title="RegrasGerais">
@@ -407,10 +729,13 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="3554213690682431">
+                                <event-block any="1" sid="3554213690682431">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="466386022405416" type="Keyboard">
                                             <param id="0" name="Key">17 (Ctrl)</param>
+                                        </condition>
+                                        <condition id="4" name="Is touching object" sid="270714070774242" type="Touch">
+                                            <param id="0" name="Object">BtnCtrl</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -449,10 +774,13 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="6988457475849023">
+                                <event-block any="1" sid="6988457475849023">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="8231356019001038" type="Keyboard">
                                             <param id="0" name="Key">17 (Ctrl)</param>
+                                        </condition>
+                                        <condition id="4" name="Is touching object" sid="268617772146046" type="Touch">
+                                            <param id="0" name="Object">BtnCtrl</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -491,10 +819,13 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="4600019008706497">
+                                <event-block any="1" sid="4600019008706497">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="1168418954599686" type="Keyboard">
                                             <param id="0" name="Key">17 (Ctrl)</param>
+                                        </condition>
+                                        <condition id="4" name="Is touching object" sid="922014000151421" type="Touch">
+                                            <param id="0" name="Object">BtnCtrl</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -571,8 +902,8 @@
                     <sub-events>
                         <event-block sid="8318072358231028">
                             <conditions>
-                                <condition id="3" name="On key released" sid="4725530887566676" type="Keyboard">
-                                    <param id="0" name="Key">17 (Ctrl)</param>
+                                <condition id="4" name="Is touching object" sid="4725530887566676" type="Touch">
+                                    <param id="0" name="Object">BtnCtrl</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="2877799719118124" type="imgPlayer">
                                     <param id="0" name="Object">itInterrup</param>
@@ -610,6 +941,53 @@
                                     </conditions>
                                     <actions>
                                         <action id="-2" name="Go to layout" sid="9738641279414327" type="System">
+                                            <param id="0" name="Layout">Conquistas</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="992030423204592">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="815419487366697" type="Keyboard">
+                                    <param id="0" name="Key">17 (Ctrl)</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="786700600993956" type="imgPlayer">
+                                    <param id="0" name="Object">itInterrup</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="691379760268935" type="Audio">
+                                    <param id="0" name="Tag">&quot;Selecao&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="816027510257764" type="Audio">
+                                    <param id="0" name="Audio file">Interruptor</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-15</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="282977882791728">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="548130817100244" type="System">
+                                            <param id="0" name="First value">itInterrup.IID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="452395004146630" type="System">
+                                            <param id="0" name="Layout">Creditos</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="476486142975510">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="943315390005630" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="939798593190377" type="System">
                                             <param id="0" name="Layout">Conquistas</param>
                                         </action>
                                     </actions>

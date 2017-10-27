@@ -13,7 +13,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Porta1</layout>
         <layout order="1">Porta2</layout>
         <layout order="2">Porta3</layout>
-        <layout active="1" order="3">Introducao</layout>
+        <layout order="3">Introducao</layout>
+        <layout order="4">Inicio</layout>
+        <layout order="7">IntroducaoSonho</layout>
+        <event-sheet active="1" order="5">Inicio</event-sheet>
+        <event-sheet order="6">Introducao</event-sheet>
+        <event-sheet order="8">IntroducaoSonho</event-sheet>
+        <event-sheet order="10">Porta2</event-sheet>
+        <event-sheet order="11">Porta1</event-sheet>
+        <event-sheet order="9">Porta3</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,7 +32,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Cenario/" />
+        <folder expanded="1" path="object-folder/Cenario/" />
         <folder expanded="0" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
@@ -34,9 +42,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Cenario/Solidos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
-        <folder expanded="0" path="object-folder/Cenario/Char/" />
+        <folder expanded="1" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
-        <folder expanded="1" path="object-folder/Cenario/Interativos/" />
+        <folder expanded="0" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />
@@ -46,11 +54,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Animacoes/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/" />
-        <folder expanded="0" path="object-folder/Animacoes/onom/onomCocorico/" />
+        <folder expanded="1" path="object-folder/Animacoes/onom/onomCocorico/" />
         <folder expanded="0" path="object-folder/Animacoes/menino/" />
         <folder expanded="0" path="object-folder/Animacoes/relogio/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Pause/" />
+        <folder expanded="1" path="object-folder/Mobile/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
         <folder expanded="1" path="layout-folder/Animacoes/" />
@@ -61,7 +70,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="file-folder/JS/" />
+        <folder expanded="0" path="file-folder/JS/" />
         <folder expanded="0" path="music-folder/fundos/" />
         <folder expanded="1" path="animation-folder/imgNuvem/" />
         <folder expanded="1" path="animation-folder/imgPiramide/" />
@@ -143,6 +152,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btnContinuar/" />
         <folder expanded="1" path="animation-folder/btnReiniciar/" />
         <folder expanded="1" path="animation-folder/btnFechar/" />
+        <folder expanded="1" path="animation-folder/BtnSetaEsq/" />
+        <folder expanded="1" path="animation-folder/BtnSetaDir/" />
+        <folder expanded="1" path="animation-folder/BtnSetaCima/" />
+        <folder expanded="1" path="animation-folder/BtnSetaBaixo/" />
+        <folder expanded="1" path="animation-folder/BtnShift/" />
+        <folder expanded="1" path="animation-folder/BtnCtrl/" />
+        <folder expanded="1" path="animation-folder/BtnEsc/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/BackgroundFix/" />
         <folder expanded="1" path="animation-folder/Engine/" />

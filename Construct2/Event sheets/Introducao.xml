@@ -121,7 +121,7 @@
         </event-group>
         <event-block sid="8201277455859557">
             <conditions>
-                <condition id="1" name="On any click" sid="3158619194287173" type="Mouse" />
+                <condition id="14" name="On tap" sid="3158619194287173" type="Touch" />
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="2588725571274144" type="System">

@@ -553,12 +553,15 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="578407483925501">
+        <event-block any="1" sid="578407483925501">
             <conditions>
                 <condition id="6" name="On object clicked" sid="6894403808139171" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">itIntro</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="101577200101712" type="Touch">
+                    <param id="0" name="Object">itIntro</param>
                 </condition>
             </conditions>
             <actions>
