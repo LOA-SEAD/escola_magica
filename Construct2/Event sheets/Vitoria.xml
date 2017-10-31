@@ -601,6 +601,7 @@
                 <condition id="0" name="On key pressed" sid="7241879589504271" type="Keyboard">
                     <param id="0" name="Key">32 (Space)</param>
                 </condition>
+                <condition id="14" name="On tap" sid="992872005799392" type="Touch" />
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="8957196535142468" type="System">

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>EscolaMagica</name>
-    <description></description>
+    <description>Embarque nessa jornada para passar de ano na Escola Mágica. Responda a diferentes quizzes e ultrapasse obstáculos para conseguir o tão sonhado 10! Você é capaz de passar ileso pelos 3 anos?</description>
     <version>1.0</version>
     <author>LOA</author>
     <author-email></author-email>
     <author-website></author-website>
-    <app-id></app-id>
+    <app-id>br.ufscar.sead.loa.remar.escolamagica</app-id>
     <unique-id>3os5c9w6g6ffc</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
@@ -57,8 +57,9 @@
     <configuration-settings>
         <prop name="Clear background">No</prop>
         <prop name="Enable WebGL">On</prop>
-        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Landscape</prop>
         <prop name="Preview browser">Firefox</prop>
         <prop name="Preview mode">HTTP</prop>
         <prop name="Sampling">Linear</prop>

@@ -39,9 +39,10 @@
         </event-block>
         <event-group description="Usuario pressiona qualquer tecla para voltar a introducao do jogo" inactive="1" sid="505864172426259" title="ProcegueJogo">
             <sub-events>
-                <event-block sid="2839464996873669">
+                <event-block any="1" sid="2839464996873669">
                     <conditions>
                         <condition id="1" name="On any key pressed" sid="7025999182802009" type="Keyboard" />
+                        <condition id="14" name="On tap" sid="358080566469704" type="Touch" />
                     </conditions>
                     <actions>
                         <action id="-12" name="Set group active" sid="780694825825143" type="System">

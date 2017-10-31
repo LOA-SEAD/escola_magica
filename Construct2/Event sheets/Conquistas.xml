@@ -206,10 +206,8 @@
         </event-block>
         <event-block sid="8251626547898244">
             <conditions>
-                <condition id="6" name="On object clicked" sid="7073558125573275" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">galo</param>
+                <condition id="17" name="On tap object" sid="7073558125573275" type="Touch">
+                    <param id="0" name="Object">galo</param>
                 </condition>
             </conditions>
             <actions>

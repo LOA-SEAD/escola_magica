@@ -45,8 +45,8 @@
         </event-block>
         <event-block any="1" sid="6517876723931321">
             <conditions>
-                <condition id="1" name="On any click" sid="3720244015982627" type="Mouse" />
                 <condition id="1" name="On any key pressed" sid="6772473420791524" type="Keyboard" />
+                <condition id="14" name="On tap" sid="532792277732760" type="Touch" />
             </conditions>
             <actions>
                 <action id="6" name="Stop" sid="3530644803828995" type="Audio">

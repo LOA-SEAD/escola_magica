@@ -101,8 +101,95 @@
                         <action behavior="Physics" id="21" name="Set immovable" sid="3179053405022629" type="PortaB">
                             <param id="0" name="Setting">1</param>
                         </action>
+                        <action id="-12" name="Set group active" sid="403335722549123" type="System">
+                            <param id="0" name="Group name">&quot;Mobile5&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                     </actions>
                     <sub-events>
+                        <comment>Verifica se estamos em um dispositivo mobile para tornar os botões visíveis e disponíveis para clique</comment>
+                        <event-block sid="231073576494168">
+                            <conditions>
+                                <condition id="-20" name="Is on mobile device" sid="111137026171630" type="System" />
+                                <condition id="-9" inverted="1" name="Is visible" sid="794775996303990" type="BtnSetaEsq" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="949559708245848" type="BtnCtrl">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="384691538555703" type="BtnEsc">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="937441095123112" type="BtnSetaBaixo">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="492826816636225" type="BtnSetaCima">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="866320397854383" type="BtnSetaDir">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="831239058826619" type="BtnSetaEsq">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="274286174938593" type="BtnShift">
+                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="305060872403431" type="BtnSetaEsq">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="276045456625276" type="BtnSetaEsq">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="563639996231545" type="BtnSetaDir">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="544699384249566" type="BtnSetaDir">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="582028036050659" type="BtnSetaCima">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="974090549461885" type="BtnSetaCima">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action disabled="1" id="-15" name="Set visible" sid="439892112893588" type="BtnSetaBaixo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action disabled="1" id="11" name="Set collisions enabled" sid="114062788456163" type="BtnSetaBaixo">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="836657975325063" type="BtnCtrl">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="430349093384636" type="BtnCtrl">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="644431274174489" type="BtnShift">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="271647999852823" type="BtnShift">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action disabled="1" id="-15" name="Set visible" sid="848540045922910" type="BtnEsc">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action disabled="1" id="11" name="Set collisions enabled" sid="963368055589805" type="BtnEsc">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="962877980718969" type="System">
+                                    <param id="0" name="Group name">&quot;Mobile5&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="8024828818504334">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="4598863858322679" type="System">
@@ -168,6 +255,241 @@
                             <actions>
                                 <action id="-15" name="Set visible" sid="3387457659281362" type="PortaC">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Responsavel por ativar os botões na versao mobile" sid="677969531437231" title="Mobile5">
+            <sub-events>
+                <event-block sid="806483530167490">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="938996927178499" type="Touch">
+                            <param id="0" name="Object">BtnSetaEsq</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="870978519649119" type="BtnSetaEsq">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="312477909267657" type="player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="276095992265158" type="imgPlayer">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="743534561699638">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="828162962101571" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="586348378169776">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="142709700251748" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="593230098144098" type="BtnSetaEsq">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="499218921105901">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="785190450022458" type="Touch">
+                            <param id="0" name="Object">BtnSetaDir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="548311436719799" type="BtnSetaDir">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="751716911692853" type="player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="697743409220203" type="imgPlayer">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="547126013901859">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="355766656907182" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="440492998446141">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="866346050809376" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="802128436514631" type="BtnSetaDir">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="886938640552417">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="402702978996482" type="Touch">
+                            <param id="0" name="Object">BtnSetaCima</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="193860769491022" type="BtnSetaCima">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="107571308169382" type="player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="592693787146044">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="658404377125454" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="738311200205983">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="266577952499983" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="766098296112512" type="BtnSetaCima">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="513838466181126">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="278703668413199" type="Touch">
+                            <param id="0" name="Object">BtnSetaBaixo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="531537373982854" type="BtnSetaBaixo">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="795942518236985">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="110708463219906" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="723294672654318">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="431040471654463" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="974097454198908" type="BtnSetaBaixo">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="154772905572143">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="413274225711337" type="Touch">
+                            <param id="0" name="Object">BtnCtrl</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="486625035527254" type="BtnCtrl">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="627859745736010">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="789300346506208" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="446207908389996">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="421585868652831" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="463172037303322" type="BtnCtrl">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="838047549921660">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="326835694409133" type="Touch">
+                            <param id="0" name="Object">BtnEsc</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="691151011063825" type="BtnEsc">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346347584195858">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="461099919803590" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="122218332198849">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="702633878315151" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="133043990695372" type="BtnEsc">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="269594486396378">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="174867016383241" type="Touch">
+                            <param id="0" name="Object">BtnShift</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="382505048969531" type="BtnShift">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="970779212287078" type="player">
+                            <param id="0" name="Max Speed">2*VLR_MAX_VELOC</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="222286553535038">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="128523745864561" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="239863443032189">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="452766260362772" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="303382033067973" type="BtnShift">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="643977436015325" type="player">
+                                    <param id="0" name="Max Speed">VLR_MAX_VELOC</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -438,89 +760,99 @@
                 <event-group description="" sid="5686711284582808" title="Alavanca">
                     <sub-events>
                         <variable constant="0" name="encontrouPergunta" sid="348220257586985" static="0" type="number">0</variable>
-                        <event-block sid="7801088572549657">
+                        <event-block any="1" sid="250828275828943">
                             <conditions>
-                                <condition id="3" name="On key released" sid="1328025449493639" type="Keyboard">
+                                <condition id="3" name="On key released" sid="227439881115788" type="Keyboard">
                                     <param id="0" name="Key">17 (Ctrl)</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="3327168361627139" type="alavBarra">
-                                    <param id="0" name="Object">player</param>
-                                </condition>
-                                <condition id="-15" inverted="1" name="Is group active" sid="4686313730922294" type="System">
-                                    <param id="0" name="Group name">&quot;AA_A&quot;</param>
-                                </condition>
-                                <condition id="-15" inverted="1" name="Is group active" sid="9364477742013602" type="System">
-                                    <param id="0" name="Group name">&quot;AA_B&quot;</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="9219950913867631" type="System">
-                                    <param id="0" name="Variable">Resp</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">alavBarra.IID</param>
+                                <condition id="4" name="Is touching object" sid="234089406717949" type="Touch">
+                                    <param id="0" name="Object">BtnCtrl</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="6494042057819106" type="System">
-                                    <param id="0" name="Variable">Resp</param>
-                                    <param id="1" name="Value">alavBarra.IID</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="6212027779784861" type="System">
-                                    <param id="0" name="Group name">&quot;AA_A&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="371290653000965">
+                                <event-block sid="7801088572549657">
                                     <conditions>
-                                        <condition id="0" name="For each node" sid="616829619741599" type="XML">
-                                            <param id="0" name="XPath">&quot;/Perguntas/Classe&quot;</param>
+                                        <condition id="1" name="Is overlapping another object" sid="3327168361627139" type="alavBarra">
+                                            <param id="0" name="Object">player</param>
                                         </condition>
-                                        <condition id="-8" name="Compare two values" sid="126328714374169" type="System">
-                                            <param id="0" name="First value">int(XML.StringValue(&quot;@ClaAno&quot;))</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">AnoAtual</param>
+                                        <condition id="-15" inverted="1" name="Is group active" sid="4686313730922294" type="System">
+                                            <param id="0" name="Group name">&quot;AA_A&quot;</param>
+                                        </condition>
+                                        <condition id="-15" inverted="1" name="Is group active" sid="9364477742013602" type="System">
+                                            <param id="0" name="Group name">&quot;AA_B&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="9219950913867631" type="System">
+                                            <param id="0" name="Variable">Resp</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">alavBarra.IID</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="6494042057819106" type="System">
+                                            <param id="0" name="Variable">Resp</param>
+                                            <param id="1" name="Value">alavBarra.IID</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="6212027779784861" type="System">
+                                            <param id="0" name="Group name">&quot;AA_A&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
-                                        <event-block sid="544480493932198">
+                                        <event-block sid="371290653000965">
                                             <conditions>
-                                                <condition id="0" name="For each node" sid="278426882534296" type="XML">
-                                                    <param id="0" name="XPath">&quot;Pergunta&quot;</param>
+                                                <condition id="0" name="For each node" sid="616829619741599" type="XML">
+                                                    <param id="0" name="XPath">&quot;/Perguntas/Classe&quot;</param>
                                                 </condition>
-                                                <condition id="-8" name="Compare two values" sid="878972108790374" type="System">
-                                                    <param id="0" name="First value">Perguntas.At(PergAtual)</param>
+                                                <condition id="-8" name="Compare two values" sid="126328714374169" type="System">
+                                                    <param id="0" name="First value">int(XML.StringValue(&quot;@ClaAno&quot;))</param>
                                                     <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">int(XML.StringValue(&quot;@PergNum&quot;))</param>
+                                                    <param id="2" name="Second value">AnoAtual</param>
                                                 </condition>
                                             </conditions>
                                             <actions />
                                             <sub-events>
-                                                <event-block sid="784188068744487">
+                                                <event-block sid="544480493932198">
                                                     <conditions>
-                                                        <condition id="0" name="For each node" sid="647089665236212" type="XML">
-                                                            <param id="0" name="XPath">&quot;Resp&quot;</param>
+                                                        <condition id="0" name="For each node" sid="278426882534296" type="XML">
+                                                            <param id="0" name="XPath">&quot;Pergunta&quot;</param>
                                                         </condition>
-                                                        <condition id="-13" name="Pick nth instance" sid="463352196575741" type="System">
-                                                            <param id="0" name="Object">txtCenario</param>
-                                                            <param id="1" name="Instance">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                        <condition id="-8" name="Compare two values" sid="878972108790374" type="System">
+                                                            <param id="0" name="First value">Perguntas.At(PergAtual)</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">int(XML.StringValue(&quot;@PergNum&quot;))</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions />
                                                     <sub-events>
-                                                        <event-block sid="915992940187693">
+                                                        <event-block sid="784188068744487">
                                                             <conditions>
-                                                                <condition id="-8" name="Compare two values" sid="413464887377087" type="System">
-                                                                    <param id="0" name="First value">Resp</param>
-                                                                    <param id="1" name="Comparison">0</param>
-                                                                    <param id="2" name="Second value">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                                <condition id="0" name="For each node" sid="647089665236212" type="XML">
+                                                                    <param id="0" name="XPath">&quot;Resp&quot;</param>
+                                                                </condition>
+                                                                <condition id="-13" name="Pick nth instance" sid="463352196575741" type="System">
+                                                                    <param id="0" name="Object">txtCenario</param>
+                                                                    <param id="1" name="Instance">int(XML.StringValue(&quot;@num&quot;))</param>
                                                                 </condition>
                                                             </conditions>
-                                                            <actions>
-                                                                <action id="-9" name="Set value" sid="734817517920354" type="System">
-                                                                    <param id="0" name="Variable">RespostaEscolhida</param>
-                                                                    <param id="1" name="Value">&quot;&quot; &amp; replace(XML.StringValue(&quot;node()&quot;), &quot;&apos;&quot;, &quot;\&apos;&quot;)</param>
-                                                                </action>
-                                                            </actions>
+                                                            <actions />
+                                                            <sub-events>
+                                                                <event-block sid="915992940187693">
+                                                                    <conditions>
+                                                                        <condition id="-8" name="Compare two values" sid="413464887377087" type="System">
+                                                                            <param id="0" name="First value">Resp</param>
+                                                                            <param id="1" name="Comparison">0</param>
+                                                                            <param id="2" name="Second value">int(XML.StringValue(&quot;@num&quot;))</param>
+                                                                        </condition>
+                                                                    </conditions>
+                                                                    <actions>
+                                                                        <action id="-9" name="Set value" sid="734817517920354" type="System">
+                                                                            <param id="0" name="Variable">RespostaEscolhida</param>
+                                                                            <param id="1" name="Value">&quot;&quot; &amp; replace(XML.StringValue(&quot;node()&quot;), &quot;&apos;&quot;, &quot;\&apos;&quot;)</param>
+                                                                        </action>
+                                                                    </actions>
+                                                                </event-block>
+                                                            </sub-events>
                                                         </event-block>
                                                     </sub-events>
                                                 </event-block>
@@ -534,10 +866,13 @@
                 </event-group>
                 <event-group description="" sid="2958246544850812" title="Portas">
                     <sub-events>
-                        <event-block sid="7579015094482156">
+                        <event-block any="1" sid="7579015094482156">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="3989987928282005" type="Keyboard">
                                     <param id="0" name="Key">17 (Ctrl)</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="363779274746425" type="Touch">
+                                    <param id="0" name="Object">BtnCtrl</param>
                                 </condition>
                             </conditions>
                             <actions />

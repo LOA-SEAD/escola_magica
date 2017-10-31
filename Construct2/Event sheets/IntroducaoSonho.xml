@@ -555,7 +555,7 @@
         </event-block>
         <event-block any="1" sid="578407483925501">
             <conditions>
-                <condition id="6" name="On object clicked" sid="6894403808139171" type="Mouse">
+                <condition disabled="1" id="6" name="On object clicked" sid="6894403808139171" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">itIntro</param>

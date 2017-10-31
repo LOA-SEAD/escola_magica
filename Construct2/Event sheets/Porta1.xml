@@ -114,7 +114,7 @@
                 <comment>Para controle dos dispositivos mobile</comment>
                 <event-block sid="613457562953536">
                     <conditions>
-                        <condition id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
+                        <condition disabled="1" id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
                         <condition id="-9" inverted="1" name="Is visible" sid="250509035337412" type="BtnSetaEsq" />
                     </conditions>
                     <actions>
@@ -2146,10 +2146,13 @@
         </event-block>
         <event-group description="" sid="9639904519568549" title="Pause">
             <sub-events>
-                <event-block sid="4677722022984175">
+                <event-block any="1" sid="4677722022984175">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="9919900697957623" type="Keyboard">
                             <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="290464054361676" type="Touch">
+                            <param id="0" name="Object">BtnEsc</param>
                         </condition>
                     </conditions>
                     <actions />
