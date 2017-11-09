@@ -114,7 +114,7 @@
                 <comment>Para controle dos dispositivos mobile</comment>
                 <event-block sid="613457562953536">
                     <conditions>
-                        <condition disabled="1" id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
+                        <condition id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
                         <condition id="-9" inverted="1" name="Is visible" sid="250509035337412" type="BtnSetaEsq" />
                     </conditions>
                     <actions>
@@ -192,6 +192,15 @@
                             <param id="0" name="Group name">&quot;Mobile2&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="282186516432593">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="833547315887313" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="415706854272911" type="BtnCtrl" />
+                        <action id="-9" name="Destroy" sid="555708342141221" type="BtnEsc" />
                     </actions>
                 </event-block>
                 <event-group description="Preenche corretamente as constantes necessarios referentes as conquistas do jogador." sid="4573874394720409" title="PreecheConquistas">
@@ -944,39 +953,49 @@
                     <sub-events>
                         <event-group description="" sid="1698569062557433" title="Alavanca">
                             <sub-events>
-                                <event-block sid="1562426576225932">
+                                <event-block any="1" sid="1562426576225932">
                                     <conditions>
                                         <condition id="3" name="On key released" sid="9885333095793594" type="Keyboard">
                                             <param id="0" name="Key">17 (Ctrl)</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="2947444624868956" type="alavBarra">
-                                            <param id="0" name="Object">player</param>
-                                        </condition>
-                                        <condition id="-13" name="Is between angles" sid="9011304876912914" type="alavBarra">
-                                            <param id="0" name="First angle">44</param>
-                                            <param id="1" name="Second angle">46</param>
+                                        <condition id="4" name="Is touching object" sid="955997683284314" type="Touch">
+                                            <param id="0" name="Object">BtnCtrl</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="9486461776502925" type="System">
-                                            <param id="0" name="Group name">&quot;CA_AlteraAlavanca&quot;</param>
-                                            <param id="1" name="State">1</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="1591978487261295" type="Audio">
-                                            <param id="0" name="Audio file">Alavanca</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">-15</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="8757075422823015" type="System">
-                                            <param id="0" name="Variable">PosX</param>
-                                            <param id="1" name="Value">player.X</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="4392148629158805" type="System">
-                                            <param id="0" name="Variable">PosY</param>
-                                            <param id="1" name="Value">player.Y</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="944107184844310">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="120473722603803" type="alavBarra">
+                                                    <param id="0" name="Object">player</param>
+                                                </condition>
+                                                <condition id="-13" name="Is between angles" sid="135459217695234" type="alavBarra">
+                                                    <param id="0" name="First angle">44</param>
+                                                    <param id="1" name="Second angle">46</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="429518269312997" type="System">
+                                                    <param id="0" name="Group name">&quot;CA_AlteraAlavanca&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="429592949581209" type="Audio">
+                                                    <param id="0" name="Audio file">Alavanca</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">-15</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="786165779278033" type="System">
+                                                    <param id="0" name="Variable">PosX</param>
+                                                    <param id="1" name="Value">player.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="170211562813651" type="System">
+                                                    <param id="0" name="Variable">PosY</param>
+                                                    <param id="1" name="Value">player.Y</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-group description="" inactive="1" sid="7942375812805092" title="CA_AlteraAlavanca">
                                     <sub-events>
@@ -1104,6 +1123,41 @@
                                             <param id="1" name="State">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <comment>Posicionamento dos botoes quando a tela voltar a sua posição inicial</comment>
+                                        <event-block sid="364997256187131">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="850015817548175" type="System">
+                                                    <param id="0" name="Variable">PosX</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">400</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-1" name="Set X" sid="973897132607223" type="BtnSetaEsq">
+                                                    <param id="0" name="X">64</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="357902409278012" type="BtnSetaDir">
+                                                    <param id="0" name="X">288</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="372543327029068" type="BtnSetaCima">
+                                                    <param id="0" name="X">176</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="579500375259357" type="BtnSetaBaixo">
+                                                    <param id="0" name="X">176</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="944057120801504" type="BtnEsc">
+                                                    <param id="0" name="X">64</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="888338568334061" type="BtnCtrl">
+                                                    <param id="0" name="X">736</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="806922559879795" type="BtnShift">
+                                                    <param id="0" name="X">736</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-group>
@@ -1966,6 +2020,75 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>Por enquanto é possível apenas mutar e desmutar o som na versão mobile</comment>
+                <event-block sid="392708481595296">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="106638574493842" type="Touch">
+                            <param id="0" name="Object">btnEditarSom</param>
+                        </condition>
+                        <condition id="-20" name="Is on mobile device" sid="275447651176540" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="442433743425361">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="375366955951958" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">-20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="461931570420085" type="btnEditarSom">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="382453822998731" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="8" name="Set silent" sid="496075848201166" type="Audio">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="395210672482533" type="Audio">
+                                    <param id="0" name="Tag">&quot;FaseA&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="123644541868620" type="Audio">
+                                    <param id="0" name="Tag">&quot;Selecao&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="755142788219092" type="Audio">
+                                    <param id="0" name="Tag">&quot;Pergunta&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="916507901519892" type="Audio">
+                                    <param id="0" name="Tag">&quot;Fim&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="475114238886607">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="723094307191703" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="297893207864265" type="btnEditarSom">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="127034004834165" type="cursorSom">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="253527032888877" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Value">-20</param>
+                                </action>
+                                <action id="8" name="Set silent" sid="982382577295334" type="Audio">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <comment>[Mouse.X -btnEditarSom.X +btnEditarSom.Width] é o local relativo do clique do mouse sobre a barra de som, indo de 0 à btnEditarSom.Width. Através de uma regra de três, compactamos linearmente este valor num intervalo de 0 à 20 e posteriormente subtraímos por 20. Ao final, teremos um valor de -20 à 0, que é o intervalo válido para o componente audio.</comment>
                 <event-block sid="9780641626727803">
                     <conditions>
@@ -2109,6 +2232,9 @@
                             <param id="0" name="X">player.X - 112</param>
                         </action>
                         <action id="-1" name="Set X" sid="373495978803470" type="BtnSetaCima">
+                            <param id="0" name="X">player.X - 224</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="787386170456924" type="BtnSetaBaixo">
                             <param id="0" name="X">player.X - 224</param>
                         </action>
                         <action id="-1" name="Set X" sid="317298498537788" type="BtnEsc">
@@ -2286,15 +2412,11 @@
                 </event-block>
                 <event-block any="1" sid="5175371022691706">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="7679009545292211" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnContinuar</param>
+                        <condition id="17" name="On tap object" sid="7679009545292211" type="Touch">
+                            <param id="0" name="Object">btnContinuar</param>
                         </condition>
-                        <condition id="6" name="On object clicked" sid="2041032659698344" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnFechar</param>
+                        <condition id="17" name="On tap object" sid="2041032659698344" type="Touch">
+                            <param id="0" name="Object">btnFechar</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2347,10 +2469,8 @@
                 </event-block>
                 <event-block sid="5443037164406282">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="8629742575663677" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnReiniciar</param>
+                        <condition id="17" name="On tap object" sid="8629742575663677" type="Touch">
+                            <param id="0" name="Object">btnReiniciar</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2395,10 +2515,8 @@
                 </event-block>
                 <event-block sid="2776851738300811">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="2369588735002487" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">btnSair</param>
+                        <condition id="17" name="On tap object" sid="2369588735002487" type="Touch">
+                            <param id="0" name="Object">btnSair</param>
                         </condition>
                     </conditions>
                     <actions>

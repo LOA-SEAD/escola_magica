@@ -10,20 +10,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+        <layout order="0">Porta1</layout>
         <layout order="1">Porta2</layout>
         <layout order="2">Porta3</layout>
+        <layout order="5">IntroducaoSonho</layout>
         <layout order="11">Introducao</layout>
-        <layout order="4">IntroducaoSonho</layout>
-        <layout order="0">Porta1</layout>
-        <event-sheet order="3">Inicio</event-sheet>
-        <event-sheet order="5">IntroducaoSonho</event-sheet>
-        <event-sheet order="6">Porta3</event-sheet>
-        <event-sheet order="7">Porta2</event-sheet>
-        <event-sheet active="1" order="8">Porta1</event-sheet>
-        <event-sheet order="9">Pergunta</event-sheet>
-        <event-sheet order="10">Creditos</event-sheet>
-        <event-sheet order="12">GameOver</event-sheet>
-        <event-sheet order="13">Vitoria</event-sheet>
+        <layout order="13">GameOver</layout>
+        <layout order="4">Inicio</layout>
+        <layout order="14">Pergunta</layout>
+        <event-sheet active="1" order="3">Inicio</event-sheet>
+        <event-sheet order="6">IntroducaoSonho</event-sheet>
+        <event-sheet order="7">Porta3</event-sheet>
+        <event-sheet order="8">Porta2</event-sheet>
+        <event-sheet order="9">Porta1</event-sheet>
+        <event-sheet order="10">Pergunta</event-sheet>
+        <event-sheet order="12">Vitoria</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -44,7 +45,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Cenario/Solidos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
-        <folder expanded="1" path="object-folder/Cenario/Char/" />
+        <folder expanded="0" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />

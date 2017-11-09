@@ -553,6 +553,50 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>Apenas para mobile</comment>
+        <event-block sid="949687001686768">
+            <conditions>
+                <condition id="14" name="On tap" sid="957179834835171" type="Touch" />
+                <condition id="-20" name="Is on mobile device" sid="241679688129148" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Só é permitido sair assim quando a camada visivel é a do logo do Escola Mágica</comment>
+                <event-block sid="937391269549473">
+                    <conditions>
+                        <condition id="-17" name="Compare opacity" sid="642647192628043" type="System">
+                            <param id="0" name="Layer">&quot;animacao9&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="449284379268685" type="Audio">
+                            <param id="0" name="Tag">&quot;IntroFX&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="638690056254667" type="Audio">
+                            <param id="0" name="Tag">&quot;IntroBG&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="393439668200016" type="Audio">
+                            <param id="0" name="Audio file">Start</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="147048318192718" type="System">
+                            <param id="0" name="Seconds">1.6</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="620932838074918" type="System">
+                            <param id="0" name="Variable">LayoutAnterior</param>
+                            <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="931150529025180" type="System">
+                            <param id="0" name="Layout">Inicio</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block any="1" sid="578407483925501">
             <conditions>
                 <condition disabled="1" id="6" name="On object clicked" sid="6894403808139171" type="Mouse">

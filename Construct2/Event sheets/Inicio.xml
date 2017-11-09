@@ -212,6 +212,15 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="255616560160425">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="868867151562652" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="897832645600346" type="BtnCtrl" />
+                        <action id="-9" name="Destroy" sid="566007497920265" type="BtnEsc" />
+                    </actions>
+                </event-block>
                 <comment>Jogador completou o jogo</comment>
                 <event-block sid="8846049922666475">
                     <conditions>
@@ -1061,6 +1070,75 @@
                                     <param id="1" name="Value">-20</param>
                                 </action>
                                 <action id="8" name="Set silent" sid="2542583639499102" type="Audio">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Por enquanto é possível apenas mutar e desmutar o som na versão mobile</comment>
+                <event-block sid="146731117750234">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="529854155930513" type="Touch">
+                            <param id="0" name="Object">btnEditarSom</param>
+                        </condition>
+                        <condition id="-20" name="Is on mobile device" sid="401333029110687" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="844070871397096">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="830743383220327" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">-20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="453377137850587" type="btnEditarSom">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="786024677713347" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="8" name="Set silent" sid="677871545678941" type="Audio">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="489352608916856" type="Audio">
+                                    <param id="0" name="Tag">&quot;FaseA&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="237507032577128" type="Audio">
+                                    <param id="0" name="Tag">&quot;Selecao&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="332982348937781" type="Audio">
+                                    <param id="0" name="Tag">&quot;Pergunta&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="898962060910507" type="Audio">
+                                    <param id="0" name="Tag">&quot;Fim&quot;</param>
+                                    <param id="1" name="dB">Volume-15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="924523540835804">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="545663655212639" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="406670046431395" type="btnEditarSom">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="363174997915421" type="cursorSom">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="409408369332384" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Value">-20</param>
+                                </action>
+                                <action id="8" name="Set silent" sid="198300581961348" type="Audio">
                                     <param id="0" name="Mode">0</param>
                                 </action>
                             </actions>

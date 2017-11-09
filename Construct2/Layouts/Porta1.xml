@@ -3464,7 +3464,7 @@
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Fase1</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
