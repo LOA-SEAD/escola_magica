@@ -3560,6 +3560,7 @@
             <file name="icon-128.png" />
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
+            <file name="icon.png" />
         </file-folder>
         <file-folder name="JS">
             <file name="stats.js" />

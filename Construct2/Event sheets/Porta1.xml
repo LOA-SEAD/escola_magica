@@ -2352,9 +2352,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="10" name="Set master volume" sid="7299082749151137" type="Audio">
-                                    <param id="0" name="dB">Audio.MasterVolume + 10</param>
-                                </action>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
                                     <param id="0" name="State">1</param>
                                 </action>
@@ -2420,6 +2417,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="10" name="Set master volume" sid="351091677412453" type="Audio">
+                            <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                        </action>
                         <action behavior="Platform" id="11" name="Set enabled" sid="698634517338744" type="player">
                             <param id="0" name="State">1</param>
                         </action>
@@ -2474,6 +2474,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="10" name="Set master volume" sid="792779903007609" type="Audio">
+                            <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                        </action>
                         <action id="-9" name="Set value" sid="8922176527425188" type="System">
                             <param id="0" name="Variable">PosX</param>
                             <param id="1" name="Value">0</param>
@@ -2520,6 +2523,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="10" name="Set master volume" sid="231129688486814" type="Audio">
+                            <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="6188807745821578" type="System">
                             <param id="0" name="Layout">Inicio</param>
                         </action>
