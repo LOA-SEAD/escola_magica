@@ -34,14 +34,14 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
 }
 
 function sendPlayData(dano,fase,setor){
-    var info = {};
+	var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
         path = "/exported-resource/savePlayStats"
     }else {                                 // for web version in production, electron and crosswalk versions
         path = "http://remar.dc.ufscar.br/exported-resource/savePlayStats"
-    }
-    $.getJSON("remar.json", function(json) {
+	}
+	$.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
         info.damage = dano;
         info.level = fase;
@@ -55,9 +55,9 @@ function sendPlayData(dano,fase,setor){
             }
         })
     });
-    /*console.log(dano);
-    console.log(fase);
-    console.log(setor);*/
+	/*console.log(dano);
+	console.log(fase);
+	console.log(setor);*/
 }
 
 function sendRankingData(pontos){
