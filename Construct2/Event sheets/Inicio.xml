@@ -34,6 +34,11 @@
         <variable constant="0" name="SetorFase" sid="278584753170574" static="0" type="number">0</variable>
         <variable constant="0" name="sendPlayJS" sid="210655776253107" static="0" type="text"></variable>
         <variable constant="0" name="sendTimeJS" sid="560454144964517" static="0" type="text"></variable>
+        <comment>Variaveis para armazenar a posição onde o direcional foi até seu máximo</comment>
+        <variable constant="0" name="PosXDirecional" sid="741208378746874" static="0" type="number">0</variable>
+        <variable constant="0" name="PosYDirecional" sid="884099432388459" static="0" type="number">0</variable>
+        <comment>Para atualizar a posição do direcional conforme o personagem se movimenta na tela</comment>
+        <variable constant="0" name="MovimentacaoDirecional" sid="185382595446570" static="0" type="number">0</variable>
         <event-block sid="1738026046230992">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="7389519769199064" type="System" />

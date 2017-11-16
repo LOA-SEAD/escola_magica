@@ -114,7 +114,7 @@
                 <comment>Para controle dos dispositivos mobile</comment>
                 <event-block sid="613457562953536">
                     <conditions>
-                        <condition id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
+                        <condition disabled="1" id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
                         <condition id="-9" inverted="1" name="Is visible" sid="250509035337412" type="BtnSetaEsq" />
                     </conditions>
                     <actions>
@@ -146,22 +146,30 @@
                             <param id="0" name="Animation">&quot;Fase1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="736362973248853" type="BtnSetaEsq">
+                        <action id="4" name="Set animation" sid="333369720107998" type="BtnDirecional">
+                            <param id="0" name="Animation">&quot;Fase1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="550534862246445" type="BtnCircDir">
+                            <param id="0" name="Animation">&quot;Fase1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="736362973248853" type="BtnSetaEsq">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="11" name="Set collisions enabled" sid="564876681972243" type="BtnSetaEsq">
+                        <action disabled="1" id="11" name="Set collisions enabled" sid="564876681972243" type="BtnSetaEsq">
                             <param id="0" name="Collisions">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="498669208148617" type="BtnSetaDir">
+                        <action disabled="1" id="-15" name="Set visible" sid="498669208148617" type="BtnSetaDir">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="11" name="Set collisions enabled" sid="576034793355248" type="BtnSetaDir">
+                        <action disabled="1" id="11" name="Set collisions enabled" sid="576034793355248" type="BtnSetaDir">
                             <param id="0" name="Collisions">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="682222222665712" type="BtnSetaCima">
+                        <action disabled="1" id="-15" name="Set visible" sid="682222222665712" type="BtnSetaCima">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="11" name="Set collisions enabled" sid="914433610641930" type="BtnSetaCima">
+                        <action disabled="1" id="11" name="Set collisions enabled" sid="914433610641930" type="BtnSetaCima">
                             <param id="0" name="Collisions">1</param>
                         </action>
                         <action disabled="1" id="-15" name="Set visible" sid="826621685857896" type="BtnSetaBaixo">
@@ -188,6 +196,21 @@
                         <action id="11" name="Set collisions enabled" sid="880078949108606" type="BtnEsc">
                             <param id="0" name="Collisions">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="142637777507742" type="BtnDirecional">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="581096712509055" type="BtnDirecional">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="813110690271498" type="BtnCircDir">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="649044553920789" type="BtnCircDir">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="977835659141248" type="HitboxDir">
+                            <param id="0" name="State">1</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="466987845244821" type="System">
                             <param id="0" name="Group name">&quot;Mobile2&quot;</param>
                             <param id="1" name="State">1</param>
@@ -201,6 +224,7 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="415706854272911" type="BtnCtrl" />
                         <action id="-9" name="Destroy" sid="555708342141221" type="BtnEsc" />
+                        <action id="-9" name="Destroy" sid="436207999269476" type="HitboxDir" />
                     </actions>
                 </event-block>
                 <event-group description="Preenche corretamente as constantes necessarios referentes as conquistas do jogador." sid="4573874394720409" title="PreecheConquistas">
@@ -566,7 +590,7 @@
         </event-group>
         <event-group description="Responsavel por ativar os botões na versao mobile" sid="719609640407481" title="Mobile2">
             <sub-events>
-                <event-block sid="229992728899707">
+                <event-block disabled="1" sid="229992728899707">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="572712108932901" type="Touch">
                             <param id="0" name="Object">BtnSetaEsq</param>
@@ -584,13 +608,13 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="529642463969603">
+                <event-block disabled="1" sid="529642463969603">
                     <conditions>
                         <condition id="-22" name="Else" sid="591442094913472" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="722504319670766">
+                        <event-block disabled="1" sid="722504319670766">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="943887778854391" type="System" />
                             </conditions>
@@ -602,7 +626,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="619260847016573">
+                <event-block disabled="1" sid="619260847016573">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="524188148555764" type="Touch">
                             <param id="0" name="Object">BtnSetaDir</param>
@@ -620,13 +644,13 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="875021283314229">
+                <event-block disabled="1" sid="875021283314229">
                     <conditions>
                         <condition id="-22" name="Else" sid="250425553068699" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="775169881529944">
+                        <event-block disabled="1" sid="775169881529944">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="223073045658582" type="System" />
                             </conditions>
@@ -638,7 +662,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="533491856842041">
+                <event-block disabled="1" sid="533491856842041">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="250132692082969" type="Touch">
                             <param id="0" name="Object">BtnSetaCima</param>
@@ -653,13 +677,13 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="136420150814959">
+                <event-block disabled="1" sid="136420150814959">
                     <conditions>
                         <condition id="-22" name="Else" sid="310132126269460" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="442069463735360">
+                        <event-block disabled="1" sid="442069463735360">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="434553278309662" type="System" />
                             </conditions>
@@ -792,6 +816,232 @@
                                 </action>
                                 <action behavior="Platform" id="1" name="Set max speed" sid="564854771430567" type="player">
                                     <param id="0" name="Max Speed">VLR_MAX_VELOC</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Processo de arrastar o direcional para o personagem se movimentar</comment>
+                <event-block sid="482139327700435">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" name="Is dragging" sid="135871990405676" type="HitboxDir" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Caso o jogador arrastou o direcional além da região delimitada, o círculo para de se mover</comment>
+                        <event-block sid="555180672028274">
+                            <conditions>
+                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="656454634181090" type="HitboxDir">
+                                    <param id="0" name="Object">BtnDirecional</param>
+                                    <param id="1" name="Offset X">HitboxDir.X - BtnDirecional.X</param>
+                                    <param id="2" name="Offset Y">HitboxDir.Y - BtnDirecional.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>Captura o exato local onde o direcional saiu da área delimitada</comment>
+                                <event-block disabled="1" sid="368213730297775">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="225289800455904" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="563372377966302" type="System">
+                                            <param id="0" name="Variable">PosXDirecional</param>
+                                            <param id="1" name="Value">BtnCircDir.X</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="116079734174266" type="System">
+                                            <param id="0" name="Variable">PosYDirecional</param>
+                                            <param id="1" name="Value">BtnCircDir.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>Enquanto o jogador não mover seu dedo para dentro da região, o circulo continuará travado na borda</comment>
+                                <event-block sid="409905372227741">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="581385358684254" type="System">
+                                            <param id="0" name="First value">HitboxDir.X</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">165.5</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="399581481833416" type="System">
+                                            <param id="0" name="First value">HitboxDir.Y</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">434</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="768632925849523" type="BtnCircDir">
+                                            <param id="0" name="X">BtnDirecional.X + (76 * (distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, HitboxDir.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                            <param id="1" name="Y">BtnDirecional.Y + (76 * (distance (HitboxDir.X, HitboxDir.Y, HitboxDir.X, BtnDirecional.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="692317185554267">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="275826498714800" type="System">
+                                            <param id="0" name="First value">HitboxDir.X</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">165.5</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="735068010384450" type="System">
+                                            <param id="0" name="First value">HitboxDir.Y</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">434</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="940854177865357" type="BtnCircDir">
+                                            <param id="0" name="X">BtnDirecional.X - (76 * (distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, HitboxDir.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                            <param id="1" name="Y">BtnDirecional.Y - (76 * (distance (HitboxDir.X, HitboxDir.Y, HitboxDir.X, BtnDirecional.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="609616194913425">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="269448973436911" type="System">
+                                            <param id="0" name="First value">HitboxDir.X</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">165.5</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="468250392416372" type="System">
+                                            <param id="0" name="First value">HitboxDir.Y</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">434</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="268597196931914" type="BtnCircDir">
+                                            <param id="0" name="X">BtnDirecional.X + (76 * (distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, HitboxDir.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                            <param id="1" name="Y">BtnDirecional.Y - (76 * (distance (HitboxDir.X, HitboxDir.Y, HitboxDir.X, BtnDirecional.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="224603858244519">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="932750481451794" type="System">
+                                            <param id="0" name="First value">HitboxDir.X</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">165.5</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="823394561424183" type="System">
+                                            <param id="0" name="First value">HitboxDir.Y</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">434</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="239319454749288" type="BtnCircDir">
+                                            <param id="0" name="X">BtnDirecional.X - (76 * (distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, HitboxDir.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                            <param id="1" name="Y">BtnDirecional.Y + (76 * (distance (HitboxDir.X, HitboxDir.Y, HitboxDir.X, BtnDirecional.Y) / distance (HitboxDir.X, HitboxDir.Y, BtnDirecional.X, BtnDirecional.Y)))</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="280012674459730">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="299410221385518" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="688860780817577" type="BtnCircDir">
+                                    <param id="0" name="Object">HitboxDir</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Caso o jogador não esteja com o dedo dentro da região de se movimentar, o círculo volta para sua posição de descanso</comment>
+                <event-block sid="108453471006286">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="628425157991391" type="Touch">
+                            <param id="0" name="Object">HitboxDir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="466872929051445" type="HitboxDir">
+                            <param id="0" name="X">BtnDirecional.X</param>
+                            <param id="1" name="Y">BtnDirecional.Y</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="983766866105256" type="BtnCircDir">
+                            <param id="0" name="Object">HitboxDir</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Como a maior distância possível que o direcional fica do centro de sua área é 76, calcula a hipotenusa de sua posição atual para o centro e, caso seja maior que a metade do valor possível (ou seja, 38), é possível realizar alguma ação</comment>
+                <event-block sid="562850532795709">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="757919047123710" type="System">
+                            <param id="0" name="First value">distance(BtnCircDir.X, BtnCircDir.Y, BtnDirecional.X, BtnDirecional.Y)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">38</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Calcula o seno da posição em que o direcional está, e caso seu ângulo possua um valor de seno menor que sen(60°), quer dizer que ele está indo para alguma direção</comment>
+                        <event-block sid="315370854877336">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="486417010870013" type="System">
+                                    <param id="0" name="First value">distance (BtnCircDir.X, BtnCircDir.Y, BtnCircDir.X, 434) / distance (BtnCircDir.X, BtnCircDir.Y, BtnDirecional.X, BtnDirecional.Y)</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">sin(60)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>Se o direcional está em um X maior que o valor da coordenada quando ele está descansando, quer dizer que ele está indo para a direita</comment>
+                                <event-block sid="820019980502314">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="720909629952746" type="System">
+                                            <param id="0" name="First value">BtnCircDir.X</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">BtnDirecional.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="957445457765909" type="player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="703042645816803" type="imgPlayer">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>Caso contrário, está indo para a esquerda</comment>
+                                <event-block sid="816105961100619">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="195309768716125" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="547965994250750" type="player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="937840940862929" type="imgPlayer">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Calcula o seno da posição em que o direcional está, e caso seu ângulo possua um valor de seno maior que sen(60°), além de seu Y ser menor que 434 (valor da coordenada quando ele está descansando), quer dizer que ele está pulando</comment>
+                        <event-block sid="371620398328239">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="827072320260408" type="System">
+                                    <param id="0" name="First value">distance (BtnCircDir.X, BtnCircDir.Y, BtnDirecional.X, BtnCircDir.Y) / distance (BtnCircDir.X, BtnCircDir.Y, BtnDirecional.X, BtnDirecional.Y)</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">sin(60)</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="287343936945401" type="System">
+                                    <param id="0" name="First value">BtnCircDir.Y</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">434</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="466523245304421" type="player">
+                                    <param id="0" name="Control">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1154,6 +1404,9 @@
                                                 </action>
                                                 <action id="-1" name="Set X" sid="806922559879795" type="BtnShift">
                                                     <param id="0" name="X">736</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="312467323591673" type="BtnDirecional">
+                                                    <param id="0" name="X">165.5</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2225,6 +2478,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="495180816175330" type="System">
+                            <param id="0" name="Variable">MovimentacaoDirecional</param>
+                            <param id="1" name="Value">BtnCircDir.X - BtnDirecional.X </param>
+                        </action>
                         <action id="-1" name="Set X" sid="617296075685829" type="BtnSetaEsq">
                             <param id="0" name="X">player.X - 336</param>
                         </action>
@@ -2245,6 +2502,19 @@
                         </action>
                         <action id="-1" name="Set X" sid="930267695540840" type="BtnShift">
                             <param id="0" name="X">player.X + 336</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="670332119358209" type="BtnDirecional">
+                            <param id="0" name="X">player.X - 234.5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="713008472121020" type="BtnCircDir">
+                            <param id="0" name="X">player.X - 234.5 + MovimentacaoDirecional</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="564401682538010" type="System">
+                            <param id="0" name="Variable">MovimentacaoDirecional</param>
+                            <param id="1" name="Value">HitboxDir.X - BtnDirecional.X </param>
+                        </action>
+                        <action id="-1" name="Set X" sid="457984419421027" type="HitboxDir">
+                            <param id="0" name="X">player.X - 234.5 + MovimentacaoDirecional</param>
                         </action>
                     </actions>
                 </event-block>
