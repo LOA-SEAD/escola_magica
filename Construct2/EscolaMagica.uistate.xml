@@ -13,7 +13,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Porta1</layout>
         <layout order="1">Porta2</layout>
         <layout order="2">Porta3</layout>
-        <layout order="4">Inicio</layout>
+        <layout active="1" order="4">Inicio</layout>
         <layout order="5">IntroducaoSonho</layout>
         <layout order="11">Introducao</layout>
         <layout order="13">GameOver</layout>
@@ -22,7 +22,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="6">IntroducaoSonho</event-sheet>
         <event-sheet order="7">Porta3</event-sheet>
         <event-sheet order="8">Porta2</event-sheet>
-        <event-sheet active="1" order="9">Porta1</event-sheet>
+        <event-sheet order="9">Porta1</event-sheet>
         <event-sheet order="10">Pergunta</event-sheet>
         <event-sheet order="12">Vitoria</event-sheet>
     </open-tabs>

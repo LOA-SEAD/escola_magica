@@ -114,8 +114,8 @@
                 <comment>Para controle dos dispositivos mobile</comment>
                 <event-block sid="613457562953536">
                     <conditions>
-                        <condition disabled="1" id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
-                        <condition id="-9" inverted="1" name="Is visible" sid="250509035337412" type="BtnSetaEsq" />
+                        <condition id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
+                        <condition id="-9" inverted="1" name="Is visible" sid="250509035337412" type="BtnShift" />
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="679133532417653" type="BtnCtrl">
@@ -126,19 +126,19 @@
                             <param id="0" name="Animation">&quot;Fase1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="560925498230075" type="BtnSetaBaixo">
+                        <action disabled="1" id="4" name="Set animation" sid="560925498230075" type="BtnSetaBaixo">
                             <param id="0" name="Animation">&quot;Fase1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="446639027804971" type="BtnSetaCima">
+                        <action disabled="1" id="4" name="Set animation" sid="446639027804971" type="BtnSetaCima">
                             <param id="0" name="Animation">&quot;Fase1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="409674954693270" type="BtnSetaDir">
+                        <action disabled="1" id="4" name="Set animation" sid="409674954693270" type="BtnSetaDir">
                             <param id="0" name="Animation">&quot;Fase1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="254575001266197" type="BtnSetaEsq">
+                        <action disabled="1" id="4" name="Set animation" sid="254575001266197" type="BtnSetaEsq">
                             <param id="0" name="Animation">&quot;Fase1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -206,6 +206,9 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="11" name="Set collisions enabled" sid="649044553920789" type="BtnCircDir">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="574168816714719" type="HitboxDir">
                             <param id="0" name="Collisions">1</param>
                         </action>
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="977835659141248" type="HitboxDir">
@@ -2450,16 +2453,16 @@
                             <param id="0" name="Variable">MovimentacaoDirecional</param>
                             <param id="1" name="Value">BtnCircDir.X - BtnDirecional.X </param>
                         </action>
-                        <action id="-1" name="Set X" sid="617296075685829" type="BtnSetaEsq">
+                        <action disabled="1" id="-1" name="Set X" sid="617296075685829" type="BtnSetaEsq">
                             <param id="0" name="X">player.X - 336</param>
                         </action>
-                        <action id="-1" name="Set X" sid="611576897956903" type="BtnSetaDir">
+                        <action disabled="1" id="-1" name="Set X" sid="611576897956903" type="BtnSetaDir">
                             <param id="0" name="X">player.X - 112</param>
                         </action>
-                        <action id="-1" name="Set X" sid="373495978803470" type="BtnSetaCima">
+                        <action disabled="1" id="-1" name="Set X" sid="373495978803470" type="BtnSetaCima">
                             <param id="0" name="X">player.X - 224</param>
                         </action>
-                        <action id="-1" name="Set X" sid="787386170456924" type="BtnSetaBaixo">
+                        <action disabled="1" id="-1" name="Set X" sid="787386170456924" type="BtnSetaBaixo">
                             <param id="0" name="X">player.X - 224</param>
                         </action>
                         <action id="-1" name="Set X" sid="317298498537788" type="BtnEsc">

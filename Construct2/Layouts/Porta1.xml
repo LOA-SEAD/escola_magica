@@ -3549,10 +3549,10 @@
                 </instance>
                 <instance type="HitboxDir" uid="572">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="DragDrop">
