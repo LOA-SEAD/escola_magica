@@ -238,6 +238,12 @@
                             <param id="0" name="Group name">&quot;Mobile1&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="1" name="Set rate" sid="648980572380948" type="Particles3">
+                            <param id="0" name="Rate">25</param>
+                        </action>
+                        <action disabled="1" id="9" name="Set scale" sid="951114956066037" type="btnEditarSom">
+                            <param id="0" name="Scale">4</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="255616560160425">
@@ -1145,19 +1151,20 @@
                                 <action id="6" name="Stop" sid="143502214390076" type="Audio">
                                     <param id="0" name="Tag">&quot;Selecao&quot;</param>
                                 </action>
-                                <action id="0" name="Play" sid="8705869062460176" type="Audio">
-                                    <param id="0" name="Audio file">Interruptor</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-15</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="148410824136339">
                                     <conditions>
                                         <condition id="-4" name="Trigger once while true" sid="423572511834949" type="System" />
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="0" name="Play" sid="8705869062460176" type="Audio">
+                                            <param id="0" name="Audio file">Interruptor</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-15</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
                                         <event-block sid="668421879697359">
                                             <conditions>
@@ -1168,6 +1175,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="-16" name="Wait" sid="384220378842204" type="System">
+                                                    <param id="0" name="Seconds">0.5</param>
+                                                </action>
                                                 <action id="-2" name="Go to layout" sid="408980232886990" type="System">
                                                     <param id="0" name="Layout">Creditos</param>
                                                 </action>

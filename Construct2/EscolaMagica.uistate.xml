@@ -20,11 +20,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="14">Pergunta</layout>
         <event-sheet order="3">Inicio</event-sheet>
         <event-sheet order="6">IntroducaoSonho</event-sheet>
-        <event-sheet active="1" order="7">Porta3</event-sheet>
+        <event-sheet order="7">Porta3</event-sheet>
         <event-sheet order="8">Porta2</event-sheet>
-        <event-sheet order="9">Porta1</event-sheet>
+        <event-sheet active="1" order="9">Porta1</event-sheet>
         <event-sheet order="10">Pergunta</event-sheet>
         <event-sheet order="12">Vitoria</event-sheet>
+        <event-sheet order="15">Creditos</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -35,19 +36,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Cenario/" />
-        <folder expanded="1" path="object-folder/Cenario/BG/" />
+        <folder expanded="0" path="object-folder/Cenario/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P2/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P3/" />
-        <folder expanded="1" path="object-folder/Cenario/BG/Inicio/" />
-        <folder expanded="0" path="object-folder/Cenario/Solidos/" />
+        <folder expanded="0" path="object-folder/Cenario/BG/Inicio/" />
+        <folder expanded="1" path="object-folder/Cenario/Solidos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
         <folder expanded="0" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
-        <folder expanded="0" path="object-folder/Cenario/Interativos/" />
+        <folder expanded="1" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />

@@ -228,6 +228,9 @@
                             <param id="0" name="Group name">&quot;Mobile3&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="1" name="Set rate" sid="422305483146379" type="particAgua">
+                            <param id="0" name="Rate">500</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="468775273007027">
