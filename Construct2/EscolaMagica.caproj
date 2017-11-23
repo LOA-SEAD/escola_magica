@@ -52,12 +52,12 @@
         <height>600</height>
     </window-size>
     <pixel-rounding>1</pixel-rounding>
-    <preview-effects>1</preview-effects>
+    <preview-effects>0</preview-effects>
     <first-layout>Introducao</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
-        <prop name="Enable WebGL">On</prop>
+        <prop name="Enable WebGL">Off</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Landscape</prop>

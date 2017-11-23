@@ -1107,206 +1107,214 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block any="1" sid="9986850052561845">
+                                <event-block sid="301602453822221">
                                     <conditions>
-                                        <condition id="1" name="Is overlapping another object" sid="1693993363471141" type="imgPlayer">
-                                            <param id="0" name="Object">PortaA</param>
-                                        </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="9551311508772431" type="imgPlayer">
-                                            <param id="0" name="Object">PortaB</param>
-                                        </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="2510182397346994" type="imgPlayer">
-                                            <param id="0" name="Object">PortaC</param>
-                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="835008517314836" type="System" />
                                     </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="20696531863455" type="System">
-                                            <param id="0" name="Group name">&quot;AA_A&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="1795285663587065" type="System">
-                                            <param id="0" name="Group name">&quot;AA_B&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
-                                        <event-block sid="8074006636747717">
+                                        <event-block any="1" sid="9986850052561845">
                                             <conditions>
-                                                <condition id="-14" name="Compare variable" sid="7680531975933655" type="System">
-                                                    <param id="0" name="Variable">Resp</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">RespCorreta</param>
+                                                <condition id="1" name="Is overlapping another object" sid="1693993363471141" type="imgPlayer">
+                                                    <param id="0" name="Object">PortaA</param>
+                                                </condition>
+                                                <condition id="1" name="Is overlapping another object" sid="9551311508772431" type="imgPlayer">
+                                                    <param id="0" name="Object">PortaB</param>
+                                                </condition>
+                                                <condition id="1" name="Is overlapping another object" sid="2510182397346994" type="imgPlayer">
+                                                    <param id="0" name="Object">PortaC</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Play" sid="1769304841177188" type="Audio">
-                                                    <param id="0" name="Audio file">Acerto</param>
-                                                    <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">-15</param>
-                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                <action id="-12" name="Set group active" sid="20696531863455" type="System">
+                                                    <param id="0" name="Group name">&quot;AA_A&quot;</param>
+                                                    <param id="1" name="State">0</param>
                                                 </action>
-                                                <action id="6" name="Stop" sid="8868967417071078" type="Audio">
-                                                    <param id="0" name="Tag">&quot;Desafio&quot;</param>
-                                                </action>
-                                                <action id="-10" name="Add to" sid="1683302807120664" type="System">
-                                                    <param id="0" name="Variable">PergAtual</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action disabled="1" id="-9" name="Set value" sid="4535131634003792" type="System">
-                                                    <param id="0" name="Variable">SendJS</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="357542854578710" type="System">
-                                                    <param id="0" name="Variable">SendJS</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;true&apos;,&apos;15&apos;&quot;</param>
-                                                </action>
-                                                <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
-                                                    <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                <action id="-12" name="Set group active" sid="1795285663587065" type="System">
+                                                    <param id="0" name="Group name">&quot;AA_B&quot;</param>
+                                                    <param id="1" name="State">0</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-group description='Verifica variaveis responsaveis pelo registro das acoes do jogador e, caso tenha atingido uma conquista, atribui o valor 1 aa posicao correspondente dessa mesma ao vetor &quot;Conquistas&quot;, registrando que ela ja foi atingida.' sid="3731565405730767" title="VerificarConquistas">
+                                                <event-block sid="8074006636747717">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="7680531975933655" type="System">
+                                                            <param id="0" name="Variable">Resp</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">RespCorreta</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="1769304841177188" type="Audio">
+                                                            <param id="0" name="Audio file">Acerto</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">-15</param>
+                                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                        </action>
+                                                        <action id="6" name="Stop" sid="8868967417071078" type="Audio">
+                                                            <param id="0" name="Tag">&quot;Desafio&quot;</param>
+                                                        </action>
+                                                        <action id="-10" name="Add to" sid="1683302807120664" type="System">
+                                                            <param id="0" name="Variable">PergAtual</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action disabled="1" id="-9" name="Set value" sid="4535131634003792" type="System">
+                                                            <param id="0" name="Variable">SendJS</param>
+                                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="357542854578710" type="System">
+                                                            <param id="0" name="Variable">SendJS</param>
+                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;true&apos;,&apos;15&apos;&quot;</param>
+                                                        </action>
+                                                        <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
+                                                            <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                        </action>
+                                                    </actions>
                                                     <sub-events>
-                                                        <comment>Espertinho</comment>
-                                                        <event-block sid="7285175935897149">
+                                                        <event-group description='Verifica variaveis responsaveis pelo registro das acoes do jogador e, caso tenha atingido uma conquista, atribui o valor 1 aa posicao correspondente dessa mesma ao vetor &quot;Conquistas&quot;, registrando que ela ja foi atingida.' sid="3731565405730767" title="VerificarConquistas">
+                                                            <sub-events>
+                                                                <comment>Espertinho</comment>
+                                                                <event-block sid="7285175935897149">
+                                                                    <conditions>
+                                                                        <condition id="-8" name="Compare two values" sid="7104877162149052" type="System">
+                                                                            <param id="0" name="First value">time -ConquistaInicioResp</param>
+                                                                            <param id="1" name="Comparison">3</param>
+                                                                            <param id="2" name="Second value">MIN_VELOC_RESP</param>
+                                                                        </condition>
+                                                                    </conditions>
+                                                                    <actions>
+                                                                        <action id="2" name="Set at X" sid="5919350633186751" type="Conquistas">
+                                                                            <param id="0" name="X">4</param>
+                                                                            <param id="1" name="Value">1</param>
+                                                                        </action>
+                                                                    </actions>
+                                                                </event-block>
+                                                            </sub-events>
+                                                        </event-group>
+                                                        <event-block sid="4326457835286619">
                                                             <conditions>
-                                                                <condition id="-8" name="Compare two values" sid="7104877162149052" type="System">
-                                                                    <param id="0" name="First value">time -ConquistaInicioResp</param>
-                                                                    <param id="1" name="Comparison">3</param>
-                                                                    <param id="2" name="Second value">MIN_VELOC_RESP</param>
+                                                                <condition id="-14" name="Compare variable" sid="4535504932116517" type="System">
+                                                                    <param id="0" name="Variable">AnoAtual</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
                                                                 </condition>
                                                             </conditions>
                                                             <actions>
-                                                                <action id="2" name="Set at X" sid="5919350633186751" type="Conquistas">
-                                                                    <param id="0" name="X">4</param>
-                                                                    <param id="1" name="Value">1</param>
+                                                                <action id="2" name="Set muted" sid="833068004022924" type="Audio">
+                                                                    <param id="0" name="Tag">&quot;Barras&quot;</param>
+                                                                    <param id="1" name="State">1</param>
+                                                                </action>
+                                                                <action id="-2" name="Go to layout" sid="221492018583202" type="System">
+                                                                    <param id="0" name="Layout">Porta1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="2652265408586885">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="3894071858587066" type="System">
+                                                                    <param id="0" name="Variable">AnoAtual</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="2" name="Set muted" sid="2190941927088953" type="Audio">
+                                                                    <param id="0" name="Tag">&quot;Agua&quot;</param>
+                                                                    <param id="1" name="State">0</param>
+                                                                </action>
+                                                                <action id="-2" name="Go to layout" sid="4678614720974338" type="System">
+                                                                    <param id="0" name="Layout">Porta2</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="7654407358738088">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="9655730852073733" type="System">
+                                                                    <param id="0" name="Variable">AnoAtual</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">3</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-2" name="Go to layout" sid="486797570581621" type="System">
+                                                                    <param id="0" name="Layout">Porta3</param>
                                                                 </action>
                                                             </actions>
                                                         </event-block>
                                                     </sub-events>
-                                                </event-group>
-                                                <event-block sid="4326457835286619">
+                                                </event-block>
+                                                <event-block sid="5167950262696314">
                                                     <conditions>
-                                                        <condition id="-14" name="Compare variable" sid="4535504932116517" type="System">
-                                                            <param id="0" name="Variable">AnoAtual</param>
+                                                        <condition id="-22" name="Else" sid="921280058430352" type="System" />
+                                                        <condition disabled="1" id="-14" name="Compare variable" sid="6911190681902456" type="System">
+                                                            <param id="0" name="Variable">HelpOn</param>
                                                             <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">1</param>
+                                                            <param id="2" name="Value">0</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action id="2" name="Set muted" sid="833068004022924" type="Audio">
-                                                            <param id="0" name="Tag">&quot;Barras&quot;</param>
+                                                        <action id="-9" name="Set value" sid="1177849256999538" type="System">
+                                                            <param id="0" name="Variable">HelpOn</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-10" name="Add to" sid="3177568496760587" type="System">
+                                                            <param id="0" name="Variable">NumRespErradas</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="891064738097468" type="System">
+                                                            <param id="0" name="Variable">SendJS</param>
+                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;,&apos;15&apos;&quot;</param>
+                                                        </action>
+                                                        <action id="0" name="Execute" sid="485455397764160" type="CallJS">
+                                                            <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                        </action>
+                                                        <action disabled="1" id="-9" name="Set value" sid="5939990263331082" type="System">
+                                                            <param id="0" name="Variable">SendJS</param>
+                                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
+                                                        </action>
+                                                        <action disabled="1" id="0" name="Execute" sid="2866700705005697" type="CallJS">
+                                                            <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="3043444281651663" type="System">
+                                                            <param id="0" name="Group name">&quot;Dano&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
-                                                        <action id="-2" name="Go to layout" sid="221492018583202" type="System">
-                                                            <param id="0" name="Layout">Porta1</param>
+                                                        <action disabled="1" id="0" name="Set text" sid="4127212282019195" type="txtFala">
+                                                            <param id="0" name="Text">&quot;Hmm... Não é essa a resposta.&quot;</param>
                                                         </action>
-                                                    </actions>
-                                                </event-block>
-                                                <event-block sid="2652265408586885">
-                                                    <conditions>
-                                                        <condition id="-14" name="Compare variable" sid="3894071858587066" type="System">
-                                                            <param id="0" name="Variable">AnoAtual</param>
-                                                            <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">2</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="2" name="Set muted" sid="2190941927088953" type="Audio">
-                                                            <param id="0" name="Tag">&quot;Agua&quot;</param>
-                                                            <param id="1" name="State">0</param>
+                                                        <action disabled="1" id="-15" name="Set visible" sid="1724373827416541" type="txtFala">
+                                                            <param id="0" name="Visibility">0</param>
                                                         </action>
-                                                        <action id="-2" name="Go to layout" sid="4678614720974338" type="System">
-                                                            <param id="0" name="Layout">Porta2</param>
+                                                        <action disabled="1" id="-15" name="Set visible" sid="712382880647509" type="imgBalao">
+                                                            <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                    </actions>
-                                                </event-block>
-                                                <event-block sid="7654407358738088">
-                                                    <conditions>
-                                                        <condition id="-14" name="Compare variable" sid="9655730852073733" type="System">
-                                                            <param id="0" name="Variable">AnoAtual</param>
-                                                            <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">3</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="-2" name="Go to layout" sid="486797570581621" type="System">
-                                                            <param id="0" name="Layout">Porta3</param>
+                                                        <action disabled="1" id="4" name="Set animation" sid="452133928890276" type="imgBalao">
+                                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                        <action disabled="1" id="-16" name="Wait" sid="4750108804787977" type="System">
+                                                            <param id="0" name="Seconds">0.3</param>
+                                                        </action>
+                                                        <action disabled="1" id="-15" name="Set visible" sid="82656323319062" type="txtFala">
+                                                            <param id="0" name="Visibility">1</param>
+                                                        </action>
+                                                        <action disabled="1" id="-16" name="Wait" sid="562483260172854" type="System">
+                                                            <param id="0" name="Seconds">5</param>
+                                                        </action>
+                                                        <action disabled="1" id="-15" name="Set visible" sid="9914236131777993" type="txtFala">
+                                                            <param id="0" name="Visibility">0</param>
+                                                        </action>
+                                                        <action disabled="1" id="4" name="Set animation" sid="6492149791021188" type="imgBalao">
+                                                            <param id="0" name="Animation">&quot;Close&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                        <action disabled="1" id="-9" name="Set value" sid="6016521169757969" type="System">
+                                                            <param id="0" name="Variable">HelpOn</param>
+                                                            <param id="1" name="Value">0</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
                                             </sub-events>
-                                        </event-block>
-                                        <event-block sid="5167950262696314">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="921280058430352" type="System" />
-                                                <condition disabled="1" id="-14" name="Compare variable" sid="6911190681902456" type="System">
-                                                    <param id="0" name="Variable">HelpOn</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="1177849256999538" type="System">
-                                                    <param id="0" name="Variable">HelpOn</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="-10" name="Add to" sid="3177568496760587" type="System">
-                                                    <param id="0" name="Variable">NumRespErradas</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="891064738097468" type="System">
-                                                    <param id="0" name="Variable">SendJS</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;,&apos;15&apos;&quot;</param>
-                                                </action>
-                                                <action id="0" name="Execute" sid="485455397764160" type="CallJS">
-                                                    <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
-                                                </action>
-                                                <action disabled="1" id="-9" name="Set value" sid="5939990263331082" type="System">
-                                                    <param id="0" name="Variable">SendJS</param>
-                                                    <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
-                                                </action>
-                                                <action disabled="1" id="0" name="Execute" sid="2866700705005697" type="CallJS">
-                                                    <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
-                                                </action>
-                                                <action id="-12" name="Set group active" sid="3043444281651663" type="System">
-                                                    <param id="0" name="Group name">&quot;Dano&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action disabled="1" id="0" name="Set text" sid="4127212282019195" type="txtFala">
-                                                    <param id="0" name="Text">&quot;Hmm... Não é essa a resposta.&quot;</param>
-                                                </action>
-                                                <action disabled="1" id="-15" name="Set visible" sid="1724373827416541" type="txtFala">
-                                                    <param id="0" name="Visibility">0</param>
-                                                </action>
-                                                <action disabled="1" id="-15" name="Set visible" sid="712382880647509" type="imgBalao">
-                                                    <param id="0" name="Visibility">1</param>
-                                                </action>
-                                                <action disabled="1" id="4" name="Set animation" sid="452133928890276" type="imgBalao">
-                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                                <action disabled="1" id="-16" name="Wait" sid="4750108804787977" type="System">
-                                                    <param id="0" name="Seconds">0.3</param>
-                                                </action>
-                                                <action disabled="1" id="-15" name="Set visible" sid="82656323319062" type="txtFala">
-                                                    <param id="0" name="Visibility">1</param>
-                                                </action>
-                                                <action disabled="1" id="-16" name="Wait" sid="562483260172854" type="System">
-                                                    <param id="0" name="Seconds">5</param>
-                                                </action>
-                                                <action disabled="1" id="-15" name="Set visible" sid="9914236131777993" type="txtFala">
-                                                    <param id="0" name="Visibility">0</param>
-                                                </action>
-                                                <action disabled="1" id="4" name="Set animation" sid="6492149791021188" type="imgBalao">
-                                                    <param id="0" name="Animation">&quot;Close&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                                <action disabled="1" id="-9" name="Set value" sid="6016521169757969" type="System">
-                                                    <param id="0" name="Variable">HelpOn</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
                                         </event-block>
                                     </sub-events>
                                 </event-block>

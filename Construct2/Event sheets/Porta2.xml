@@ -424,6 +424,45 @@
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="739367662401782">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="472451264116290" type="player">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">7600</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action disabled="1" id="-1" name="Set X" sid="484064588895149" type="BtnSetaEsq">
+                                            <param id="0" name="X">7264</param>
+                                        </action>
+                                        <action disabled="1" id="-1" name="Set X" sid="625841141074727" type="BtnSetaDir">
+                                            <param id="0" name="X">7488</param>
+                                        </action>
+                                        <action disabled="1" id="-1" name="Set X" sid="927055578305456" type="BtnSetaCima">
+                                            <param id="0" name="X">7376</param>
+                                        </action>
+                                        <action disabled="1" id="-1" name="Set X" sid="112460764355266" type="BtnSetaBaixo">
+                                            <param id="0" name="X">7376</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="525195746952770" type="BtnEsc">
+                                            <param id="0" name="X">7264</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="166548441133198" type="BtnCtrl">
+                                            <param id="0" name="X">7936</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="570789393277339" type="BtnShift">
+                                            <param id="0" name="X">7936</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="702283592909643" type="BtnDirecional">
+                                            <param id="0" name="X">7365.5</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <comment>É necessário customizar a posição dos botoes manualmente aqui caso a alavanca está depois da corrdenada 7600 no eixo X</comment>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="3446861910413175">
                             <conditions>
@@ -1627,16 +1666,16 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-1" name="Set X" sid="151758684486862" type="BtnSetaEsq">
+                                                <action disabled="1" id="-1" name="Set X" sid="151758684486862" type="BtnSetaEsq">
                                                     <param id="0" name="X">64</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="780899986174307" type="BtnSetaDir">
+                                                <action disabled="1" id="-1" name="Set X" sid="780899986174307" type="BtnSetaDir">
                                                     <param id="0" name="X">288</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="865690346331965" type="BtnSetaCima">
+                                                <action disabled="1" id="-1" name="Set X" sid="865690346331965" type="BtnSetaCima">
                                                     <param id="0" name="X">176</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="543666066283938" type="BtnSetaBaixo">
+                                                <action disabled="1" id="-1" name="Set X" sid="543666066283938" type="BtnSetaBaixo">
                                                     <param id="0" name="X">176</param>
                                                 </action>
                                                 <action id="-1" name="Set X" sid="395711656802972" type="BtnEsc">

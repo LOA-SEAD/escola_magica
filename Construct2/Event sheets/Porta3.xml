@@ -227,6 +227,9 @@
                             <param id="0" name="Group name">&quot;Mobile4&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="1" name="Set rate" sid="604294380239760" type="AreiaPorta">
+                            <param id="0" name="Rate">1000</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="237369649352177">
@@ -478,6 +481,45 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="557845255053199">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="504371905491983" type="player">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">8100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action disabled="1" id="-1" name="Set X" sid="948950650113837" type="BtnSetaEsq">
+                                            <param id="0" name="X">7764</param>
+                                        </action>
+                                        <action disabled="1" id="-1" name="Set X" sid="769732604998441" type="BtnSetaDir">
+                                            <param id="0" name="X">7988</param>
+                                        </action>
+                                        <action disabled="1" id="-1" name="Set X" sid="421605121479169" type="BtnSetaCima">
+                                            <param id="0" name="X">7876</param>
+                                        </action>
+                                        <action disabled="1" id="-1" name="Set X" sid="847729635207125" type="BtnSetaBaixo">
+                                            <param id="0" name="X">7876</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="226936908686977" type="BtnEsc">
+                                            <param id="0" name="X">7764</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="100544806943723" type="BtnCtrl">
+                                            <param id="0" name="X">8436</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="608617225902743" type="BtnShift">
+                                            <param id="0" name="X">8436</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="859866948095240" type="BtnDirecional">
+                                            <param id="0" name="X">7865.5</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <comment>É necessário customizar a posição dos botoes manualmente aqui caso a alavanca está depois da corrdenada 7600 no eixo X</comment>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="1866402574217302">
                             <conditions>

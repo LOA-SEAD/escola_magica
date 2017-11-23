@@ -6,7 +6,7 @@
 	"orientation": "landscape",
 	"description": "Embarque nessa jornada para passar de ano na Escola Mágica. Responda a diferentes quizzes e ultrapasse obstáculos para conseguir o tão sonhado 10! Você é capaz de passar ileso pelos 3 anos?",
 	"author": "LOA - UFSCar",
-	"xwalk_app_version": "2.2",
+	"xwalk_app_version": "3.0",
 	"xwalk_package_id": "br.ufscar.sead.loa.remar.escolamagica",
 	"icons": [
 		{

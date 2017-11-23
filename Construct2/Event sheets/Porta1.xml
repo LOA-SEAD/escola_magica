@@ -1355,16 +1355,16 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-1" name="Set X" sid="973897132607223" type="BtnSetaEsq">
+                                                <action disabled="1" id="-1" name="Set X" sid="973897132607223" type="BtnSetaEsq">
                                                     <param id="0" name="X">64</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="357902409278012" type="BtnSetaDir">
+                                                <action disabled="1" id="-1" name="Set X" sid="357902409278012" type="BtnSetaDir">
                                                     <param id="0" name="X">288</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="372543327029068" type="BtnSetaCima">
+                                                <action disabled="1" id="-1" name="Set X" sid="372543327029068" type="BtnSetaCima">
                                                     <param id="0" name="X">176</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="579500375259357" type="BtnSetaBaixo">
+                                                <action disabled="1" id="-1" name="Set X" sid="579500375259357" type="BtnSetaBaixo">
                                                     <param id="0" name="X">176</param>
                                                 </action>
                                                 <action id="-1" name="Set X" sid="944057120801504" type="BtnEsc">

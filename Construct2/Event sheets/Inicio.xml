@@ -1153,33 +1153,37 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <comment>É necessária uma pequena pausa para que o toque não esteja ativo ainda quando abrir a tela de créditos, o que a faria fechar</comment>
-                                <event-block sid="7196418426071707">
+                                <event-block sid="148410824136339">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="1346158529817228" type="System">
-                                            <param id="0" name="First value">itInterrup.IID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="423572511834949" type="System" />
                                     </conditions>
-                                    <actions>
-                                        <action id="-16" name="Wait" sid="316137200362995" type="System">
-                                            <param id="0" name="Seconds">1.0</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="9392689301994338" type="System">
-                                            <param id="0" name="Layout">Creditos</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="7313674172930115">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="4467726298318406" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-2" name="Go to layout" sid="9738641279414327" type="System">
-                                            <param id="0" name="Layout">Conquistas</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="668421879697359">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="642339392869317" type="System">
+                                                    <param id="0" name="First value">itInterrup.IID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="408980232886990" type="System">
+                                                    <param id="0" name="Layout">Creditos</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="393548648718404">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="664657885696162" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="990127988605840" type="System">
+                                                    <param id="0" name="Layout">Conquistas</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
