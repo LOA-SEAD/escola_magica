@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -1463,6 +1464,9 @@
             </object-type>
             <object-type name="Touch" sid="771886348430902">
                 <plugin id="Touch" />
+            </object-type>
+            <object-type name="Browser" sid="448878867679658">
+                <plugin id="Browser" />
             </object-type>
         </object-folder>
         <object-folder name="HUD">
@@ -3261,6 +3265,65 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="BtnSomMobile" sid="229226126006866">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964127226958924" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\sound_64.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\sound-off_64.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BtnFecharMobile" sid="682509663939613">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567574968527831" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\close_64.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\close_642.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MenuFechar" sid="452984577060574">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913269453196249" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\menuPause.png">
+                            <collision-poly>
+                                <point x="0.005" y="0.0075" />
+                                <point x="0.995" y="0.0075" />
+                                <point x="0.991667" y="0.9875" />
+                                <point x="0.005" y="0.9925" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BtnSimFechar" sid="907369631486433">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="606475255413334">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651191158536933" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BtnNaoFechar" sid="111449911091003">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="855670451207713">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258506382621395" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Tilemap" sid="1278653460600283">
             <plugin id="Tilemap" />
@@ -3651,6 +3714,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="574" />
     </global-instances>
     <sounds-folder>
         <file name="IniDest.ogg" />

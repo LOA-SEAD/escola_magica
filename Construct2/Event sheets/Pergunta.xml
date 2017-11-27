@@ -105,6 +105,18 @@
                             <param id="0" name="Group name">&quot;Mobile5&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="-3" name="Set position" sid="240276112111971" type="MenuFechar">
+                            <param id="0" name="X">400</param>
+                            <param id="1" name="Y">-300</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="978576188673457" type="BtnNaoFechar">
+                            <param id="0" name="Pin to">MenuFechar</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="577629944167265" type="BtnSimFechar">
+                            <param id="0" name="Pin to">MenuFechar</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <comment>Verifica se estamos em um dispositivo mobile para tornar os botões visíveis e disponíveis para clique</comment>
@@ -210,6 +222,23 @@
                                 <action behavior="DragDrop" id="0" name="Set enabled" sid="854498670666351" type="HitboxDir">
                                     <param id="0" name="State">1</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="658639392220531" type="BtnSomMobile">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="962995649951646" type="BtnSomMobile">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="258544620605127" type="BtnFecharMobile">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="852107536374608" type="BtnFecharMobile">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="366064356589424" type="btnEditarSom" />
+                                <action id="-9" name="Destroy" sid="316212807090794" type="cursorSom" />
+                                <action id="5" name="Set frame" sid="922511644544022" type="BtnSomMobile">
+                                    <param id="0" name="Frame number">Volume = -20 ? 1 : 0</param>
+                                </action>
                                 <action id="-12" name="Set group active" sid="962877980718969" type="System">
                                     <param id="0" name="Group name">&quot;Mobile5&quot;</param>
                                     <param id="1" name="State">1</param>
@@ -224,6 +253,8 @@
                                 <action id="-9" name="Destroy" sid="819266230482104" type="BtnCtrl" />
                                 <action id="-9" name="Destroy" sid="551140208307254" type="BtnEsc" />
                                 <action id="-9" name="Destroy" sid="305807279824821" type="HitboxDir" />
+                                <action id="-9" name="Destroy" sid="589553487868849" type="BtnFecharMobile" />
+                                <action id="-9" name="Destroy" sid="890386597879166" type="BtnSomMobile" />
                             </actions>
                         </event-block>
                         <event-block sid="8024828818504334">
@@ -526,6 +557,36 @@
                                 </action>
                                 <action behavior="Platform" id="1" name="Set max speed" sid="643977436015325" type="player">
                                     <param id="0" name="Max Speed">VLR_MAX_VELOC</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="414429561214533">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="684754423200681" type="Touch">
+                            <param id="0" name="Object">BtnFecharMobile</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="749415321454562" type="BtnFecharMobile">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="486766786713066">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="275708470163995" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="651606906177017">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="159251418520797" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="407474795593404" type="BtnFecharMobile">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1676,9 +1737,8 @@
                 <event-block sid="837270000964883">
                     <conditions>
                         <condition id="17" name="On tap object" sid="652396236738961" type="Touch">
-                            <param id="0" name="Object">btnEditarSom</param>
+                            <param id="0" name="Object">BtnSomMobile</param>
                         </condition>
-                        <condition id="-20" name="Is on mobile device" sid="584326391123954" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
@@ -1691,7 +1751,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="127801680861550" type="btnEditarSom">
+                                <action id="5" name="Set frame" sid="127801680861550" type="BtnSomMobile">
                                     <param id="0" name="Frame number">0</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="974595793819330" type="System">
@@ -1724,8 +1784,8 @@
                                 <condition id="-22" name="Else" sid="607154566207741" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="668894780682409" type="btnEditarSom">
-                                    <param id="0" name="Frame number">2</param>
+                                <action id="5" name="Set frame" sid="668894780682409" type="BtnSomMobile">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="450009144953480" type="cursorSom">
                                     <param id="0" name="Visibility">0</param>
@@ -1829,6 +1889,215 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="358467166014509" title="FecharMobile2">
+            <sub-events>
+                <event-block any="1" sid="114946043232938">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="966351996057378" type="Touch">
+                            <param id="0" name="Object">BtnFecharMobile</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="111513374505890">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="994133400316464" type="System">
+                                    <param id="0" name="Variable">FechaApp</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Set master volume" sid="782804045454857" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume - 10</param>
+                                </action>
+                                <action id="6" name="Stop" sid="300050354708847" type="Audio">
+                                    <param id="0" name="Tag">&quot;ponte&quot;</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="714764410924555" type="player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="786357162381321" type="imgPlatMov">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="507338158473174" type="imgPlatMovBase">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="464295378368417" type="imgPlayer" />
+                                <action id="2" name="Stop" sid="584110225481666" type="Monitor" />
+                                <action id="4" name="Set speed" sid="306248781862454" type="particAgua">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="817682538992742" type="itBarras">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="140021409361340" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="405380913228736" type="itBala">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="748163496876717" type="Inimigo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="267214683651406" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="105904629303275" type="Inimigo" />
+                                <action id="2" name="Stop" sid="376572087485465" type="itBala" />
+                                <action id="-2" name="Set Y" sid="283576239960429" type="MenuFechar">
+                                    <param id="0" name="Y">300</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="120411198684608" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="884246924372281" type="System">
+                                    <param id="0" name="Variable">FechaApp</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="790387497671145">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="800884875581253" type="System">
+                                    <param id="0" name="Variable">FechaApp</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Set master volume" sid="860778636167863" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="528073587090635" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="408759514882690" type="imgPlatMov">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="585108373461840" type="imgPlatMovBase">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="895806007123523" type="imgPlayer">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="669344713650675" type="Monitor">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="4" name="Set speed" sid="380812248299856" type="particAgua">
+                                    <param id="0" name="Speed">200</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="974284411040528" type="itBarras">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="548383652532567" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="919097415721008" type="itBala">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="996395680712348" type="Inimigo">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="476153128600002" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="103107904526680" type="Inimigo">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="732100310525434" type="itBala">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="930931152950341" type="MenuFechar">
+                                    <param id="0" name="Y">-300</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="369696270865413" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="287798782377977" type="System">
+                                    <param id="0" name="Variable">FechaApp</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="583284132290941">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="403777332511483" type="Touch">
+                            <param id="0" name="Object">BtnNaoFechar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Set master volume" sid="541634828164303" type="Audio">
+                            <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="115388352225589" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="125856683635795" type="imgPlayer">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="117442065215805" type="Monitor">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="4" name="Set speed" sid="325117719522772" type="particAgua">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="321266631864542" type="itBarras">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="468204104132302" type="System">
+                            <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="308106110496450" type="itBala">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="718023044228628" type="Inimigo">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="200576810781711" type="System">
+                            <param id="0" name="Group name">&quot;Balas&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="382971843191798" type="Inimigo">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="896229764054541" type="itBala">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="424797812901667" type="MenuFechar">
+                            <param id="0" name="Y">-300</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="695939463946415" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="477882790968423" type="System">
+                            <param id="0" name="Variable">FechaApp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="716890669160718">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="290650418637804" type="Touch">
+                            <param id="0" name="Object">BtnSimFechar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Set master volume" sid="483082514466660" type="Audio">
+                            <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                        </action>
+                        <action id="1" name="Close" sid="422627579760233" type="Browser" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

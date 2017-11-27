@@ -37,6 +37,27 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Verifica se estamos em um dispositivo mobile para tornar os botões visíveis e disponíveis para clique</comment>
+        <event-block sid="118684485990069">
+            <conditions>
+                <condition id="-20" name="Is on mobile device" sid="332372977066388" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="314537094743870" type="btnEditarSom" />
+                <action id="-9" name="Destroy" sid="124980527733834" type="cursorSom" />
+                <action id="5" name="Set frame" sid="609071859785357" type="BtnSomMobile">
+                    <param id="0" name="Frame number">Volume = -20 ? 1 : 0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="936452088194150">
+            <conditions>
+                <condition id="-22" name="Else" sid="165493163850052" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="376778784604873" type="BtnSomMobile" />
+            </actions>
+        </event-block>
         <event-group description="Usuario pressiona qualquer tecla para voltar a introducao do jogo" inactive="1" sid="505864172426259" title="ProcegueJogo">
             <sub-events>
                 <event-block any="1" sid="2839464996873669">
@@ -136,9 +157,8 @@
                 <event-block sid="478148732152754">
                     <conditions>
                         <condition id="17" name="On tap object" sid="941148180598264" type="Touch">
-                            <param id="0" name="Object">btnEditarSom</param>
+                            <param id="0" name="Object">BtnSomMobile</param>
                         </condition>
-                        <condition id="-20" name="Is on mobile device" sid="649637426687449" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
@@ -151,7 +171,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="620286314446749" type="btnEditarSom">
+                                <action id="5" name="Set frame" sid="620286314446749" type="BtnSomMobile">
                                     <param id="0" name="Frame number">0</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="711693219420293" type="System">
@@ -184,8 +204,8 @@
                                 <condition id="-22" name="Else" sid="970315643918919" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="911686422060495" type="btnEditarSom">
-                                    <param id="0" name="Frame number">2</param>
+                                <action id="5" name="Set frame" sid="911686422060495" type="BtnSomMobile">
+                                    <param id="0" name="Frame number">1</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="184134093345586" type="cursorSom">
                                     <param id="0" name="Visibility">0</param>
