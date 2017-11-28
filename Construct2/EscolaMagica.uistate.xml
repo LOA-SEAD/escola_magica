@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="10">Pergunta</event-sheet>
         <event-sheet order="12">Vitoria</event-sheet>
         <event-sheet order="15">Creditos</event-sheet>
-        <event-sheet active="1" order="16">Conquistas</event-sheet>
+        <event-sheet active="1" order="16">GameOver</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -56,7 +56,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Cenario/Particulas/" />
         <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="0" path="object-folder/Componentes/" />
-        <folder expanded="0" path="object-folder/HUD/" />
+        <folder expanded="1" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Animacoes/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/" />
         <folder expanded="1" path="object-folder/Animacoes/onom/onomCocorico/" />
@@ -64,7 +64,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Animacoes/relogio/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Pause/" />
-        <folder expanded="1" path="object-folder/Mobile/" />
+        <folder expanded="0" path="object-folder/Mobile/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
         <folder expanded="1" path="layout-folder/Animacoes/" />
@@ -73,10 +73,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="event-folder/Animacoes/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="file-folder/JS/" />
-        <folder expanded="0" path="music-folder/fundos/" />
+        <folder expanded="1" path="music-folder/fundos/" />
         <folder expanded="1" path="animation-folder/imgNuvem/" />
         <folder expanded="1" path="animation-folder/imgPiramide/" />
         <folder expanded="1" path="animation-folder/itCaixaMusica/" />

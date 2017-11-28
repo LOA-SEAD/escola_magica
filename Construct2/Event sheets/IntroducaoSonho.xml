@@ -126,6 +126,17 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Troca para uma versão com um hitbox maior</comment>
+                <event-block sid="635216226020576">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="910944106923209" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="222105049092445" type="itIntro">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-group description="Gerador da sequencia de animações na introdução" inactive="1" sid="499728501446407" title="IS_SEQUENCIA_ANIMACOES">
@@ -599,11 +610,6 @@
         </event-block>
         <event-block any="1" sid="578407483925501">
             <conditions>
-                <condition disabled="1" id="6" name="On object clicked" sid="6894403808139171" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">itIntro</param>
-                </condition>
                 <condition id="17" name="On tap object" sid="101577200101712" type="Touch">
                     <param id="0" name="Object">itIntro</param>
                 </condition>
