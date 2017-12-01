@@ -780,6 +780,7 @@
                                     <param id="1" name="Comparison">3</param>
                                     <param id="2" name="Second value">BtnDirecional.Y - 19</param>
                                 </condition>
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="341090837937340" type="player" />
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="772420779187330" type="player">
@@ -908,27 +909,73 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="6567870407310972">
+                        <comment>Foi necessário dividir os comandos de troca de animação do pulo, pois na versão mobile, para facilitar a jogabilidade, foi habilitado o &quot;bunny hopping&quot;, ou seja, o personagem fica pulando infinitamente enquanto o comando de pular estiver habilitado</comment>
+                        <event-block sid="445431939095975">
                             <conditions>
-                                <condition behavior="Platform" id="9" name="On landed" sid="9733081372603331" type="player" />
+                                <condition id="-20" name="Is on mobile device" sid="970034313437855" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="8681455619992065" type="imgPlayer">
-                                    <param id="0" name="Animation">&quot;Standing&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="8599090478495572">
+                                <event-block sid="726314371978261">
                                     <conditions>
-                                        <condition behavior="Platform" id="0" name="Is moving" sid="9368776481042779" type="player" />
+                                        <condition behavior="Platform" id="9" name="On landed" sid="298003637857518" type="player" />
+                                        <condition id="-8" name="Compare two values" sid="385101288311175" type="System">
+                                            <param id="0" name="First value">BtnCircDir.Y</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">BtnDirecional.Y - 19</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="555095035844448" type="imgPlayer">
-                                            <param id="0" name="Animation">&quot;Running&quot;</param>
+                                        <action id="4" name="Set animation" sid="695853062640543" type="imgPlayer">
+                                            <param id="0" name="Animation">&quot;Standing&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="376266477472073">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="601300017447576" type="player" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="810271881698563" type="imgPlayer">
+                                                    <param id="0" name="Animation">&quot;Running&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="472059707294044">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="689643615883851" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="209296298689989">
+                                    <conditions>
+                                        <condition behavior="Platform" id="9" name="On landed" sid="165995916067707" type="player" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="413672582289916" type="imgPlayer">
+                                            <param id="0" name="Animation">&quot;Standing&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="963559912772836">
+                                            <conditions>
+                                                <condition behavior="Platform" id="0" name="Is moving" sid="767868089588580" type="player" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="376084320935050" type="imgPlayer">
+                                                    <param id="0" name="Animation">&quot;Running&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
