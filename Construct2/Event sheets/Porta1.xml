@@ -251,6 +251,56 @@
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="908898569562345">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="231755600891536" type="Text2">
+                                    <param id="0" name="Unique ID">60</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="485659378365370" type="Text2">
+                                    <param id="0" name="Text">&quot;&gt;&gt;arraste o direcional em uma direção para andar&quot; &amp; newline &amp; &quot;&gt;&gt;use Pausar para interromper jogo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="500210131023612">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="772050095065095" type="Text2">
+                                    <param id="0" name="Unique ID">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="242291803819872" type="Text2">
+                                    <param id="0" name="Text">&quot;&gt;&gt;arraste o direcional para cima para pular&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="516546592191633">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="587610221231892" type="Text2">
+                                    <param id="0" name="Unique ID">467</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="427377846418816" type="Text2">
+                                    <param id="0" name="Text">&quot;&gt;&gt;para acionar alavancas use o botão Ação&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="606200687938001">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="117957621702368" type="Text2">
+                                    <param id="0" name="Unique ID">470</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="425203730182501" type="Text2">
+                                    <param id="0" name="Text">&quot;&gt;&gt;para saltar grandes distâncias segure o botão Correr&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="282186516432593">
                     <conditions>

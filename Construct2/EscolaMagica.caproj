@@ -2797,108 +2797,20 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Inicio" pingpong="0" repeatcount="1" repeatto="0" sid="873246689798695" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shift.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\BtnShiftPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_11.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_12.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase1" pingpong="0" repeatcount="1" repeatto="0" sid="989977808722482" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shift.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shiftPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_21.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_22.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase2" pingpong="0" repeatcount="1" repeatto="0" sid="916557897773296" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shift.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shiftPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_31.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_32.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase3" pingpong="0" repeatcount="1" repeatto="0" sid="988315202487762" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shift.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\shiftP.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_41.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\correr_42.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -2906,108 +2818,20 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Inicio" pingpong="0" repeatcount="1" repeatto="0" sid="939177108725998" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\BtnCtrl.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\BtnCtrlPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_11.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_12.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase1" pingpong="0" repeatcount="1" repeatto="0" sid="794794250806498" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\ctrl.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\ctrlPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_21.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_22.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase2" pingpong="0" repeatcount="1" repeatto="0" sid="959757955293735" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\ctrl.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\ctrlPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_31.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_32.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase3" pingpong="0" repeatcount="1" repeatto="0" sid="591341481120713" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\ctrl.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\ctrlP.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_41.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\acao_42.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -3015,108 +2839,20 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Inicio" pingpong="0" repeatcount="1" repeatto="0" sid="546134399482660" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\BtnEsc.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\BtnEscPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_11.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_12.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase1" pingpong="0" repeatcount="1" repeatto="0" sid="966574675478926" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\esc.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\escPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_21.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_22.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase2" pingpong="0" repeatcount="1" repeatto="0" sid="910686476933561" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\esc.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\escPress.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_31.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_32.png" />
                     </animation>
                     <animation framecount="2" loop="0" name="Fase3" pingpong="0" repeatcount="1" repeatto="0" sid="161412796747559" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\esc.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\escP.png">
-                            <collision-poly>
-                                <point x="0.0625" y="0.0625" />
-                                <point x="0.5" y="0" />
-                                <point x="0.927083" y="0.0729167" />
-                                <point x="1" y="0.5" />
-                                <point x="0.9375" y="0.9375" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0625" y="0.9375" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_41.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_42.png" />
                     </animation>
                 </animation-folder>
             </object-type>

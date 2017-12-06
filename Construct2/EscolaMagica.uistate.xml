@@ -16,17 +16,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="3">Inicio</layout>
         <layout order="5">IntroducaoSonho</layout>
         <layout order="11">Introducao</layout>
-        <layout order="13">GameOver</layout>
-        <layout order="14">Pergunta</layout>
-        <event-sheet active="1" order="4">Inicio</event-sheet>
+        <layout order="12">GameOver</layout>
+        <layout order="13">Pergunta</layout>
+        <event-sheet order="4">Inicio</event-sheet>
         <event-sheet order="6">IntroducaoSonho</event-sheet>
         <event-sheet order="7">Porta3</event-sheet>
         <event-sheet order="8">Porta2</event-sheet>
-        <event-sheet order="9">Porta1</event-sheet>
+        <event-sheet active="1" order="9">Porta1</event-sheet>
         <event-sheet order="10">Pergunta</event-sheet>
-        <event-sheet order="12">Vitoria</event-sheet>
-        <event-sheet order="15">Creditos</event-sheet>
-        <event-sheet order="16">GameOver</event-sheet>
+        <event-sheet order="14">Creditos</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,7 +35,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Cenario/" />
+        <folder expanded="0" path="object-folder/Cenario/" />
         <folder expanded="0" path="object-folder/Cenario/BG/" />
         <folder expanded="0" path="object-folder/Cenario/BG/Efeitos/" />
         <folder expanded="0" path="object-folder/Cenario/BG/P1/" />
@@ -47,14 +45,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Cenario/Solidos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Dinamicos/" />
         <folder expanded="0" path="object-folder/Cenario/Solidos/Fixos/" />
-        <folder expanded="1" path="object-folder/Cenario/Char/" />
+        <folder expanded="0" path="object-folder/Cenario/Char/" />
         <folder expanded="0" path="object-folder/Cenario/Inimigos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Portas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />
         <folder expanded="0" path="object-folder/Cenario/Particulas/" />
-        <folder expanded="0" path="object-folder/Textos/" />
+        <folder expanded="1" path="object-folder/Textos/" />
         <folder expanded="0" path="object-folder/Componentes/" />
         <folder expanded="0" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Animacoes/" />
@@ -67,7 +65,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Mobile/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
-        <folder expanded="1" path="layout-folder/Animacoes/" />
+        <folder expanded="0" path="layout-folder/Animacoes/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Classes/" />
         <folder expanded="1" path="event-folder/Animacoes/" />

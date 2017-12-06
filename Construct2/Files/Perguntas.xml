@@ -66,10 +66,10 @@
     </Classe>
     <Classe ClaAno="3">
 		<Pergunta PergNum="0" respCorreta="3" titulo="O avesso de uma blusa preta é branco. O avesso de uma calça preta é azul. O avesso de uma bermuda preta é branco. O avesso do avesso das três peças de roupa é:">
-            <Resp num="0">Preto e branco.</Resp>
-            <Resp num="1">Branco.</Resp>
-            <Resp num="2">Azul.</Resp>
-            <Resp num="3">Preto.</Resp>
+            <Resp num="0">Preto e branco</Resp>
+            <Resp num="1">Branco</Resp>
+            <Resp num="2">Azul</Resp>
+            <Resp num="3">Preto</Resp>
         </Pergunta>
 		<Pergunta PergNum="1" respCorreta="2" titulo="Assinale a alternativa que completa a série seguinte: 9, 16, 25, 36, …">
             <Resp num="0">45</Resp>

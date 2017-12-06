@@ -239,6 +239,12 @@
                                 </action>
                                 <action id="-9" name="Destroy" sid="366064356589424" type="btnEditarSom" />
                                 <action id="-9" name="Destroy" sid="316212807090794" type="cursorSom" />
+                                <action id="3" name="Set font size" sid="445969420163459" type="txtCenario">
+                                    <param id="0" name="Size (pt)">13</param>
+                                </action>
+                                <action id="3" name="Set font size" sid="846789224709432" type="txtPergunta">
+                                    <param id="0" name="Size (pt)">18</param>
+                                </action>
                                 <action id="5" name="Set frame" sid="922511644544022" type="BtnSomMobile">
                                     <param id="0" name="Frame number">Volume = -100 ? 1 : 0</param>
                                 </action>

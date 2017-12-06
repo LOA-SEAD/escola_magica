@@ -30,14 +30,6 @@
                 <action id="-16" name="Wait" sid="8705754897872975" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="1" name="Append text" sid="9901799743136759" type="txtPontuacao">
-                    <param id="0" name="Text">&quot;&#x0D;&#x0A;Pressione qualquer tecla para continuar...&quot;</param>
-                </action>
-                <action behavior="Fade" id="0" name="Restart fade" sid="9226207132669837" type="txtPontuacao" />
-                <action id="-12" name="Set group active" sid="4051337060772134" type="System">
-                    <param id="0" name="Group name">&quot;ProcegueJogo&quot;</param>
-                    <param id="1" name="State">1</param>
-                </action>
             </actions>
             <sub-events>
                 <comment>Verifica se estamos em um dispositivo mobile para tornar os botões visíveis e disponíveis para clique</comment>
@@ -46,6 +38,14 @@
                         <condition id="-20" name="Is on mobile device" sid="332372977066388" type="System" />
                     </conditions>
                     <actions>
+                        <action id="1" name="Append text" sid="791353366866217" type="txtPontuacao">
+                            <param id="0" name="Text">&quot;&#x0D;&#x0A;Toque na tela para continuar...&quot;</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="519209177815856" type="txtPontuacao" />
+                        <action id="-12" name="Set group active" sid="540946644566705" type="System">
+                            <param id="0" name="Group name">&quot;ProcegueJogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="314537094743870" type="btnEditarSom" />
                         <action id="-9" name="Destroy" sid="124980527733834" type="cursorSom" />
                         <action id="5" name="Set frame" sid="609071859785357" type="BtnSomMobile">
@@ -58,6 +58,14 @@
                         <condition id="-22" name="Else" sid="165493163850052" type="System" />
                     </conditions>
                     <actions>
+                        <action id="1" name="Append text" sid="9901799743136759" type="txtPontuacao">
+                            <param id="0" name="Text">&quot;&#x0D;&#x0A;Pressione qualquer tecla para continuar...&quot;</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="9226207132669837" type="txtPontuacao" />
+                        <action id="-12" name="Set group active" sid="4051337060772134" type="System">
+                            <param id="0" name="Group name">&quot;ProcegueJogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="376778784604873" type="BtnSomMobile" />
                     </actions>
                 </event-block>
