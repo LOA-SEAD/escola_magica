@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1512577534,
+	"version": 1513276673,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -142,6 +142,7 @@
 		"images/btnctrl-sheet1.png",
 		"images/btnesc-sheet0.png",
 		"images/btnesc-sheet1.png",
+		"images/btnesc-sheet2.png",
 		"images/btndirecional-sheet0.png",
 		"images/btncircdir-sheet0.png",
 		"images/hitboxdir-sheet0.png",

@@ -2289,18 +2289,18 @@
                 <instance type="BtnEsc" uid="541">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Pause</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
-                        <y>64</y>
+                        <x>592</x>
+                        <y>48</y>
                         <z>0</z>
-                        <width>96</width>
-                        <height>96</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2318,8 +2318,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165.5</x>
-                        <y>434</y>
+                        <x>140</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>207</width>
                         <height>207</height>
@@ -2340,8 +2340,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165.5</x>
-                        <y>434</y>
+                        <x>140</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>96</width>
                         <height>96</height>
@@ -2370,8 +2370,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165.5</x>
-                        <y>434</y>
+                        <x>140</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>144</width>
                         <height>144</height>

@@ -15,15 +15,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Porta3</layout>
         <layout order="3">Inicio</layout>
         <layout order="5">IntroducaoSonho</layout>
-        <layout order="11">Introducao</layout>
-        <layout order="12">GameOver</layout>
-        <layout order="13">Pergunta</layout>
-        <event-sheet order="4">Inicio</event-sheet>
+        <layout order="12">Introducao</layout>
+        <layout order="13">GameOver</layout>
+        <layout active="1" order="4">Pergunta</layout>
+        <event-sheet order="7">Inicio</event-sheet>
         <event-sheet order="6">IntroducaoSonho</event-sheet>
-        <event-sheet order="7">Porta3</event-sheet>
-        <event-sheet order="8">Porta2</event-sheet>
-        <event-sheet active="1" order="9">Porta1</event-sheet>
-        <event-sheet order="10">Pergunta</event-sheet>
+        <event-sheet order="8">Porta3</event-sheet>
+        <event-sheet order="9">Porta2</event-sheet>
+        <event-sheet order="10">Porta1</event-sheet>
+        <event-sheet order="11">Pergunta</event-sheet>
         <event-sheet order="14">Creditos</event-sheet>
     </open-tabs>
     <properties>
@@ -52,7 +52,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Cenario/Interativos/Alavancas/" />
         <folder expanded="0" path="object-folder/Cenario/Interativos/Canos/" />
         <folder expanded="0" path="object-folder/Cenario/Particulas/" />
-        <folder expanded="1" path="object-folder/Textos/" />
+        <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="0" path="object-folder/Componentes/" />
         <folder expanded="0" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Animacoes/" />
@@ -62,7 +62,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Animacoes/relogio/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Pause/" />
-        <folder expanded="0" path="object-folder/Mobile/" />
+        <folder expanded="1" path="object-folder/Mobile/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
         <folder expanded="0" path="layout-folder/Animacoes/" />

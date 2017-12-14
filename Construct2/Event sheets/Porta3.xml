@@ -146,7 +146,7 @@
                             <param id="0" name="Animation">&quot;Fase3&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="572698917305513" type="BtnEsc">
+                        <action disabled="1" id="4" name="Set animation" sid="572698917305513" type="BtnEsc">
                             <param id="0" name="Animation">&quot;Fase3&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -220,7 +220,7 @@
                         <action id="11" name="Set collisions enabled" sid="834038238871587" type="BtnEsc">
                             <param id="0" name="Collisions">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="632626432370889" type="BtnDirecional">
+                        <action disabled="1" id="-15" name="Set visible" sid="632626432370889" type="BtnDirecional">
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="11" name="Set collisions enabled" sid="289755808609583" type="BtnDirecional">
@@ -829,7 +829,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="180159497541245">
+                <event-block disabled="1" sid="180159497541245">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="156896641155008" type="Touch">
                             <param id="0" name="Object">BtnEsc</param>
@@ -841,13 +841,13 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="347216764913226">
+                <event-block disabled="1" sid="347216764913226">
                     <conditions>
                         <condition id="-22" name="Else" sid="533750833034405" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="436304407304904">
+                        <event-block disabled="1" sid="436304407304904">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="745493524377549" type="System" />
                             </conditions>
@@ -895,7 +895,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="964177688511003">
+                <event-block disabled="1" sid="964177688511003">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="951704652549457" type="Touch">
                             <param id="0" name="Object">BtnFecharMobile</param>
@@ -907,13 +907,13 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="164669871588571">
+                <event-block disabled="1" sid="164669871588571">
                     <conditions>
                         <condition id="-22" name="Else" sid="825089396633050" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="618367144136415">
+                        <event-block disabled="1" sid="618367144136415">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="200099388333669" type="System" />
                             </conditions>
@@ -1063,7 +1063,7 @@
                         <condition id="-8" name="Compare two values" sid="912859690123369" type="System">
                             <param id="0" name="First value">distance(BtnCircDir.X, BtnCircDir.Y, BtnDirecional.X, BtnDirecional.Y)</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">38</param>
+                            <param id="2" name="Second value">0.2</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1074,7 +1074,7 @@
                                 <condition id="-8" name="Compare two values" sid="626107504529861" type="System">
                                     <param id="0" name="First value">BtnCircDir.X </param>
                                     <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Second value">BtnDirecional.X + 19</param>
+                                    <param id="2" name="Second value">BtnDirecional.X + 0.1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1091,7 +1091,7 @@
                                 <condition id="-8" name="Compare two values" sid="384517251876123" type="System">
                                     <param id="0" name="First value">BtnCircDir.X </param>
                                     <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Second value">BtnDirecional.X - 19</param>
+                                    <param id="2" name="Second value">BtnDirecional.X - 0.1</param>
                                 </condition>
                             </conditions>
                             <actions>

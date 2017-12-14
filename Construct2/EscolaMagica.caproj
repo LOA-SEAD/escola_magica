@@ -2854,6 +2854,9 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_41.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pausar_42.png" />
                     </animation>
+                    <animation framecount="1" loop="0" name="Pause" pingpong="0" repeatcount="1" repeatto="0" sid="791379872370584" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\pause2.png" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="BtnDirecional" sid="420086730914158">
@@ -2976,6 +2979,20 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="1" loop="0" name="Teste" pingpong="0" repeatcount="1" repeatto="0" sid="700808540090577" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Downloads\direcional2.png">
+                            <collision-poly>
+                                <point x="0.145833" y="0.145833" />
+                                <point x="0.5" y="0" />
+                                <point x="0.854167" y="0.145833" />
+                                <point x="1" y="0.5" />
+                                <point x="0.854167" y="0.854167" />
+                                <point x="0.5" y="1" />
+                                <point x="0.145833" y="0.854167" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="HitboxDir" sid="358505162075565">
@@ -3015,7 +3032,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567574968527831" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\close_64.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\close.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\close_642.png" />
                     </animation>
                 </animation-folder>

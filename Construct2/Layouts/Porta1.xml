@@ -3263,8 +3263,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165.5</x>
-                        <y>434</y>
+                        <x>140</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>207</width>
                         <height>207</height>
@@ -3285,8 +3285,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165.5</x>
-                        <y>434</y>
+                        <x>140</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>96</width>
                         <height>96</height>
@@ -3315,8 +3315,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165.5</x>
-                        <y>434</y>
+                        <x>140</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>144</width>
                         <height>144</height>
@@ -3360,6 +3360,28 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>672</x>
+                        <y>48</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BtnEsc" uid="548">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Pause</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>592</x>
                         <y>48</y>
                         <z>0</z>
                         <width>64</width>
@@ -3592,28 +3614,6 @@
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BtnEsc" uid="548">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Fase1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>64</x>
-                        <y>64</y>
-                        <z>0</z>
-                        <width>96</width>
-                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
