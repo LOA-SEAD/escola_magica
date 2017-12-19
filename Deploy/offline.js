@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1513276673,
+	"version": 1513700352,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -19,8 +19,8 @@
 		"images/imgnuvem-sheet0.png",
 		"images/imgpiramide-sheet0.png",
 		"images/itcaixamusica-sheet0.png",
-		"images/imginiciobg-sheet0.png",
 		"images/tituloescolamagica-sheet0.png",
+		"images/imginiciobg.png",
 		"images/imgarvores-sheet0.png",
 		"images/imggreencheck.png",
 		"images/lousa.png",
@@ -145,6 +145,7 @@
 		"images/btnesc-sheet2.png",
 		"images/btndirecional-sheet0.png",
 		"images/btncircdir-sheet0.png",
+		"images/btncircdir-sheet1.png",
 		"images/hitboxdir-sheet0.png",
 		"images/btnsommobile-sheet0.png",
 		"images/btnsommobile-sheet1.png",
@@ -184,6 +185,7 @@
 		"images/portacpin-sheet0.png",
 		"images/particles5.png",
 		"images/killmonster.png",
+		"images/adaptar4_3para16_9.png",
 		"media/inidest.ogg",
 		"media/morrer.ogg",
 		"media/acerto.ogg",

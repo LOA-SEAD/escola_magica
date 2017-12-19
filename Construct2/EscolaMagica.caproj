@@ -8,7 +8,7 @@
     <author-website></author-website>
     <app-id>br.ufscar.sead.loa.remar.escolamagica</app-id>
     <unique-id>3os5c9w6g6ffc</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>25000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
@@ -49,7 +49,7 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>800</width>
+        <width>1066</width>
         <height>600</height>
     </window-size>
     <pixel-rounding>1</pixel-rounding>
@@ -173,14 +173,6 @@
                     </object-type>
                 </object-folder>
                 <object-folder name="Inicio">
-                    <object-type name="imgInicioBG" sid="75848030327744">
-                        <plugin id="Sprite" />
-                        <animation-folder>
-                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2688889978635177" speed="5">
-                                <frame duration="1" hotspotX="0" hotspotY="0" />
-                            </animation>
-                        </animation-folder>
-                    </object-type>
                     <object-type name="TituloEscolaMagica" sid="7145589452139491">
                         <plugin id="Sprite" />
                         <animation-folder>
@@ -188,6 +180,10 @@
                                 <frame duration="1" hotspotX="0.500773" hotspotY="0.503704" />
                             </animation>
                         </animation-folder>
+                    </object-type>
+                    <object-type name="imgInicioBG" sid="421550713286258">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Douglas\Pictures\textura.png" />
                     </object-type>
                 </object-folder>
                 <object-type name="imgArvores" sid="2365570565540687">
@@ -257,7 +253,7 @@
                 </object-type>
                 <object-type name="Lousa" sid="7565839531706553">
                     <plugin id="TiledBg" />
-                    <texture />
+                    <texture original-source="C:\Users\Douglas\Pictures\lousa2.png" />
                 </object-type>
                 <object-type name="basePonte" sid="1525393982073772">
                     <plugin id="TiledBg" />
@@ -3408,6 +3404,10 @@
         </object-type>
         <object-type global="1" name="Pontuacao" sid="430250450220324">
             <plugin id="Arr" />
+        </object-type>
+        <object-type name="Adaptar4_3Para16_9" sid="646707385984172">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families />

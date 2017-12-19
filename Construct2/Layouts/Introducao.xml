@@ -4,7 +4,7 @@
     <sid>2203436478885422</sid>
     <event-sheet>Introducao</event-sheet>
     <size>
-        <width>800</width>
+        <width>1066</width>
         <height>600</height>
     </size>
     <margins>
@@ -42,7 +42,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>400</x>
+                        <x>533</x>
                         <y>300</y>
                         <z>0</z>
                         <width>800</width>

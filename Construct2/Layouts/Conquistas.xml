@@ -4,7 +4,7 @@
     <sid>4379301719071101</sid>
     <event-sheet>Conquistas</event-sheet>
     <size>
-        <width>800</width>
+        <width>1066</width>
         <height>600</height>
     </size>
     <margins>
@@ -28,30 +28,7 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="imgInicioBG" uid="416">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>0</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>800</width>
-                        <height>600</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
+            <instances />
             <effects />
         </layer>
         <layer name="layPlat" sid="1560910518435348">
@@ -69,7 +46,28 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="imgInicioBG" uid="416">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1066</width>
+                        <height>600</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="layTexto" sid="9324355216969477">
@@ -103,7 +101,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>29</x>
+                        <x>162</x>
                         <y>37</y>
                         <z>0</z>
                         <width>225</width>
@@ -130,8 +128,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>285</x>
-                        <y>120</y>
+                        <x>417</x>
+                        <y>115</y>
                         <z>0</z>
                         <width>507</width>
                         <height>466</height>
@@ -157,7 +155,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>10</x>
+                        <x>143</x>
                         <y>120</y>
                         <z>0</z>
                         <width>229</width>
@@ -199,7 +197,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>784</x>
+                        <x>1050</x>
                         <y>571</y>
                         <z>0</z>
                         <width>45</width>

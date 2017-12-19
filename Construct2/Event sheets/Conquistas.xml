@@ -101,7 +101,7 @@
                     <sub-events>
                         <variable constant="0" name="LINE_HEIGHT" sid="3015489170006913" static="0" type="number">36</variable>
                         <variable constant="0" name="INI_POS_Y" sid="6560231153611721" static="0" type="number">81</variable>
-                        <variable constant="0" name="INI_POS_X" sid="8940501059926431" static="0" type="number">250</variable>
+                        <variable constant="0" name="INI_POS_X" sid="8940501059926431" static="0" type="number">383</variable>
                         <variable constant="0" name="ConqIndex" sid="2717004975934929" static="0" type="number">0</variable>
                         <event-block sid="3564258213618734">
                             <conditions>
@@ -180,7 +180,7 @@
                     <param id="0" name="Cursor style">1</param>
                 </action>
                 <action id="-3" name="Set position" sid="6907127426393091" type="galo">
-                    <param id="0" name="X">784</param>
+                    <param id="0" name="X">1050</param>
                     <param id="1" name="Y">571</param>
                 </action>
                 <action id="-8" name="Set angle" sid="6531038131131296" type="galo">
@@ -197,7 +197,7 @@
                     <param id="0" name="Cursor style">0</param>
                 </action>
                 <action id="-3" name="Set position" sid="7729104174358749" type="galo">
-                    <param id="0" name="X">792</param>
+                    <param id="0" name="X">1058</param>
                     <param id="1" name="Y">574</param>
                 </action>
                 <action id="-8" name="Set angle" sid="6854218860452721" type="galo">

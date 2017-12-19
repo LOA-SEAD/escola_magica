@@ -46,16 +46,8 @@
                 <action id="-15" name="Set visible" sid="3095437953438241" type="onomTriiim">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-3" name="Set position" sid="5401536502899959" type="pupila">
-                    <param id="0" name="X">563</param>
-                    <param id="1" name="Y">199</param>
-                </action>
                 <action id="-16" name="Set opacity" sid="8984078758454751" type="professorProva">
                     <param id="0" name="Opacity">0</param>
-                </action>
-                <action id="-3" name="Set position" sid="9183718856071369" type="meninoProvaPupila">
-                    <param id="0" name="X">414</param>
-                    <param id="1" name="Y">305</param>
                 </action>
                 <action id="0" name="Execute" sid="108376284846277" type="CallJS">
                     <param id="0" name="Value">&quot;sendRankingData(&quot; &amp; Pontuacao.At(0) + Pontuacao.At(1) + Pontuacao.At(2) &amp; &quot;)&quot;</param>
@@ -593,13 +585,13 @@
         <event-block any="1" sid="4457758171099473">
             <conditions>
                 <condition id="0" name="On key pressed" sid="286035350681477" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
+                    <param id="0" name="Key">27</param>
                 </condition>
                 <condition id="0" name="On key pressed" sid="1663150197477924" type="Keyboard">
-                    <param id="0" name="Key">13 (Return)</param>
+                    <param id="0" name="Key">13</param>
                 </condition>
                 <condition id="0" name="On key pressed" sid="7241879589504271" type="Keyboard">
-                    <param id="0" name="Key">32 (Space)</param>
+                    <param id="0" name="Key">32</param>
                 </condition>
                 <condition id="14" name="On tap" sid="992872005799392" type="Touch" />
             </conditions>

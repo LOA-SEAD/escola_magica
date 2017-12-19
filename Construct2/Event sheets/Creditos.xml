@@ -10,7 +10,7 @@
             <actions>
                 <action id="33" name="Stop all" sid="8088735845280139" type="Audio" />
                 <action id="-3" name="Set position" sid="5870587113205849" type="TextCreditos">
-                    <param id="0" name="X">400</param>
+                    <param id="0" name="X">533</param>
                     <param id="1" name="Y">600</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="9039529198482182" type="Logos">

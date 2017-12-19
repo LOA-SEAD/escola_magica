@@ -132,7 +132,7 @@
                     <param id="1" name="State">0</param>
                 </action>
                 <action id="-3" name="Set position" sid="595540724096244" type="MenuFechar">
-                    <param id="0" name="X">400</param>
+                    <param id="0" name="X">533</param>
                     <param id="1" name="Y">-300</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="605957164535429" type="BtnNaoFechar">
@@ -872,7 +872,7 @@
                         <event-block sid="6923857880406495">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="9862657719860663" type="Keyboard">
-                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                    <param id="0" name="Key">37</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -884,7 +884,7 @@
                         <event-block sid="1061344161340521">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="9436611406174763" type="Keyboard">
-                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                    <param id="0" name="Key">39</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -896,7 +896,7 @@
                         <event-block sid="2192729837793912">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="6999210304182477" type="Keyboard">
-                                    <param id="0" name="Key">16 (Shift)</param>
+                                    <param id="0" name="Key">16</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -908,7 +908,7 @@
                         <event-block sid="3404311480714554">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="127636190364114" type="Keyboard">
-                                    <param id="0" name="Key">32 (Space)</param>
+                                    <param id="0" name="Key">32</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -920,7 +920,7 @@
                         <event-block sid="2330122157494355">
                             <conditions>
                                 <condition id="3" name="On key released" sid="5022777497899134" type="Keyboard">
-                                    <param id="0" name="Key">16 (Shift)</param>
+                                    <param id="0" name="Key">16</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1083,7 +1083,7 @@
                                 <event-block any="1" sid="3554213690682431">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="466386022405416" type="Keyboard">
-                                            <param id="0" name="Key">17 (Ctrl)</param>
+                                            <param id="0" name="Key">17</param>
                                         </condition>
                                         <condition id="4" name="Is touching object" sid="270714070774242" type="Touch">
                                             <param id="0" name="Object">BtnCtrl</param>
@@ -1128,7 +1128,7 @@
                                 <event-block any="1" sid="6988457475849023">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="8231356019001038" type="Keyboard">
-                                            <param id="0" name="Key">17 (Ctrl)</param>
+                                            <param id="0" name="Key">17</param>
                                         </condition>
                                         <condition id="4" name="Is touching object" sid="268617772146046" type="Touch">
                                             <param id="0" name="Object">BtnCtrl</param>
@@ -1173,7 +1173,7 @@
                                 <event-block any="1" sid="4600019008706497">
                                     <conditions>
                                         <condition id="0" name="On key pressed" sid="1168418954599686" type="Keyboard">
-                                            <param id="0" name="Key">17 (Ctrl)</param>
+                                            <param id="0" name="Key">17</param>
                                         </condition>
                                         <condition id="4" name="Is touching object" sid="922014000151421" type="Touch">
                                             <param id="0" name="Object">BtnCtrl</param>
@@ -1313,7 +1313,7 @@
                         <event-block sid="992030423204592">
                             <conditions>
                                 <condition id="3" name="On key released" sid="815419487366697" type="Keyboard">
-                                    <param id="0" name="Key">17 (Ctrl)</param>
+                                    <param id="0" name="Key">17</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="786700600993956" type="imgPlayer">
                                     <param id="0" name="Object">itInterrup</param>
@@ -1366,7 +1366,7 @@
                 <event-block sid="3589690094565488">
                     <conditions>
                         <condition id="3" name="On key released" sid="8267984354768686" type="Keyboard">
-                            <param id="0" name="Key">77 (M)</param>
+                            <param id="0" name="Key">77</param>
                         </condition>
                     </conditions>
                     <actions />

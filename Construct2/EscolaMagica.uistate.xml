@@ -13,18 +13,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Porta1</layout>
         <layout order="1">Porta2</layout>
         <layout order="2">Porta3</layout>
-        <layout order="3">Inicio</layout>
+        <layout active="1" order="3">Inicio</layout>
+        <layout order="4">Pergunta</layout>
         <layout order="5">IntroducaoSonho</layout>
-        <layout order="12">Introducao</layout>
-        <layout order="13">GameOver</layout>
-        <layout active="1" order="4">Pergunta</layout>
+        <layout order="6">Introducao</layout>
+        <layout order="12">GameOver</layout>
+        <layout order="13">Creditos</layout>
+        <layout order="14">Conquistas</layout>
+        <layout order="17">Vitoria</layout>
+        <event-sheet order="11">IntroducaoSonho</event-sheet>
         <event-sheet order="7">Inicio</event-sheet>
-        <event-sheet order="6">IntroducaoSonho</event-sheet>
-        <event-sheet order="8">Porta3</event-sheet>
+        <event-sheet order="10">Porta3</event-sheet>
         <event-sheet order="9">Porta2</event-sheet>
-        <event-sheet order="10">Porta1</event-sheet>
-        <event-sheet order="11">Pergunta</event-sheet>
-        <event-sheet order="14">Creditos</event-sheet>
+        <event-sheet order="8">Porta1</event-sheet>
+        <event-sheet order="15">Conquistas</event-sheet>
+        <event-sheet order="16">Pergunta</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -55,30 +58,29 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Textos/" />
         <folder expanded="0" path="object-folder/Componentes/" />
         <folder expanded="0" path="object-folder/HUD/" />
-        <folder expanded="0" path="object-folder/Animacoes/" />
+        <folder expanded="1" path="object-folder/Animacoes/" />
         <folder expanded="0" path="object-folder/Animacoes/onom/" />
         <folder expanded="1" path="object-folder/Animacoes/onom/onomCocorico/" />
         <folder expanded="0" path="object-folder/Animacoes/menino/" />
         <folder expanded="0" path="object-folder/Animacoes/relogio/" />
         <folder expanded="0" path="object-folder/Creditos/" />
-        <folder expanded="0" path="object-folder/Pause/" />
+        <folder expanded="1" path="object-folder/Pause/" />
         <folder expanded="1" path="object-folder/Mobile/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Portas/" />
-        <folder expanded="0" path="layout-folder/Animacoes/" />
+        <folder expanded="1" path="layout-folder/Animacoes/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Classes/" />
         <folder expanded="1" path="event-folder/Animacoes/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
-        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="file-folder/JS/" />
         <folder expanded="1" path="music-folder/fundos/" />
         <folder expanded="1" path="animation-folder/imgNuvem/" />
         <folder expanded="1" path="animation-folder/imgPiramide/" />
         <folder expanded="1" path="animation-folder/itCaixaMusica/" />
-        <folder expanded="1" path="animation-folder/imgInicioBG/" />
         <folder expanded="1" path="animation-folder/TituloEscolaMagica/" />
         <folder expanded="1" path="animation-folder/imgArvores/" />
         <folder expanded="1" path="animation-folder/itPonte/" />

@@ -498,13 +498,13 @@
         <event-block any="1" sid="102883158725705">
             <conditions>
                 <condition id="0" name="On key pressed" sid="3406548390867138" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
+                    <param id="0" name="Key">27</param>
                 </condition>
                 <condition id="0" name="On key pressed" sid="4484935234444352" type="Keyboard">
-                    <param id="0" name="Key">13 (Return)</param>
+                    <param id="0" name="Key">13</param>
                 </condition>
                 <condition id="0" name="On key pressed" sid="4174395221224141" type="Keyboard">
-                    <param id="0" name="Key">32 (Space)</param>
+                    <param id="0" name="Key">32</param>
                 </condition>
             </conditions>
             <actions />

@@ -40,7 +40,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="-3" name="Set position" sid="5072174524636328" type="Pause">
-                    <param id="0" name="X">400</param>
+                    <param id="0" name="X">533</param>
                     <param id="1" name="Y">900</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="3967276325034202" type="btnContinuar">
@@ -113,7 +113,7 @@
                     <param id="1" name="State">0</param>
                 </action>
                 <action id="-3" name="Set position" sid="578205667361229" type="MenuFechar">
-                    <param id="0" name="X">400</param>
+                    <param id="0" name="X">533</param>
                     <param id="1" name="Y">-300</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="485235293362757" type="BtnNaoFechar">
@@ -129,7 +129,7 @@
                 <comment>Para controle dos dispositivos mobile</comment>
                 <event-block sid="613457562953536">
                     <conditions>
-                        <condition disabled="1" id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
+                        <condition id="-20" name="Is on mobile device" sid="255282342870109" type="System" />
                         <condition id="-9" inverted="1" name="Is visible" sid="250509035337412" type="BtnShift" />
                     </conditions>
                     <actions>
@@ -1142,7 +1142,7 @@
                         <event-block sid="578587582104011">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="3219576397405611" type="Keyboard">
-                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                    <param id="0" name="Key">37</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1154,7 +1154,7 @@
                         <event-block sid="84676478053737">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="8015312896119335" type="Keyboard">
-                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                    <param id="0" name="Key">39</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1166,7 +1166,7 @@
                         <event-block sid="6746875710467818">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="8317506787865899" type="Keyboard">
-                                    <param id="0" name="Key">16 (Shift)</param>
+                                    <param id="0" name="Key">16</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1181,7 +1181,7 @@
                         <event-block sid="789239622436402">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="2113718567081424" type="Keyboard">
-                                    <param id="0" name="Key">32 (Space)</param>
+                                    <param id="0" name="Key">32</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1193,7 +1193,7 @@
                         <event-block sid="681527161402038">
                             <conditions>
                                 <condition id="3" name="On key released" sid="1167399169246588" type="Keyboard">
-                                    <param id="0" name="Key">16 (Shift)</param>
+                                    <param id="0" name="Key">16</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1338,7 +1338,7 @@
                                 <event-block any="1" sid="1562426576225932">
                                     <conditions>
                                         <condition id="3" name="On key released" sid="9885333095793594" type="Keyboard">
-                                            <param id="0" name="Key">17 (Ctrl)</param>
+                                            <param id="0" name="Key">17</param>
                                         </condition>
                                         <condition id="4" name="Is touching object" sid="955997683284314" type="Touch">
                                             <param id="0" name="Object">BtnCtrl</param>
@@ -2303,7 +2303,7 @@
                 <event-block sid="764824097511275">
                     <conditions>
                         <condition id="3" name="On key released" sid="291461933884968" type="Keyboard">
-                            <param id="0" name="Key">77 (M)</param>
+                            <param id="0" name="Key">77</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2625,7 +2625,7 @@
                 <event-block any="1" sid="4677722022984175">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="9919900697957623" type="Keyboard">
-                            <param id="0" name="Key">27 (Esc)</param>
+                            <param id="0" name="Key">27</param>
                         </condition>
                         <condition id="3" name="On touched object" sid="290464054361676" type="Touch">
                             <param id="0" name="Object">BtnEsc</param>

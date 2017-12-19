@@ -102,7 +102,7 @@
                 <event-block disabled="1" sid="9962840014300728">
                     <conditions>
                         <condition id="3" name="On key released" sid="1726322219551026" type="Keyboard">
-                            <param id="0" name="Key">77 (M)</param>
+                            <param id="0" name="Key">77</param>
                         </condition>
                     </conditions>
                     <actions />
