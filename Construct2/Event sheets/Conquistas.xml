@@ -30,6 +30,16 @@
                 </action>
             </actions>
             <sub-events>
+                <event-block sid="672738503161638">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="904082628204209" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set font size" sid="245582003287766" type="txtCenario">
+                            <param id="0" name="Size (pt)">17</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-group description='Verifica variaveis responsaveis pelo registro das acoes do jogador e, caso tenha atingido uma conquista, atribui o valor 1 aa posicao correspondente dessa mesma ao vetor &quot;Conquistas&quot;, registrando que ela ja foi atingida.' sid="2474853392045306" title="VerificarConquistas">
                     <sub-events>
                         <comment>Repetente</comment>
@@ -168,12 +178,11 @@
                 </event-group>
             </sub-events>
         </event-block>
-        <event-block any="1" sid="2321700257482058">
+        <event-block sid="2321700257482058">
             <conditions>
                 <condition id="7" name="Cursor is over object" sid="8842000061321847" type="Mouse">
                     <param id="0" name="Object">galo</param>
                 </condition>
-                <condition id="-20" name="Is on mobile device" sid="562109926891532" type="System" />
             </conditions>
             <actions>
                 <action id="0" name="Set cursor style" sid="9690528662918836" type="Mouse">
@@ -217,6 +226,21 @@
                     <param id="1" name="Value">&quot;Conquistas&quot;</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="323371765746531" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440855351768073">
+            <conditions>
+                <condition id="14" name="On tap" sid="826987362540445" type="Touch" />
+                <condition id="-20" name="Is on mobile device" sid="473337770990547" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="252866199498468" type="System">
+                    <param id="0" name="Variable">LayoutAnterior</param>
+                    <param id="1" name="Value">&quot;Conquistas&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="806321863154268" type="System">
                     <param id="0" name="Layout">Inicio</param>
                 </action>
             </actions>

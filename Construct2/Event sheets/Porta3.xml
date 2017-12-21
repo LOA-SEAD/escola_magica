@@ -143,7 +143,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="531344705096278" type="BtnCtrl">
-                            <param id="0" name="Animation">&quot;Fase3&quot;</param>
+                            <param id="0" name="Animation">&quot;Branco&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action disabled="1" id="4" name="Set animation" sid="572698917305513" type="BtnEsc">
@@ -167,7 +167,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="874513127462661" type="BtnShift">
-                            <param id="0" name="Animation">&quot;Fase3&quot;</param>
+                            <param id="0" name="Animation">&quot;Branco&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="445953607910242" type="BtnDirecional">
@@ -175,7 +175,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="876547017465595" type="BtnCircDir">
-                            <param id="0" name="Animation">&quot;Fase3&quot;</param>
+                            <param id="0" name="Animation">&quot;Branco&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action disabled="1" id="-15" name="Set visible" sid="275981430836275" type="BtnSetaEsq">
@@ -3123,131 +3123,143 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="8764557524232928">
+                        <event-block sid="783012157533411">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="2954964382006967" type="System">
-                                    <param id="0" name="Variable">pausado</param>
+                                <condition id="-14" name="Compare variable" sid="484644016949150" type="System">
+                                    <param id="0" name="Variable">FechaApp</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="10" name="Set master volume" sid="9726953574582497" type="Audio">
-                                    <param id="0" name="dB">Audio.MasterVolume - 10</param>
-                                </action>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action id="2" name="Stop" sid="5205238254887733" type="imgPlayer" />
-                                <action id="2" name="Stop" sid="8325824230256894" type="Monitor" />
-                                <action id="2" name="Stop" sid="6135150080810201" type="itCaixaMusica" />
-                                <action id="2" name="Stop" sid="5276631492026212" type="AreiaMovetica" />
-                                <action behavior="Sine" id="0" name="Set active" sid="9713422142483866" type="itBarras">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="2667577385049447" type="System">
-                                    <param id="0" name="Group name">&quot;ControleMao&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="0" name="Set spraying" sid="1112208194732684" type="Areias">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="9160004701460578" type="System">
-                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="6485876101862006" type="itBala">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="4480387004893727" type="Inimigo">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="4177724011179551" type="System">
-                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="2" name="Stop" sid="1768169569919" type="Inimigo" />
-                                <action id="2" name="Stop" sid="6907539348092644" type="itBala" />
-                                <action id="-2" name="Set Y" sid="8432172744044183" type="Pause">
-                                    <param id="0" name="Y">300</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="5350487560269484" type="System">
-                                    <param id="0" name="Seconds">0.01</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="1895531899378355" type="System">
-                                    <param id="0" name="Variable">pausado</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="2514202807907053">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="5203595730922394" type="System">
-                                    <param id="0" name="Variable">pausado</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="10" name="Set master volume" sid="533289131784929" type="Audio">
-                                    <param id="0" name="dB">Audio.MasterVolume +10</param>
-                                </action>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="3" name="Start" sid="3789186778512904" type="imgPlayer">
-                                    <param id="0" name="From">0</param>
-                                </action>
-                                <action id="3" name="Start" sid="8427177743147599" type="Monitor">
-                                    <param id="0" name="From">0</param>
-                                </action>
-                                <action id="3" name="Start" sid="7571108024583952" type="itCaixaMusica">
-                                    <param id="0" name="From">0</param>
-                                </action>
-                                <action id="3" name="Start" sid="187490287811298" type="AreiaMovetica">
-                                    <param id="0" name="From">0</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="7143919103170106" type="System">
-                                    <param id="0" name="Group name">&quot;ControleMao&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set spraying" sid="7020822140369974" type="Areias">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="1541602515711581" type="System">
-                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="9283294758409059" type="itBala">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="5978722890634736" type="Inimigo">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="2691966395545415" type="System">
-                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="3" name="Start" sid="5717987624382805" type="Inimigo">
-                                    <param id="0" name="From">0</param>
-                                </action>
-                                <action id="3" name="Start" sid="5836607921020539" type="itBala">
-                                    <param id="0" name="From">0</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="7040081383905007" type="Pause">
-                                    <param id="0" name="Y">900</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="7623870425909599" type="System">
-                                    <param id="0" name="Seconds">0.01</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="5587345331490058" type="System">
-                                    <param id="0" name="Variable">pausado</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="8764557524232928">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="2954964382006967" type="System">
+                                            <param id="0" name="Variable">pausado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Set master volume" sid="9726953574582497" type="Audio">
+                                            <param id="0" name="dB">Audio.MasterVolume - 10</param>
+                                        </action>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="975632827710708" type="player">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="5205238254887733" type="imgPlayer" />
+                                        <action id="2" name="Stop" sid="8325824230256894" type="Monitor" />
+                                        <action id="2" name="Stop" sid="6135150080810201" type="itCaixaMusica" />
+                                        <action id="2" name="Stop" sid="5276631492026212" type="AreiaMovetica" />
+                                        <action behavior="Sine" id="0" name="Set active" sid="9713422142483866" type="itBarras">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="2667577385049447" type="System">
+                                            <param id="0" name="Group name">&quot;ControleMao&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Set spraying" sid="1112208194732684" type="Areias">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="9160004701460578" type="System">
+                                            <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="5" name="Set enabled" sid="6485876101862006" type="itBala">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="4480387004893727" type="Inimigo">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="4177724011179551" type="System">
+                                            <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="2" name="Stop" sid="1768169569919" type="Inimigo" />
+                                        <action id="2" name="Stop" sid="6907539348092644" type="itBala" />
+                                        <action id="-2" name="Set Y" sid="8432172744044183" type="Pause">
+                                            <param id="0" name="Y">300</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="5350487560269484" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="1895531899378355" type="System">
+                                            <param id="0" name="Variable">pausado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2514202807907053">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5203595730922394" type="System">
+                                            <param id="0" name="Variable">pausado</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Set master volume" sid="533289131784929" type="Audio">
+                                            <param id="0" name="dB">Audio.MasterVolume +10</param>
+                                        </action>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="7566065787833035" type="player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="3789186778512904" type="imgPlayer">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="8427177743147599" type="Monitor">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="7571108024583952" type="itCaixaMusica">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="187490287811298" type="AreiaMovetica">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="7143919103170106" type="System">
+                                            <param id="0" name="Group name">&quot;ControleMao&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set spraying" sid="7020822140369974" type="Areias">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="1541602515711581" type="System">
+                                            <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action behavior="Bullet" id="5" name="Set enabled" sid="9283294758409059" type="itBala">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="5978722890634736" type="Inimigo">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="2691966395545415" type="System">
+                                            <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="5717987624382805" type="Inimigo">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action id="3" name="Start" sid="5836607921020539" type="itBala">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="7040081383905007" type="Pause">
+                                            <param id="0" name="Y">900</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="7623870425909599" type="System">
+                                            <param id="0" name="Seconds">0.01</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="5587345331490058" type="System">
+                                            <param id="0" name="Variable">pausado</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -3420,10 +3432,15 @@
         </event-group>
         <event-group description="" sid="268249051413874" title="FecharMobile5">
             <sub-events>
-                <event-block any="1" sid="526472621872919">
+                <event-block sid="526472621872919">
                     <conditions>
                         <condition id="3" name="On touched object" sid="711572898218329" type="Touch">
                             <param id="0" name="Object">BtnFecharMobile</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="419594594967467" type="System">
+                            <param id="0" name="Variable">pausado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions />

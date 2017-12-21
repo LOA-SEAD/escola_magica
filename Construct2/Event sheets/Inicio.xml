@@ -34,7 +34,9 @@
         <variable constant="0" name="SetorFase" sid="278584753170574" static="0" type="number">0</variable>
         <variable constant="0" name="sendPlayJS" sid="210655776253107" static="0" type="text"></variable>
         <variable constant="0" name="sendTimeJS" sid="560454144964517" static="0" type="text"></variable>
+        <comment>Controla as telas de fechar e de ajuda</comment>
         <variable constant="0" name="FechaApp" sid="185382595446570" static="0" type="number">0</variable>
+        <variable constant="0" name="AjudaApp" sid="516557489491433" static="0" type="number">0</variable>
         <event-block sid="1738026046230992">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="7389519769199064" type="System" />
@@ -153,10 +155,30 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="858915869980222" type="txtMenu2">
-                            <param id="0" name="Text">&quot;Direcional - Arraste na direção desejada para o personagem andar. Arraste para cima para pular.&#x0D;&#x0A;Correr - segure enquanto anda para fazer o personagem correr.&#x0D;&#x0A;Ação - aperte para produzir uma ação qualquer no jogo (entrar na porta, responder uma pergunta, ...)&#x0D;&#x0A;Pausar - aperte a qualquer momento do jogo para pausar e ter novas opções.&quot;</param>
+                            <param id="0" name="Text">&quot;Direcional - Arraste na direção desejada para o personagem andar. Arraste para cima para pular.&#x0D;&#x0A;Correr - segure enquanto anda para fazer o personagem correr.&#x0D;&#x0A;Ação - aperte para produzir uma ação qualquer no jogo (entrar na porta, responder uma pergunta, ...)&#x0D;&#x0A;Pausar - aperte a qualquer momento do jogo para pausar e ter novas opções.&#x0D;&#x0A;&#x0D;&#x0A;Toque na lousa para fechar a seção de ajuda&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="621145849313107" type="txtMenu2">
+                            <param id="0" name="Width">680</param>
+                            <param id="1" name="Height">340</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="647380870868760" type="txtMenu2">
+                            <param id="0" name="Size (pt)">19</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="964341031053823" type="txtMenu2">
+                            <param id="0" name="Color">rgb(255, 255, 255)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="845669927446316" type="txtMenu2">
+                            <param id="0" name="X">533</param>
+                            <param id="1" name="Y">300</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="759086936945826" type="txtMenu2">
+                            <param id="0" name="Layer">&quot;mobile&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="927242030391350" type="txtMenu2">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="4" name="Set animation" sid="172209913545596" type="BtnCtrl">
-                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="0" name="Animation">&quot;Branco&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action disabled="1" id="4" name="Set animation" sid="488251503241011" type="BtnEsc">
@@ -180,7 +202,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="116362601059918" type="BtnShift">
-                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="0" name="Animation">&quot;Branco&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="639687710396125" type="BtnDirecional">
@@ -188,7 +210,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="928691048721050" type="BtnCircDir">
-                            <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                            <param id="0" name="Animation">&quot;Branco&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action disabled="1" id="-15" name="Set visible" sid="253871958835912" type="BtnSetaEsq">
@@ -245,6 +267,12 @@
                         <action id="11" name="Set collisions enabled" sid="669393202169279" type="BtnCircDir">
                             <param id="0" name="Collisions">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="150604498690797" type="BtnAjuda">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="214857486512548" type="BtnAjuda">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
                         <action id="11" name="Set collisions enabled" sid="394411703489505" type="HitboxDir">
                             <param id="0" name="Collisions">1</param>
                         </action>
@@ -277,6 +305,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Além de destruir alguns botões, edita todo o texto de ajuda para que ele seja apresentado em uma tela separada</comment>
                 <event-block sid="255616560160425">
                     <conditions>
                         <condition id="-22" name="Else" sid="868867151562652" type="System" />
@@ -290,6 +319,7 @@
                         <action id="-9" name="Destroy" sid="256955194731336" type="HitboxDir" />
                         <action id="-9" name="Destroy" sid="695482503915395" type="BtnFecharMobile" />
                         <action id="-9" name="Destroy" sid="813146254330437" type="BtnSomMobile" />
+                        <action id="-9" name="Destroy" sid="476463859154349" type="BtnAjuda" />
                     </actions>
                 </event-block>
                 <comment>Jogador completou o jogo</comment>
@@ -1277,6 +1307,9 @@
                                             <param id="3" name="Volume">Volume-15</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
+                                        <action id="-16" name="Wait" sid="425306436533569" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
                                         <event-block sid="668421879697359">
@@ -1288,9 +1321,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-16" name="Wait" sid="384220378842204" type="System">
-                                                    <param id="0" name="Seconds">0.5</param>
-                                                </action>
                                                 <action id="-2" name="Go to layout" sid="408980232886990" type="System">
                                                     <param id="0" name="Layout">Creditos</param>
                                                 </action>
@@ -1682,10 +1712,15 @@
         </event-block>
         <event-group description="" sid="362189483654559" title="FecharMobile">
             <sub-events>
-                <event-block any="1" sid="705535462941004">
+                <event-block sid="705535462941004">
                     <conditions>
                         <condition id="3" name="On touched object" sid="252407032876760" type="Touch">
                             <param id="0" name="Object">BtnFecharMobile</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="153554608702620" type="System">
+                            <param id="0" name="Variable">AjudaApp</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1885,6 +1920,217 @@
                             <param id="0" name="dB">Audio.MasterVolume + 10</param>
                         </action>
                         <action id="1" name="Close" sid="175182744058438" type="Browser" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Ao invés de apresentar a ajuda embaixo, na versão mobile ela será apresentada em uma lousa</comment>
+        <event-group description="" sid="867346850274628" title="AjudaMobile">
+            <sub-events>
+                <event-block sid="441854215588087">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="686036193018886" type="Touch">
+                            <param id="0" name="Object">BtnAjuda</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="427460989154532" type="System">
+                            <param id="0" name="Variable">FechaApp</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="173822681624272">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="863018896102996" type="System">
+                                    <param id="0" name="Variable">AjudaApp</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Set master volume" sid="232107976838040" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume - 10</param>
+                                </action>
+                                <action id="6" name="Stop" sid="443626779368428" type="Audio">
+                                    <param id="0" name="Tag">&quot;ponte&quot;</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="594389710038656" type="player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="850227018068641" type="imgPlatMov">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="449172601380725" type="imgPlatMovBase">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="901899557801086" type="imgPlayer" />
+                                <action id="2" name="Stop" sid="555573781897767" type="Monitor" />
+                                <action id="4" name="Set speed" sid="261095457536719" type="particAgua">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="759951602621680" type="itBarras">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="469518153761907" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="503233285655142" type="itBala">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="802375865536692" type="Inimigo">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="983931793947385" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="508301518528570" type="Inimigo" />
+                                <action id="2" name="Stop" sid="355501254753695" type="itBala" />
+                                <action id="-2" name="Set Y" sid="442490947552306" type="LousaAjuda">
+                                    <param id="0" name="Y">100</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="167840837618638" type="txtMenu2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="563907690930030" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="265147429819239" type="System">
+                                    <param id="0" name="Variable">AjudaApp</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="355171675687151">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="242057258481454" type="System">
+                                    <param id="0" name="Variable">AjudaApp</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Set master volume" sid="265933824776994" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="602025863089847" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="953528299098603" type="imgPlatMov">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="994870773062139" type="imgPlatMovBase">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="141546994920826" type="imgPlayer">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="426347041646786" type="Monitor">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="4" name="Set speed" sid="408789141142243" type="particAgua">
+                                    <param id="0" name="Speed">200</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="324928454764895" type="itBarras">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="641375912558675" type="System">
+                                    <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="774094515600319" type="itBala">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="193488318417832" type="Inimigo">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="215070121271647" type="System">
+                                    <param id="0" name="Group name">&quot;Balas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="584575179669227" type="Inimigo">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="3" name="Start" sid="645389625645232" type="itBala">
+                                    <param id="0" name="From">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="884268929358388" type="LousaAjuda">
+                                    <param id="0" name="Y">700</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="239548152813768" type="txtMenu2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="807067335582149" type="System">
+                                    <param id="0" name="Seconds">0.01</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="801388139882144" type="System">
+                                    <param id="0" name="Variable">AjudaApp</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="482073026184355">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="185006103064900" type="Touch">
+                            <param id="0" name="Object">LousaAjuda</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Set master volume" sid="951103365221278" type="Audio">
+                            <param id="0" name="dB">Audio.MasterVolume + 10</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="595363941934468" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="177412580752007" type="imgPlayer">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="551850981219661" type="Monitor">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="4" name="Set speed" sid="984798657506253" type="particAgua">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="472253772905236" type="itBarras">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="546695790863288" type="System">
+                            <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="259329719764775" type="itBala">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="845200327246437" type="Inimigo">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="785780273608788" type="System">
+                            <param id="0" name="Group name">&quot;Balas&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="776562173198320" type="Inimigo">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="3" name="Start" sid="715219033184393" type="itBala">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="297977839900819" type="LousaAjuda">
+                            <param id="0" name="Y">700</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="344502562974777" type="txtMenu2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="596272338229733" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="521213599408965" type="System">
+                            <param id="0" name="Variable">AjudaApp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

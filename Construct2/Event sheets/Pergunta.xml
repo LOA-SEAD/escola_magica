@@ -130,7 +130,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="949559708245848" type="BtnCtrl">
-                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="0" name="Animation">&quot;Preto&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action disabled="1" id="4" name="Set animation" sid="384691538555703" type="BtnEsc">
@@ -154,7 +154,7 @@
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="274286174938593" type="BtnShift">
-                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="0" name="Animation">&quot;Preto&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="540893529646851" type="BtnDirecional">
@@ -162,7 +162,7 @@
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="305527341669190" type="BtnCircDir">
-                                    <param id="0" name="Animation">&quot;Inicio&quot;</param>
+                                    <param id="0" name="Animation">&quot;Preto&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action disabled="1" id="-15" name="Set visible" sid="305060872403431" type="BtnSetaEsq">

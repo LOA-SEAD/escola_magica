@@ -3472,7 +3472,7 @@
                 <instance type="BtnCtrl" uid="561">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Fase3</initial-animation>
+                        <initial-animation>Branco</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
@@ -3494,7 +3494,7 @@
                 <instance type="BtnShift" uid="562">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Fase3</initial-animation>
+                        <initial-animation>Branco</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
@@ -3538,7 +3538,7 @@
                 <instance type="BtnCircDir" uid="557">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Fase3</initial-animation>
+                        <initial-animation>Branco</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
@@ -3941,7 +3941,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>672</x>
+                        <x>670</x>
                         <y>-274</y>
                         <z>0</z>
                         <width>80</width>

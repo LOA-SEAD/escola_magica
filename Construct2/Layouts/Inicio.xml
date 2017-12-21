@@ -2066,6 +2066,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="BtnAjuda" uid="604">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>725</x>
+                        <y>48</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -2283,7 +2305,7 @@
                 <instance type="BtnShift" uid="539">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Branco</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
@@ -2305,7 +2327,7 @@
                 <instance type="BtnCtrl" uid="540">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Branco</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
@@ -2335,7 +2357,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>725</x>
-                        <y>48</y>
+                        <y>-48</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -2371,7 +2393,7 @@
                 <instance type="BtnCircDir" uid="536">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Inicio</initial-animation>
+                        <initial-animation>Branco</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
                     </properties>
@@ -2524,7 +2546,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>672</x>
+                        <x>670</x>
                         <y>-274</y>
                         <z>0</z>
                         <width>80</width>
@@ -2532,6 +2554,26 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="LousaAjuda" uid="603">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>173</x>
+                        <y>700</y>
+                        <z>0</z>
+                        <width>720</width>
+                        <height>400</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

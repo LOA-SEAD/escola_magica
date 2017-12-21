@@ -118,7 +118,7 @@
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Comic Sans MS,-21,400,0</font>
-                        <color>105,105,105</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -145,7 +145,7 @@
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Comic Sans MS,-21,700,0</font>
-                        <color>105,105,105</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Right</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
