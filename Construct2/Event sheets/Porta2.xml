@@ -447,6 +447,22 @@
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <comment>O local onde se pisa fica correto, mas a base não...</comment>
+                                <event-block sid="683183013901706">
+                                    <conditions>
+                                        <condition id="-13" name="Pick nth instance" sid="630771889781304" type="System">
+                                            <param id="0" name="Object">imgPlatMov</param>
+                                            <param id="1" name="Instance">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="326997310339516" type="imgPlatMov">
+                                            <param id="0" name="Y">576</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="649786958599411">
                             <conditions>
@@ -461,6 +477,22 @@
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <comment>O local onde se pisa fica correto, mas a base não...</comment>
+                                <event-block sid="747712167706097">
+                                    <conditions>
+                                        <condition id="-13" name="Pick nth instance" sid="135750637662549" type="System">
+                                            <param id="0" name="Object">imgPlatMov</param>
+                                            <param id="1" name="Instance">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="916651758549697" type="imgPlatMov">
+                                            <param id="0" name="Y">576</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="3446861910413175">
                             <conditions>

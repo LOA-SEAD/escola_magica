@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="animacao9" />
+    <active-layer name="HUD" />
     <layers>
         <layer locked="0" name="animacao0" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="animacao1" parallax-in-editor="0" visible="1" />
@@ -40,5 +40,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="animacao12" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="animacao13" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="animacao14" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="HUD" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

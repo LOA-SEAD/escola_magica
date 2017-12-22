@@ -54,6 +54,15 @@
                 </action>
             </actions>
             <sub-events>
+                <comment>Não se utiliza o interruptor para avançar na versão desktop</comment>
+                <event-block sid="715891035113480">
+                    <conditions>
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="209976228719475" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="904998043565640" type="itIntro" />
+                    </actions>
+                </event-block>
                 <variable constant="0" name="i" sid="8731638371082725" static="0" type="number">1</variable>
                 <event-block sid="8693922566966198">
                     <conditions>
@@ -582,6 +591,33 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <comment>Pular cenas mobile</comment>
+        <event-block sid="589056936171550">
+            <conditions>
+                <condition id="17" name="On tap object" sid="650570114501760" type="Touch">
+                    <param id="0" name="Object">itIntro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="801096802450510" type="System">
+                    <param id="0" name="Group name">&quot;AF_ALTERNAR_LAYERS&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="303064071791899">
+            <conditions>
+                <condition id="-20" name="Is on mobile device" sid="338150262169947" type="System" />
+                <condition id="-14" name="Compare variable" sid="800284682237298" type="System">
+                    <param id="0" name="Variable">AnimacaoAtual</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ANIMACAOFINAL</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="994306346585589" type="itIntro" />
+            </actions>
+        </event-block>
         <event-block any="1" sid="4457758171099473">
             <conditions>
                 <condition id="0" name="On key pressed" sid="286035350681477" type="Keyboard">
@@ -593,7 +629,6 @@
                 <condition id="0" name="On key pressed" sid="7241879589504271" type="Keyboard">
                     <param id="0" name="Key">32</param>
                 </condition>
-                <condition id="14" name="On tap" sid="992872005799392" type="Touch" />
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="8957196535142468" type="System">
@@ -601,6 +636,27 @@
                     <param id="1" name="Value">&quot;Vitoria&quot;</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="2434440254251759" type="System">
+                    <param id="0" name="Layout">Creditos</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Versão mobile para sair</comment>
+        <event-block sid="612462580614749">
+            <conditions>
+                <condition id="14" name="On tap" sid="851440808187103" type="Touch" />
+                <condition id="-20" name="Is on mobile device" sid="319142347074554" type="System" />
+                <condition id="-14" name="Compare variable" sid="667478848222173" type="System">
+                    <param id="0" name="Variable">AnimacaoAtual</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">ANIMACAOFINAL</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="490839526950600" type="System">
+                    <param id="0" name="Variable">LayoutAnterior</param>
+                    <param id="1" name="Value">&quot;Vitoria&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="481650683738252" type="System">
                     <param id="0" name="Layout">Creditos</param>
                 </action>
             </actions>

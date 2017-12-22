@@ -1537,8 +1537,9 @@
             <object-type name="itIntro" sid="1459548435419079">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433072019676073" speed="0">
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433072019676073" speed="0">
                         <frame duration="1" hotspotX="0.52" hotspotY="0.515152" original-source="C:\Users\Valério\Documents\GitHub\escola_magica\Construct2\Textures\itIntro.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Douglas\Pictures\avanca_mobile.png" />
                     </animation>
                 </animation-folder>
             </object-type>
