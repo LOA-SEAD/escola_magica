@@ -901,7 +901,7 @@
                     <sub-events>
                         <event-block sid="6923857880406495">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="9862657719860663" type="Keyboard">
+                                <condition id="2" name="Key is down" sid="9862657719860663" type="Keyboard">
                                     <param id="0" name="Key">37</param>
                                 </condition>
                             </conditions>
@@ -913,7 +913,7 @@
                         </event-block>
                         <event-block sid="1061344161340521">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="9436611406174763" type="Keyboard">
+                                <condition id="2" name="Key is down" sid="9436611406174763" type="Keyboard">
                                     <param id="0" name="Key">39</param>
                                 </condition>
                             </conditions>

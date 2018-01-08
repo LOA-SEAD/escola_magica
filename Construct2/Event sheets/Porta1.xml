@@ -2733,9 +2733,6 @@
                                         <action id="4" name="Set speed" sid="741011278819792" type="particAgua">
                                             <param id="0" name="Speed">200</param>
                                         </action>
-                                        <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
-                                            <param id="0" name="State">1</param>
-                                        </action>
                                         <action id="-12" name="Set group active" sid="1541602515711581" type="System">
                                             <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -2767,6 +2764,22 @@
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="627856085054691">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="824028918200858" type="System">
+                                                    <param id="0" name="Variable">PergAtual</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Sine" id="0" name="Set active" sid="69045105741733" type="itBarras">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2796,9 +2809,6 @@
                         </action>
                         <action id="4" name="Set speed" sid="7367038283370661" type="particAgua">
                             <param id="0" name="Speed">200</param>
-                        </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="1166711076003986" type="itBarras">
-                            <param id="0" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="217044097750129" type="System">
                             <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
@@ -2831,6 +2841,22 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="850057224894198">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="643253660624505" type="System">
+                                    <param id="0" name="Variable">PergAtual</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Sine" id="0" name="Set active" sid="725253010478596" type="itBarras">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="5443037164406282">
                     <conditions>
@@ -3034,9 +3060,6 @@
                                 <action id="4" name="Set speed" sid="700591678992257" type="particAgua">
                                     <param id="0" name="Speed">200</param>
                                 </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="274991173308452" type="itBarras">
-                                    <param id="0" name="State">1</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="997346618163100" type="System">
                                     <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
                                     <param id="1" name="State">1</param>
@@ -3068,6 +3091,22 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="369999599975476">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="695878707236843" type="System">
+                                            <param id="0" name="Variable">PergAtual</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Sine" id="0" name="Set active" sid="262245110194279" type="itBarras">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -3092,9 +3131,6 @@
                         </action>
                         <action id="4" name="Set speed" sid="988014945752693" type="particAgua">
                             <param id="0" name="Speed">200</param>
-                        </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="436084366914404" type="itBarras">
-                            <param id="0" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="131872141789346" type="System">
                             <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
@@ -3127,6 +3163,22 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="472302756821126">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="220790352711127" type="System">
+                                    <param id="0" name="Variable">PergAtual</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Sine" id="0" name="Set active" sid="961259521420887" type="itBarras">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="452503533657314">
                     <conditions>

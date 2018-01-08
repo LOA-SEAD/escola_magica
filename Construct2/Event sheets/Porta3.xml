@@ -3085,6 +3085,10 @@
                 <action id="-16" name="Wait" sid="7057735368956077" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
+                <action id="-9" name="Set value" sid="387407716679720" type="System">
+                    <param id="0" name="Variable">SubindoPorta</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action behavior="Platform" id="0" name="Set ignoring input" sid="8508847347141953" type="player">
                     <param id="0" name="Input">0</param>
                 </action>
@@ -3155,6 +3159,9 @@
                                         <action behavior="Sine" id="0" name="Set active" sid="9713422142483866" type="itBarras">
                                             <param id="0" name="State">0</param>
                                         </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="4480387004893727" type="Inimigo">
+                                            <param id="0" name="State">0</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="2667577385049447" type="System">
                                             <param id="0" name="Group name">&quot;ControleMao&quot;</param>
                                             <param id="1" name="State">0</param>
@@ -3167,9 +3174,6 @@
                                             <param id="1" name="State">0</param>
                                         </action>
                                         <action behavior="Bullet" id="5" name="Set enabled" sid="6485876101862006" type="itBala">
-                                            <param id="0" name="State">0</param>
-                                        </action>
-                                        <action behavior="Sine" id="0" name="Set active" sid="4480387004893727" type="Inimigo">
                                             <param id="0" name="State">0</param>
                                         </action>
                                         <action id="-12" name="Set group active" sid="4177724011179551" type="System">
@@ -3258,6 +3262,37 @@
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="949150635931826">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="609669116904558" type="System">
+                                                    <param id="0" name="Variable">PergAtual</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="797541480554408">
+                                                    <conditions>
+                                                        <condition id="-11" name="For Each" sid="449863431944995" type="System">
+                                                            <param id="0" name="Object">Inimigo</param>
+                                                        </condition>
+                                                        <condition id="-7" name="Compare instance variable" sid="136379216360290" type="Inimigo">
+                                                            <param id="0" name="Instance variable">tipo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action behavior="Sine" id="0" name="Set active" sid="739258762626793" type="Inimigo">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -3332,6 +3367,37 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="890116660702557">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="343426502317378" type="System">
+                                    <param id="0" name="Variable">PergAtual</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="500450376645045">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="498485380804730" type="System">
+                                            <param id="0" name="Object">Inimigo</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="622044648092751" type="Inimigo">
+                                            <param id="0" name="Instance variable">tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Sine" id="0" name="Set active" sid="279275344349042" type="Inimigo">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="2570612125425387">
                     <conditions>
@@ -3377,6 +3443,10 @@
                         </action>
                         <action id="-9" name="Set value" sid="277277976013047" type="System">
                             <param id="0" name="Variable">NumQuedas</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="320070787129754" type="System">
+                            <param id="0" name="Variable">SubindoPorta</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="1987428601121574" type="System" />
@@ -3477,14 +3547,14 @@
                                 <action behavior="Sine" id="0" name="Set active" sid="499849687897658" type="itBarras">
                                     <param id="0" name="State">0</param>
                                 </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="276016021260483" type="Inimigo">
+                                    <param id="0" name="State">0</param>
+                                </action>
                                 <action id="-12" name="Set group active" sid="606334288368849" type="System">
                                     <param id="0" name="Group name">&quot;ColisaoEsp&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action behavior="Bullet" id="5" name="Set enabled" sid="938955318234313" type="itBala">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="Sine" id="0" name="Set active" sid="276016021260483" type="Inimigo">
                                     <param id="0" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="457164382612704" type="System">
@@ -3569,6 +3639,37 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="165853818197051">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="876578530879015" type="System">
+                                            <param id="0" name="Variable">PergAtual</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="415619090993286">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="910571388616460" type="System">
+                                                    <param id="0" name="Object">Inimigo</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="343898355086315" type="Inimigo">
+                                                    <param id="0" name="Instance variable">tipo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Sine" id="0" name="Set active" sid="145109420836645" type="Inimigo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -3604,7 +3705,7 @@
                         <action behavior="Bullet" id="5" name="Set enabled" sid="342858344684287" type="itBala">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="553663670114828" type="Inimigo">
+                        <action behavior="Sine" id="0" name="Set active" sid="662949040950560" type="Inimigo">
                             <param id="0" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="625336811808566" type="System">
@@ -3628,6 +3729,37 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="984800605091847">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="116971343882150" type="System">
+                                    <param id="0" name="Variable">PergAtual</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="958466351518853">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="818629931650980" type="System">
+                                            <param id="0" name="Object">Inimigo</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="838544584630664" type="Inimigo">
+                                            <param id="0" name="Instance variable">tipo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Sine" id="0" name="Set active" sid="823846408636435" type="Inimigo">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="687120900080997">
                     <conditions>
