@@ -15,7 +15,7 @@
         <variable constant="0" name="VLR_MAX_ACELER" sid="254123058421735" static="0" type="number">1000</variable>
         <variable constant="0" name="VLR_DANO_MONSTROS" sid="8629533435183975" static="0" type="number">10</variable>
         <variable constant="0" name="VLR_DANO_ESPINHOS" sid="6718017299344441" static="0" type="number">10</variable>
-        <variable constant="0" name="VLR_DANO_QUEDA" sid="2902097495240122" static="0" type="number">30</variable>
+        <variable constant="0" name="VLR_DANO_QUEDA" sid="2902097495240122" static="0" type="number">10</variable>
         <variable constant="0" name="VLR_DANO_BALA" sid="3559482628025" static="0" type="number">10</variable>
         <variable constant="0" name="VLR_FATOR_CURA" sid="3602671317392379" static="0" type="number">30</variable>
         <comment>PosX e PosY sao utilizadas em todas as portas. Essas guardam a ultima posicao do jogador (quando este passa por um checkpoint ou resolve uma questao durante uma das classes). Finalmente, quando o jogador morre ou o layout de uma das portas ee resetado, ele volta para a ultima posicao definida por essas variaveis. Elas tambem devem sempre ser zeradas no layout SelecaoPorta.</comment>

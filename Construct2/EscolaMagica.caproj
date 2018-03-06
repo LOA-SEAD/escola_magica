@@ -8,7 +8,7 @@
     <author-website></author-website>
     <app-id>br.ufscar.sead.loa.remar.escolamagica</app-id>
     <unique-id>3os5c9w6g6ffc</unique-id>
-    <saved-with-version>25000</saved-with-version>
+    <saved-with-version>25200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
