@@ -3,8 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Inicio</name>
     <events>
-        <variable constant="0" name="tempoInicial" sid="877176602283471" static="0" type="number">0</variable>
-        <variable constant="0" name="tempoFinal" sid="127578133996177" static="0" type="number">0</variable>
+        <variable constant="0" name="tempoInicialJogo" sid="612025270234543" static="0" type="number">0</variable>
+        <variable constant="0" name="tempoFinalJogo" sid="370370305820488" static="0" type="number">0</variable>
+        <variable constant="0" name="tempoInicialNivel" sid="877176602283471" static="0" type="number">0</variable>
+        <variable constant="0" name="tempoFinalNivel" sid="127578133996177" static="0" type="number">0</variable>
+        <variable constant="0" name="tempoInicialDesafio" sid="280051266762562" static="0" type="number">0</variable>
+        <variable constant="0" name="tempoFinalDesafio" sid="861886566370488" static="0" type="number">0</variable>
         <variable constant="0" name="pausado" sid="7867959592615192" static="0" type="number">0</variable>
         <variable constant="0" name="EasterEgg" sid="8009486351615664" static="0" type="number">0</variable>
         <variable constant="0" name="Porta3Clear" sid="2136560678193999" static="0" type="number">0</variable>
@@ -337,6 +341,17 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="429793603076393" type="System">
+                            <param id="0" name="Variable">tempoFinalJogo</param>
+                            <param id="1" name="Value">time</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="559316483643003" type="System">
+                            <param id="0" name="Variable">sendTimeJS</param>
+                            <param id="1" name="Value">tempoFinalJogo - tempoInicialJogo</param>
+                        </action>
+                        <action id="0" name="Execute" sid="190155511944605" type="CallJS">
+                            <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,0,&apos;EscolaMagica&apos;)&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="120931942347326" type="System">
                             <param id="0" name="Layout">Vitoria</param>
                         </action>
@@ -1121,8 +1136,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Set value" sid="756249124786815" type="System">
-                                            <param id="0" name="Variable">tempoInicial</param>
+                                            <param id="0" name="Variable">tempoInicialNivel</param>
                                             <param id="1" name="Value">time</param>
+                                        </action>
+                                        <action id="0" name="Execute" sid="274737828002583" type="CallJS">
+                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,1)&quot;</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="8713904051286008" type="System">
                                             <param id="0" name="Layout">Porta1</param>
@@ -1166,8 +1184,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Set value" sid="472620741215845" type="System">
-                                            <param id="0" name="Variable">tempoInicial</param>
+                                            <param id="0" name="Variable">tempoInicialNivel</param>
                                             <param id="1" name="Value">time</param>
+                                        </action>
+                                        <action id="0" name="Execute" sid="168236989764721" type="CallJS">
+                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,2)&quot;</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="5893102331848469" type="System">
                                             <param id="0" name="Layout">Porta2</param>
@@ -1211,8 +1232,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Set value" sid="381036907460713" type="System">
-                                            <param id="0" name="Variable">tempoInicial</param>
+                                            <param id="0" name="Variable">tempoInicialNivel</param>
                                             <param id="1" name="Value">time</param>
+                                        </action>
+                                        <action id="0" name="Execute" sid="789000812461297" type="CallJS">
+                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,3)&quot;</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="7056093819997631" type="System">
                                             <param id="0" name="Layout">Porta3</param>

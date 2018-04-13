@@ -531,6 +531,13 @@
                             <param id="0" name="Variable">LayoutAnterior</param>
                             <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="530664636143509" type="System">
+                            <param id="0" name="Variable">tempoInicialJogo</param>
+                            <param id="1" name="Value">time</param>
+                        </action>
+                        <action id="0" name="Execute" sid="595538251802871" type="CallJS">
+                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,0,&apos;EscolaMagica&apos;)&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="4201733162794606" type="System">
                             <param id="0" name="Layout">Inicio</param>
                         </action>
@@ -559,6 +566,13 @@
                         <action id="-9" name="Set value" sid="4360167349376269" type="System">
                             <param id="0" name="Variable">LayoutAnterior</param>
                             <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="371051609770092" type="System">
+                            <param id="0" name="Variable">tempoInicialJogo</param>
+                            <param id="1" name="Value">time</param>
+                        </action>
+                        <action id="0" name="Execute" sid="140806983366724" type="CallJS">
+                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,0,&apos;EscolaMagica&apos;)&quot;</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="693024365318934" type="System">
                             <param id="0" name="Layout">Inicio</param>
@@ -665,6 +679,13 @@
                             <param id="0" name="Variable">LayoutAnterior</param>
                             <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="326144889580864" type="System">
+                            <param id="0" name="Variable">tempoInicialJogo</param>
+                            <param id="1" name="Value">time</param>
+                        </action>
+                        <action id="0" name="Execute" sid="348580031017509" type="CallJS">
+                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,0,&apos;EscolaMagica&apos;)&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="7282014666491478" type="System">
                             <param id="0" name="Layout">Inicio</param>
                         </action>
@@ -716,6 +737,13 @@
                 <action id="-9" name="Set value" sid="993545356420559" type="System">
                     <param id="0" name="Variable">LayoutAnterior</param>
                     <param id="1" name="Value">&quot;IntroducaoSonho&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="327106179535571" type="System">
+                    <param id="0" name="Variable">tempoInicialJogo</param>
+                    <param id="1" name="Value">time</param>
+                </action>
+                <action id="0" name="Execute" sid="285600722251738" type="CallJS">
+                    <param id="0" name="Value">&quot;sendPlaytimeData(0.0,0,&apos;EscolaMagica&apos;)&quot;</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="165231596923720" type="System">
                     <param id="0" name="Layout">Inicio</param>

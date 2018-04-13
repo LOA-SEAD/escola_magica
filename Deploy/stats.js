@@ -1,4 +1,4 @@
-function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,tamanho){
+function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,tamanho,nivel){
 	var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
@@ -10,11 +10,12 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
         info.exportedResourceId = json.exportedResourceId;
         info.question = correta;
         info.answer = pergunta;
-        info.levelId = nroPergunta;
+        info.challengeId = nroPergunta;
         info.choices = respostas;
         info.choice = escolhida;
         info.win = acertou;
         info.size = tamanho;
+        info.levelName = nivel;
         info.gameType = 'multipleChoice';
         $.ajax({
             type: "POST",
@@ -24,13 +25,14 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
             }
         })
 	});
-	/*console.log(pergunta);
+	console.log(pergunta);
 	console.log(correta);
 	console.log(nroPergunta);
 	console.log(respostas);
 	console.log(escolhida);
     console.log(acertou);
-    console.log(tamanho);*/
+    console.log(tamanho);
+    console.log(nivel)
 }
 
 function sendPlayData(dano,fase,setor){
@@ -55,9 +57,9 @@ function sendPlayData(dano,fase,setor){
             }
         })
     });
-	/*console.log(dano);
+	console.log(dano);
 	console.log(fase);
-	console.log(setor);*/
+	console.log(setor);
 }
 
 function sendRankingData(pontos){
@@ -79,5 +81,5 @@ function sendRankingData(pontos){
             }
         })
     });
-    /*console.log(pontos);*/
+    console.log(pontos);
 }

@@ -1406,6 +1406,13 @@
                                                 <action id="-8" name="Set angle" sid="226010568491412" type="alavBarra">
                                                     <param id="0" name="Angle">315</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="191723930331686" type="System">
+                                                    <param id="0" name="Variable">tempoInicialDesafio</param>
+                                                    <param id="1" name="Value">time</param>
+                                                </action>
+                                                <action id="0" name="Execute" sid="902922123337186" type="CallJS">
+                                                    <param id="0" name="Value">&quot;sendPlaytimeData(0.0,2,&apos;EscolaMagica&apos;,1,&quot; &amp; Perguntas.At(PergAtual) + (5 * (AnoAtual - 1)) &amp; &quot;)&quot;</param>
+                                                </action>
                                                 <action id="-2" name="Go to layout" sid="7900093948535531" type="System">
                                                     <param id="0" name="Layout">Pergunta</param>
                                                 </action>
@@ -1814,7 +1821,7 @@
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="787916766492591" type="System">
-                                            <param id="0" name="Variable">tempoFinal</param>
+                                            <param id="0" name="Variable">tempoFinalNivel</param>
                                             <param id="1" name="Value">time</param>
                                         </action>
                                     </actions>
@@ -1959,10 +1966,10 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="540649488404684" type="System">
                                                     <param id="0" name="Variable">sendTimeJS</param>
-                                                    <param id="1" name="Value">tempoFinal - tempoInicial</param>
+                                                    <param id="1" name="Value">tempoFinalNivel - tempoInicialNivel</param>
                                                 </action>
-                                                <action disabled="1" id="0" name="Execute" sid="288290773258507" type="CallJS">
-                                                    <param id="0" name="Value">&quot;sendTimeData(&quot; &amp; sendTimeJS &amp; &quot;)&quot;</param>
+                                                <action id="0" name="Execute" sid="509445436495628" type="CallJS">
+                                                    <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,1,&apos;EscolaMagica&apos;,1)&quot;</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="1288812834193346" type="System">
                                                     <param id="0" name="Layout">Inicio</param>

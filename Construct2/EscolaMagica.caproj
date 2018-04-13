@@ -8,7 +8,7 @@
     <author-website></author-website>
     <app-id>br.ufscar.sead.loa.remar.escolamagica</app-id>
     <unique-id>3os5c9w6g6ffc</unique-id>
-    <saved-with-version>25200</saved-with-version>
+    <saved-with-version>25500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
@@ -58,7 +58,7 @@
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
-        <prop name="Enable WebGL">Off</prop>
+        <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Landscape</prop>

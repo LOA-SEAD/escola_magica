@@ -21,10 +21,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="13">Creditos</layout>
         <layout order="14">Conquistas</layout>
         <layout order="17">Vitoria</layout>
-        <event-sheet active="1" order="7">Inicio</event-sheet>
+        <event-sheet order="7">Inicio</event-sheet>
         <event-sheet order="8">Porta1</event-sheet>
         <event-sheet order="9">Porta2</event-sheet>
-        <event-sheet order="10">Porta3</event-sheet>
+        <event-sheet active="1" order="10">Porta3</event-sheet>
         <event-sheet order="11">Pergunta</event-sheet>
         <event-sheet order="15">IntroducaoSonho</event-sheet>
         <event-sheet order="16">Vitoria</event-sheet>

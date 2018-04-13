@@ -1281,10 +1281,21 @@
                                                         </action>
                                                         <action id="-9" name="Set value" sid="357542854578710" type="System">
                                                             <param id="0" name="Variable">SendJS</param>
-                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;true&apos;,&apos;15&apos;&quot;</param>
+                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;true&apos;,&apos;15&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;&quot;</param>
                                                         </action>
                                                         <action id="0" name="Execute" sid="4873315960752509" type="CallJS">
                                                             <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="296557221543829" type="System">
+                                                            <param id="0" name="Variable">tempoFinalDesafio</param>
+                                                            <param id="1" name="Value">time</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="103245633068531" type="System">
+                                                            <param id="0" name="Variable">sendTimeJS</param>
+                                                            <param id="1" name="Value">tempoFinalDesafio - tempoInicialDesafio</param>
+                                                        </action>
+                                                        <action id="0" name="Execute" sid="181939152177555" type="CallJS">
+                                                            <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,2,&apos;EscolaMagica&apos;,&quot; &amp; AnoAtual &amp; &quot;,&quot; &amp; Perguntas.At(PergAtual - 1) + (5 * (AnoAtual - 1)) &amp; &quot;)&quot;</param>
                                                         </action>
                                                     </actions>
                                                     <sub-events>
@@ -1380,7 +1391,7 @@
                                                         </action>
                                                         <action id="-9" name="Set value" sid="891064738097468" type="System">
                                                             <param id="0" name="Variable">SendJS</param>
-                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;,&apos;15&apos;&quot;</param>
+                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;,&apos;15&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;&quot;</param>
                                                         </action>
                                                         <action id="0" name="Execute" sid="485455397764160" type="CallJS">
                                                             <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
