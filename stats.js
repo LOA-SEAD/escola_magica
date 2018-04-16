@@ -16,7 +16,7 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
         info.win = acertou;
         info.size = tamanho;
         info.gameLevel = nroFase;
-        info.levelName = nivel;
+        info.gameLevelName = nivel;
         info.gameType = 'multipleChoice';
         $.ajax({
             type: "POST",
