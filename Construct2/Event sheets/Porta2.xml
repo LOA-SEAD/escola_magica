@@ -1580,7 +1580,7 @@
                                                     <param id="1" name="Value">time</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="812189369821132" type="CallJS">
-                                                    <param id="0" name="Value">&quot;sendPlaytimeData(0.0,2,&apos;EscolaMagica&apos;,2,&quot; &amp; Perguntas.At(PergAtual) + (5 * (AnoAtual - 1)) &amp; &quot;)&quot;</param>
+                                                    <param id="0" name="Value">&quot;sendPlaytimeData(0.0,2,&apos;EscolaMagica&apos;,2,&quot; &amp; Perguntas.At(PergAtual) &amp; &quot;)&quot;</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="2610134563679977" type="System">
                                                     <param id="0" name="Layout">Pergunta</param>
