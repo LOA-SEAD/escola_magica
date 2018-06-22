@@ -41,9 +41,9 @@ function sendPlayData(dano,fase,setor){
 	var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
-        path = "/exported-resource/savePlayStats"
+        path = "/exported-resource/saveDamageStats"
     }else {                                 // for web version in production, electron and crosswalk versions
-        path = "http://remar.dc.ufscar.br/exported-resource/savePlayStats"
+        path = "http://remar.dc.ufscar.br/exported-resource/saveDamageStats"
 	}
 	$.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
@@ -90,9 +90,9 @@ function sendPlaytimeData(tempo,tipo,idJogo,idNivel,idDesafio){
     var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
-        path = "/exported-resource/savePlayStats"
+        path = "/exported-resource/saveTimeStats"
     }else {                                 // for web version in production, electron and crosswalk versions
-        path = "http://remar.dc.ufscar.br/exported-resource/savePlayStats"
+        path = "http://remar.dc.ufscar.br/exported-resource/saveTimeStats"
     }
     $.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
