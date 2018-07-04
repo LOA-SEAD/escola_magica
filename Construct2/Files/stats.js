@@ -9,13 +9,13 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
 	$.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
         info.question = correta;
-        info.answer = pergunta;
+        info.correctAnswer = pergunta;
         info.challengeId = nroPergunta;
         info.choices = respostas;
-        info.choice = escolhida;
+        info.answer = escolhida;
         info.win = acertou;
         info.size = tamanho;
-        info.gameLevel = nroFase;
+        info.gameLevelId = nroFase;
         info.gameLevelName = nivel;
         info.gameType = 'multipleChoice';
         $.ajax({
