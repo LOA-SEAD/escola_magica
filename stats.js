@@ -15,8 +15,8 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
         info.answer = escolhida;
         info.win = acertou;
         info.size = tamanho;
-        info.gameLevelId = nroFase;
-        info.gameLevelName = nivel;
+        info.levelId = nroFase;
+        info.levelName = nivel;
         info.gameType = 'multipleChoice';
         $.ajax({
             type: "POST",
@@ -86,7 +86,7 @@ function sendRankingData(pontos){
     console.log(pontos);
 }
 
-function sendPlaytimeData(tempo,tipo,idJogo,idNivel,idDesafio){
+function sendPlaytimeData(tempo,tipo,idJogo,idNivel,nomeNivel,idDesafio){
     var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
@@ -100,7 +100,10 @@ function sendPlaytimeData(tempo,tipo,idJogo,idNivel,idDesafio){
         info.type = tipo;
         info.gameId = idJogo;
         if (idNivel != null){
-            info.gameLevel = idNivel;
+            info.levelId = idNivel;
+        }
+        if (nomeNivel != null){
+            info.levelName = nomeNivel;
         }
         if (idDesafio != null){
             info.challengeId = idDesafio;
@@ -119,6 +122,9 @@ function sendPlaytimeData(tempo,tipo,idJogo,idNivel,idDesafio){
     console.log(idJogo);
     if (idNivel != null){
         console.log(idNivel);
+    }
+    if (nomeNivel != null){
+        console.log(nomeNivel);
     }
     if (idDesafio != null){
         console.log(idDesafio);
