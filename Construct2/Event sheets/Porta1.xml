@@ -1411,7 +1411,7 @@
                                                     <param id="1" name="Value">time</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="902922123337186" type="CallJS">
-                                                    <param id="0" name="Value">&quot;sendPlaytimeData(0.0,2,&apos;EscolaMagica&apos;,1,&quot; &amp; Perguntas.At(PergAtual) &amp; &quot;)&quot;</param>
+                                                    <param id="0" name="Value">&quot;sendPlaytimeData(0.0,2,&apos;EscolaMagica&apos;,1,&apos;Porta 1&apos;,&quot; &amp; Perguntas.At(PergAtual) &amp; &quot;)&quot;</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="7900093948535531" type="System">
                                                     <param id="0" name="Layout">Pergunta</param>
@@ -1969,7 +1969,7 @@
                                                     <param id="1" name="Value">tempoFinalNivel - tempoInicialNivel</param>
                                                 </action>
                                                 <action id="0" name="Execute" sid="509445436495628" type="CallJS">
-                                                    <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,1,&apos;EscolaMagica&apos;,1)&quot;</param>
+                                                    <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,1,&apos;EscolaMagica&apos;,1,&apos;Porta 1&apos;)&quot;</param>
                                                 </action>
                                                 <action id="-2" name="Go to layout" sid="1288812834193346" type="System">
                                                     <param id="0" name="Layout">Inicio</param>

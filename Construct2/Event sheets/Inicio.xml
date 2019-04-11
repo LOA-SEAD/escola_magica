@@ -1140,7 +1140,7 @@
                                             <param id="1" name="Value">time</param>
                                         </action>
                                         <action id="0" name="Execute" sid="274737828002583" type="CallJS">
-                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,1)&quot;</param>
+                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,1,&apos;Porta 1&apos;)&quot;</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="8713904051286008" type="System">
                                             <param id="0" name="Layout">Porta1</param>
@@ -1188,7 +1188,7 @@
                                             <param id="1" name="Value">time</param>
                                         </action>
                                         <action id="0" name="Execute" sid="168236989764721" type="CallJS">
-                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,2)&quot;</param>
+                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,2,&apos;Porta 2&apos;)&quot;</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="5893102331848469" type="System">
                                             <param id="0" name="Layout">Porta2</param>
@@ -1236,7 +1236,7 @@
                                             <param id="1" name="Value">time</param>
                                         </action>
                                         <action id="0" name="Execute" sid="789000812461297" type="CallJS">
-                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,3)&quot;</param>
+                                            <param id="0" name="Value">&quot;sendPlaytimeData(0.0,1,&apos;EscolaMagica&apos;,3,&apos;Porta 3&apos;)&quot;</param>
                                         </action>
                                         <action id="-2" name="Go to layout" sid="7056093819997631" type="System">
                                             <param id="0" name="Layout">Porta3</param>

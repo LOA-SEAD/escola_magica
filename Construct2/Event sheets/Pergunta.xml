@@ -14,7 +14,7 @@
         <variable constant="0" name="SendJS" sid="3321349714617433" static="0" type="text"></variable>
         <variable constant="0" name="RespCorreta" sid="5447675615131101" static="0" type="number">-1</variable>
         <comment>Serve para armazenar o texto da resposta escolhida pelo jogador</comment>
-        <variable constant="0" name="RespostaEscolhida" sid="911034782147211" static="0" type="text"></variable>
+        <variable constant="0" name="RespostaEscolhida" sid="911034782147211" static="0" type="text">null</variable>
         <event-group description="" sid="7103146111134226" title="Start Layout">
             <sub-events>
                 <event-block sid="152157541819758">
@@ -90,6 +90,10 @@
                         <action id="-9" name="Set value" sid="6320746257360839" type="System">
                             <param id="0" name="Variable">RespCorreta</param>
                             <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="987393405862027" type="System">
+                            <param id="0" name="Variable">RespostaEscolhida</param>
+                            <param id="1" name="Value">&quot;null&quot;</param>
                         </action>
                         <action id="5" name="Set frame" sid="7904220537366845" type="btnEditarSom">
                             <param id="0" name="Frame number">Volume = -100 ? 2 : 0</param>
@@ -1295,7 +1299,7 @@
                                                             <param id="1" name="Value">tempoFinalDesafio - tempoInicialDesafio</param>
                                                         </action>
                                                         <action id="0" name="Execute" sid="181939152177555" type="CallJS">
-                                                            <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,2,&apos;EscolaMagica&apos;,&quot; &amp; AnoAtual &amp; &quot;,&quot; &amp; Perguntas.At(PergAtual - 1) &amp; &quot;)&quot;</param>
+                                                            <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,2,&apos;EscolaMagica&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;,&quot; &amp; Perguntas.At(PergAtual - 1) &amp; &quot;)&quot;</param>
                                                         </action>
                                                     </actions>
                                                     <sub-events>
@@ -1374,11 +1378,6 @@
                                                 <event-block sid="5167950262696314">
                                                     <conditions>
                                                         <condition id="-22" name="Else" sid="921280058430352" type="System" />
-                                                        <condition disabled="1" id="-14" name="Compare variable" sid="6911190681902456" type="System">
-                                                            <param id="0" name="Variable">HelpOn</param>
-                                                            <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">0</param>
-                                                        </condition>
                                                     </conditions>
                                                     <actions>
                                                         <action id="-9" name="Set value" sid="1177849256999538" type="System">
@@ -1389,58 +1388,31 @@
                                                             <param id="0" name="Variable">NumRespErradas</param>
                                                             <param id="1" name="Value">1</param>
                                                         </action>
-                                                        <action id="-9" name="Set value" sid="891064738097468" type="System">
-                                                            <param id="0" name="Variable">SendJS</param>
-                                                            <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;,&apos;5&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;&quot;</param>
-                                                        </action>
-                                                        <action id="0" name="Execute" sid="485455397764160" type="CallJS">
-                                                            <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
-                                                        </action>
-                                                        <action disabled="1" id="-9" name="Set value" sid="5939990263331082" type="System">
-                                                            <param id="0" name="Variable">SendJS</param>
-                                                            <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
-                                                        </action>
-                                                        <action disabled="1" id="0" name="Execute" sid="2866700705005697" type="CallJS">
-                                                            <param id="0" name="Value">&quot;send(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
-                                                        </action>
                                                         <action id="-12" name="Set group active" sid="3043444281651663" type="System">
                                                             <param id="0" name="Group name">&quot;Dano&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
-                                                        <action disabled="1" id="0" name="Set text" sid="4127212282019195" type="txtFala">
-                                                            <param id="0" name="Text">&quot;Hmm... Não é essa a resposta.&quot;</param>
-                                                        </action>
-                                                        <action disabled="1" id="-15" name="Set visible" sid="1724373827416541" type="txtFala">
-                                                            <param id="0" name="Visibility">0</param>
-                                                        </action>
-                                                        <action disabled="1" id="-15" name="Set visible" sid="712382880647509" type="imgBalao">
-                                                            <param id="0" name="Visibility">1</param>
-                                                        </action>
-                                                        <action disabled="1" id="4" name="Set animation" sid="452133928890276" type="imgBalao">
-                                                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                            <param id="1" name="From">1</param>
-                                                        </action>
-                                                        <action disabled="1" id="-16" name="Wait" sid="4750108804787977" type="System">
-                                                            <param id="0" name="Seconds">0.3</param>
-                                                        </action>
-                                                        <action disabled="1" id="-15" name="Set visible" sid="82656323319062" type="txtFala">
-                                                            <param id="0" name="Visibility">1</param>
-                                                        </action>
-                                                        <action disabled="1" id="-16" name="Wait" sid="562483260172854" type="System">
-                                                            <param id="0" name="Seconds">5</param>
-                                                        </action>
-                                                        <action disabled="1" id="-15" name="Set visible" sid="9914236131777993" type="txtFala">
-                                                            <param id="0" name="Visibility">0</param>
-                                                        </action>
-                                                        <action disabled="1" id="4" name="Set animation" sid="6492149791021188" type="imgBalao">
-                                                            <param id="0" name="Animation">&quot;Close&quot;</param>
-                                                            <param id="1" name="From">1</param>
-                                                        </action>
-                                                        <action disabled="1" id="-9" name="Set value" sid="6016521169757969" type="System">
-                                                            <param id="0" name="Variable">HelpOn</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
                                                     </actions>
+                                                    <sub-events>
+                                                        <event-block sid="293759551117016">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="341552326187117" type="System">
+                                                                    <param id="0" name="Variable">RespostaEscolhida</param>
+                                                                    <param id="1" name="Comparison">1</param>
+                                                                    <param id="2" name="Value">&quot;null&quot;</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="891064738097468" type="System">
+                                                                    <param id="0" name="Variable">SendJS</param>
+                                                                    <param id="1" name="Value">Pergunta &amp; &quot;&apos;&quot; &amp; RespostaEscolhida &amp; &quot;&apos;,&apos;false&apos;,&apos;5&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;&quot;</param>
+                                                                </action>
+                                                                <action id="0" name="Execute" sid="485455397764160" type="CallJS">
+                                                                    <param id="0" name="Value">&quot;sendData(&quot; &amp; SendJS &amp; &quot;)&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>

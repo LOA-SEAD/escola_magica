@@ -8,7 +8,7 @@
     <author-website></author-website>
     <app-id>br.ufscar.sead.loa.remar.escolamagica</app-id>
     <unique-id>3os5c9w6g6ffc</unique-id>
-    <saved-with-version>25500</saved-with-version>
+    <saved-with-version>26700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
@@ -62,7 +62,7 @@
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Landscape</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Preview mode">HTTP</prop>
         <prop name="Sampling">Linear</prop>
     </configuration-settings>
