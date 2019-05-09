@@ -1275,10 +1275,6 @@
                                                         <action id="6" name="Stop" sid="8868967417071078" type="Audio">
                                                             <param id="0" name="Tag">&quot;Desafio&quot;</param>
                                                         </action>
-                                                        <action id="-10" name="Add to" sid="1683302807120664" type="System">
-                                                            <param id="0" name="Variable">PergAtual</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
                                                         <action disabled="1" id="-9" name="Set value" sid="4535131634003792" type="System">
                                                             <param id="0" name="Variable">SendJS</param>
                                                             <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; Resp &amp; &quot;&apos;&quot;</param>
@@ -1299,7 +1295,11 @@
                                                             <param id="1" name="Value">tempoFinalDesafio - tempoInicialDesafio</param>
                                                         </action>
                                                         <action id="0" name="Execute" sid="181939152177555" type="CallJS">
-                                                            <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,2,&apos;EscolaMagica&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;,&quot; &amp; Perguntas.At(PergAtual - 1) &amp; &quot;)&quot;</param>
+                                                            <param id="0" name="Value">&quot;sendPlaytimeData(&quot; &amp; sendTimeJS &amp; &quot;,2,&apos;EscolaMagica&apos;,&quot; &amp; AnoAtual &amp; &quot;,&apos;Porta &quot; &amp; AnoAtual &amp; &quot;&apos;,&quot; &amp; Perguntas.At(PergAtual)+1 &amp; &quot;)&quot;</param>
+                                                        </action>
+                                                        <action id="-10" name="Add to" sid="1683302807120664" type="System">
+                                                            <param id="0" name="Variable">PergAtual</param>
+                                                            <param id="1" name="Value">1</param>
                                                         </action>
                                                     </actions>
                                                     <sub-events>
