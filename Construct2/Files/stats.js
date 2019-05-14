@@ -1,12 +1,12 @@
 function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,tamanho,nroFase,nivel){
-	var info = {};
+    var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
-        path = "/exported-resource/saveStats"
+        path = "/stats/saveChallengeStats"
     }else {                                 // for web version in production, electron and crosswalk versions
-        path = "http://remar.dc.ufscar.br/exported-resource/saveStats"
-	}
-	$.getJSON("remar.json", function(json) {
+        path = "http://remar.dc.ufscar.br/stats/saveChallengeStats"
+    }
+    $.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
         info.question = correta;
         info.correctAnswer = pergunta;
@@ -14,42 +14,10 @@ function sendData(correta,pergunta,nroPergunta,respostas,escolhida,acertou,taman
         info.choices = respostas;
         info.answer = escolhida;
         info.win = acertou;
-        info.size = tamanho;
+        info.levelSize = tamanho;
         info.levelId = nroFase;
         info.levelName = nivel;
-        info.gameType = 'multipleChoice';
-        $.ajax({
-            type: "POST",
-            url: path,
-            data: info,
-            success: function(data) {
-            }
-        })
-	});
-	console.log("sendData");
-	console.log("Pergunta " + nroPerguntas + ": " + pergunta);
-	console.log("Resposta correta: " + correta);
-	console.log("Alternativas: " + respostas);
-	console.log("Resposta submetida: " + escolhida);
-    console.log("Acertou? "	+ acertou);
-    console.log("Tamanho: " + tamanho);
-    console.log("Fase " + nroFase + " - " + nivel);
-}
-
-function sendPlayData(dano,fase,setor){
-	var info = {};
-    var path;
-    if(window.location.hostname == "localhost" ){   // for localhost tests
-        path = "/exported-resource/saveDamageStats"
-    }else {                                 // for web version in production, electron and crosswalk versions
-        path = "http://remar.dc.ufscar.br/exported-resource/saveDamageStats"
-	}
-	$.getJSON("remar.json", function(json) {
-        info.exportedResourceId = json.exportedResourceId;
-        info.damage = dano;
-        info.level = fase;
-        info.sector = setor;
-        info.gameType = 'EscolaMagica';
+        info.challengeType = 'multipleChoice';
         $.ajax({
             type: "POST",
             url: path,
@@ -58,18 +26,42 @@ function sendPlayData(dano,fase,setor){
             }
         })
     });
-	console.log("sendPlayData");
-	console.log("Número de danos: " + dano);
-	console.log("Fase " + fase + " - " + setor);
+}
+
+function sendPlayData(dano,fase,setor){
+    var info = {};
+    var path;
+    if(window.location.hostname == "localhost" ){   // for localhost tests
+        path = "/stats/saveDamageStats"
+    }else {                                 // for web version in production, electron and crosswalk versions
+        path = "http://remar.dc.ufscar.br/stats/saveDamageStats"
+    }
+    $.getJSON("remar.json", function(json) {
+        info.exportedResourceId = json.exportedResourceId;
+        info.damage = dano;
+        info.level = fase;
+        info.sector = setor;
+
+        $.ajax({
+            type: "POST",
+            url: path,
+            data: info,
+            success: function(data) {
+            }
+        })
+    });
+    console.log(dano);
+    console.log(fase);
+    console.log(setor);
 }
 
 function sendRankingData(pontos){
     var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
-        path = "/exported-resource/saveScore"
+        path = "/stats/saveRankingStats"
     }else {                                 // for web version in production, electron and crosswalk versions
-        path = "http://remar.dc.ufscar.br/exported-resource/saveScore"
+        path = "http://remar.dc.ufscar.br/stats/saveRankingStats"
     }
     $.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
@@ -82,31 +74,32 @@ function sendRankingData(pontos){
             }
         })
     });
-    console.log("sendRankingData");
-    console.log("Pontuação: " + pontos);
+    console.log(pontos);
 }
 
 function sendPlaytimeData(tempo,tipo,idJogo,idNivel,nomeNivel,idDesafio){
     var info = {};
     var path;
     if(window.location.hostname == "localhost" ){   // for localhost tests
-        path = "/exported-resource/saveTimeStats"
+        path = "/stats/saveTimeStats"
     }else {                                 // for web version in production, electron and crosswalk versions
-        path = "http://remar.dc.ufscar.br/exported-resource/saveTimeStats"
+        path = "http://remar.dc.ufscar.br/stats/saveTimeStats"
     }
     $.getJSON("remar.json", function(json) {
         info.exportedResourceId = json.exportedResourceId;
         info.time = tempo;
-        info.type = tipo;
+        info.timeType = tipo;
         info.gameId = idJogo;
         if (idNivel != null){
             info.levelId = idNivel;
+        }
+        if (nomeNivel != null){
             info.levelName = nomeNivel;
         }
         if (idDesafio != null){
             info.challengeId = idDesafio;
         }
-        info.gameType = 'ConclusionTime';
+
         $.ajax({
             type: "POST",
             url: path,
@@ -115,14 +108,16 @@ function sendPlaytimeData(tempo,tipo,idJogo,idNivel,nomeNivel,idDesafio){
             }
         })
     });
-    console.log("sendPlaytimeData");
-    console.log("Tempo: " + tempo + "s");
-    console.log("Tipo: " + tipo);
-    console.log("Nome do jogo: " + idJogo);
+    console.log(tempo);
+    console.log(tipo);
+    console.log(idJogo);
     if (idNivel != null){
-        console.log("Fase " + idNivel + " - " + nomeNivel);
+        console.log(idNivel);
+    }
+    if (nomeNivel != null){
+        console.log(nomeNivel);
     }
     if (idDesafio != null){
-        console.log("Desafio: " + idDesafio);
+        console.log(idDesafio);
     }
 }
