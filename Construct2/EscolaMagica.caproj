@@ -3569,9 +3569,6 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Text3" sid="413819693181942">
-            <plugin id="Text" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>

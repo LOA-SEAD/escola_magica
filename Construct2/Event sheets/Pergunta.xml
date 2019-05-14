@@ -1695,9 +1695,6 @@
                                             <param id="0" name="Variable">Pergunta</param>
                                             <param id="1" name="Value">Pergunta &amp; &quot;,&apos;&quot; &amp; RespostaCerta &amp; &quot;&apos;,&apos;&quot; &amp; Perguntas.At(PergAtual)+1 &amp; &quot;&apos;,&quot; &amp; AlternativasVariavel &amp; &quot;&apos;,&quot;</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="470150695354302" type="Text3">
-                                            <param id="0" name="Text">Pergunta</param>
-                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
