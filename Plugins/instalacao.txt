@@ -1,0 +1,3 @@
+- Certifique-se que o Construct2 esteja fechado.
+- Copie as pastas na íntegra e cole em %ProgramFiles%\Construct 2\exporters\html5\plugins
+- Abre o projeto no Construct 2.
