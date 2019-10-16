@@ -63,7 +63,7 @@ function sendPlayData(dano,fase,setor){
     console.log("sendPlayData");
 	console.log("Número de danos: " + dano);
 	console.log("Fase " + fase + " - " + setor);
-	
+
 }
 
 function sendRankingData(pontos){
@@ -120,7 +120,7 @@ function sendPlaytimeData(tempo,tipo,idJogo,idNivel,nomeNivel,idDesafio){
             }
         })
     });
-
+    
     console.log("sendPlaytimeData");
     console.log("Tempo: " + tempo + "s");
     console.log("Tipo: " + tipo);
